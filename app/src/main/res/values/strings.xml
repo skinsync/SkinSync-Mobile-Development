@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">SkinSync</string>
+    <string name="desc_title">Skincare Recommendation Based on Facial Skin Condition</string>
+    <string name="input_username">Masukkan Nama Anda</string>
+    <string name="input_email">Masukkan Email Anda</string>
+    <string name="input_password">Masukkan Password Anda</string>
+    <string name="input_confirm">Konfirmasi Password Anda</string>
+    <string name="button_register">Daftar</string>
+    <string name="button_login">Masuk</string>
 </resources>

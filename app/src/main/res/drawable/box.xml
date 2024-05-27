@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:shape="rectangle">
+        <shape>
+            <!-- Efek drop shadow -->
+            <size android:height="2dp" />
+            <solid android:color="#F4F5FD" />
+            <!-- Isian utama dengan transparansi 100% -->
+            <solid android:color="#F4F5FD" />
+            <!-- Stroke pertama dengan alpha (transparansi) 100% -->
+            <stroke android:width="2dp" android:color="#F4F5FD" />
+            <!-- Stroke kedua dengan alpha (transparansi) 20% -->
+            <stroke android:width="2dp" android:color="#FEE0C0" android:alpha="0.2" />
+            <!-- Corner radius sebesar 15dp -->
+            <corners android:radius="15dp" />
+        </shape>
+    </item>
+</selector>
