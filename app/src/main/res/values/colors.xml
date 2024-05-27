@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  Button Selector Colors  -->
+    <color name="button_default">#FEE0C0</color>
+    <color name="button_pressed">#F9A296</color>
+    <color name="button_disabled">#B0B0B0</color>
 </resources>
