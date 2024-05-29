@@ -13,16 +13,22 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
-            android:name=".activity.users.LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.users.RegisterActivity"
+            android:name=".activity.users.welcome.WelcomeActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.users.LoginActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.users.RegisterActivity"
+            android:exported="false">
         </activity>
         <activity
             android:name=".activity.MainActivity"
