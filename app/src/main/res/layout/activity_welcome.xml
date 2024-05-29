@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.users.welcome.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/ImageWelcome"
+        android:layout_width="282dp"
+        android:layout_height="271dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/welcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginRight="140dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/welcome"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toRightOf="@+id/ImageWelcome"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ImageWelcome"
+        app:layout_constraintTop_toBottomOf="@+id/ImageWelcome"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/welcomeDesc"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginRight="140dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/welcome_desc"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeTextView"/>
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="-150dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_login"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeDesc" />
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="137dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="150dp"
+        android:background="@drawable/button_selector"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_register"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcomeDesc" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
