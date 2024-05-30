@@ -4,57 +4,29 @@ package com.example.skinsync.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.ImageButton;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
-import androidx.viewbinding.ViewBindings;
 import com.example.skinsync.R;
-import com.google.android.material.navigation.NavigationView;
-import com.google.android.material.search.SearchBar;
 import java.lang.NullPointerException;
 import java.lang.Override;
-import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final DrawerLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
-  public final DrawerLayout drawerLayout;
+  public final ConstraintLayout main;
 
-  @NonNull
-  public final ImageButton ibMenu;
-
-  @NonNull
-  public final ImageButton ibProfile;
-
-  @NonNull
-  public final FrameLayout navFragment;
-
-  @NonNull
-  public final NavigationView navigationView;
-
-  @NonNull
-  public final SearchBar searchBar;
-
-  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull DrawerLayout drawerLayout,
-      @NonNull ImageButton ibMenu, @NonNull ImageButton ibProfile, @NonNull FrameLayout navFragment,
-      @NonNull NavigationView navigationView, @NonNull SearchBar searchBar) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout main) {
     this.rootView = rootView;
-    this.drawerLayout = drawerLayout;
-    this.ibMenu = ibMenu;
-    this.ibProfile = ibProfile;
-    this.navFragment = navFragment;
-    this.navigationView = navigationView;
-    this.searchBar = searchBar;
+    this.main = main;
   }
 
   @Override
   @NonNull
-  public DrawerLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -75,46 +47,12 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMainBinding bind(@NonNull View rootView) {
-    // The body of this method is generated in a way you would not otherwise write.
-    // This is done to optimize the compiled bytecode for size and performance.
-    int id;
-    missingId: {
-      DrawerLayout drawerLayout = (DrawerLayout) rootView;
-
-      id = R.id.ib_menu;
-      ImageButton ibMenu = ViewBindings.findChildViewById(rootView, id);
-      if (ibMenu == null) {
-        break missingId;
-      }
-
-      id = R.id.ib_profile;
-      ImageButton ibProfile = ViewBindings.findChildViewById(rootView, id);
-      if (ibProfile == null) {
-        break missingId;
-      }
-
-      id = R.id.navFragment;
-      FrameLayout navFragment = ViewBindings.findChildViewById(rootView, id);
-      if (navFragment == null) {
-        break missingId;
-      }
-
-      id = R.id.navigation_view;
-      NavigationView navigationView = ViewBindings.findChildViewById(rootView, id);
-      if (navigationView == null) {
-        break missingId;
-      }
-
-      id = R.id.searchBar;
-      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
-      if (searchBar == null) {
-        break missingId;
-      }
-
-      return new ActivityMainBinding((DrawerLayout) rootView, drawerLayout, ibMenu, ibProfile,
-          navFragment, navigationView, searchBar);
+    if (rootView == null) {
+      throw new NullPointerException("rootView");
     }
-    String missingId = rootView.getResources().getResourceName(id);
-    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
+
+    ConstraintLayout main = (ConstraintLayout) rootView;
+
+    return new ActivityMainBinding((ConstraintLayout) rootView, main);
   }
 }

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State ketika tombol tidak aktif atau tidak sedang dihover -->
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/whisper_blue" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!-- State ketika tombol dihover atau di-tap -->
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/beige" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+    <!-- State default atau ketika tombol aktif tanpa interaksi -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/peach" />
+            <corners android:radius="5dp" />
+        </shape>
+    </item>
+</selector>

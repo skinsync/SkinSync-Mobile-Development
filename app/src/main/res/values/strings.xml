@@ -14,4 +14,15 @@
     <string name="welcome">Selamat datang di SkinSync !</string>
     <string name="welcome_desc">Deteksi kulit wajah Anda dan dapatkan solusi perawatan terbaik untuk kulit yang sehat ? di SkinSync aja!</string>
     <string name="dashboard">Dashboard</string>
+    <string name="title_page_profile">Profile</string>
+    <string name="username_profile">Username</string>
+    <string name="age_title">Age</string>
+    <string name="age_desc">21 years old</string>
+    <string name="gender_title">Gender</string>
+    <string name="gender_desc">Male</string>
+    <string name="email_title">Gmail</string>
+    <string name="email_desc">email@gmail.com</string>
+    <string name="password_title">Password</string>
+    <string name="password_desc">*********</string>
+    <string name="button_edit_profile">Edit Profile</string>
 </resources>

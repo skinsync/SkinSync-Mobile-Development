@@ -298,6 +298,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2892,8 +2896,6 @@ dimen mtrl_tooltip_minHeight
 dimen mtrl_tooltip_minWidth
 dimen mtrl_tooltip_padding
 dimen mtrl_transition_shared_axis_slide_distance
-dimen nav_icon_size
-dimen new_nav_icon_margin
 dimen notification_action_icon_size
 dimen notification_action_text_size
 dimen notification_big_circle_margin
@@ -2998,7 +3000,11 @@ drawable abc_textfield_search_material
 drawable abc_vector_test
 drawable avd_hide_password
 drawable avd_show_password
+drawable back
+drawable background_article
+drawable books
 drawable box
+drawable brands
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -3007,6 +3013,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable button_peach
 drawable button_selector
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3015,8 +3022,6 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable field
 drawable ic_arrow_back_black_24
-drawable ic_article
-drawable ic_bucket
 drawable ic_call_answer
 drawable ic_call_answer_low
 drawable ic_call_answer_video
@@ -3028,19 +3033,14 @@ drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
-drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
-drawable ic_menu
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
-drawable ic_person
-drawable ic_search
 drawable ic_search_black_24
-drawable ic_user
 drawable icon_user
 drawable indeterminate_static
 drawable lock
@@ -3118,7 +3118,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
-drawable search_background
+drawable products
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3200,6 +3200,8 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id ageDesc
+id ageTitle
 id alertTitle
 id aligned
 id all
@@ -3209,7 +3211,6 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
-id appBarLayout
 id arc
 id asConfigured
 id async
@@ -3217,6 +3218,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id avatarImageProfile
 id background
 id barrier
 id baseline
@@ -3230,12 +3232,17 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id box
+id buttonEdit
 id buttonLogin
 id buttonPanel
 id buttonRegister
 id cache_measures
 id callMeasure
 id cancel_button
+id card
+id card1
+id card2
+id card3
 id carryVelocity
 id center
 id centerCrop
@@ -3301,7 +3308,6 @@ id dragLeft
 id dragRight
 id dragStart
 id dragUp
-id drawer_layout
 id dropdown_menu
 id easeIn
 id easeInOut
@@ -3311,6 +3317,8 @@ id edge
 id edit_query
 id edit_text_id
 id elastic
+id emailDesc2
+id emailTitle
 id embed
 id end
 id endToStart
@@ -3341,8 +3349,11 @@ id forever
 id fragment_container_view_tag
 id frost
 id fullscreen_header
+id genderDesc
+id genderTitle
 id ghost_view
 id ghost_view_holder
+id gmail_textView
 id gone
 id graph
 id graph_wrap
@@ -3356,8 +3367,6 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
-id ib_menu
-id ib_profile
 id icon
 id iconConfirmPassword
 id iconEmail
@@ -3380,7 +3389,6 @@ id invisible
 id inward
 id italic
 id item_touch_helper_previous_elevation
-id iv_profile
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3393,7 +3401,6 @@ id line3
 id linear
 id listMode
 id list_item
-id ll_nav_header
 id m3_side_sheet
 id main
 id marquee
@@ -3455,11 +3462,6 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id navFragment
-id nav_article
-id nav_list_product
-id nav_logout
-id nav_profile
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3467,7 +3469,6 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
-id navigation_view
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3505,6 +3506,8 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordDesc
+id passwordTitle
 id password_toggle
 id path
 id pathRelative
@@ -3526,6 +3529,8 @@ id rightToLeft
 id right_icon
 id right_side
 id rounded
+id row_1
+id row_2
 id row_index_key
 id save_non_transition_alpha
 id save_overlay_view
@@ -3537,10 +3542,6 @@ id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
 id scrollable
-id searchBar
-id searchEditText
-id searchIcon
-id searchView
 id search_badge
 id search_bar
 id search_button
@@ -3629,6 +3630,7 @@ id time
 id title
 id titleApp
 id titleDividerNoCustom
+id titlePage
 id title_template
 id toggle
 id toolbar
@@ -3646,13 +3648,12 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
-id tv_email
-id tv_name
 id unchecked
 id uniform
 id unlabeled
 id up
 id useLogo
+id usernameProfile
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3787,13 +3788,14 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_dashboard
+layout activity_edit_profile
 layout activity_login
 layout activity_main
+layout activity_profile
 layout activity_register
 layout activity_welcome
-layout app_bar_main
 layout custom_dialog
-layout custom_search_bar
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
 layout design_layout_snackbar
@@ -3809,9 +3811,6 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
-layout fragment_article
-layout fragment_list_product
-layout fragment_profile
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout m3_alert_dialog
@@ -3865,7 +3864,6 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
-layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -3876,7 +3874,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -3907,6 +3904,8 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string age_desc
+string age_title
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3916,6 +3915,7 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string button_edit_profile
 string button_login
 string button_register
 string call_notification_answer_action
@@ -3930,16 +3930,19 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string checkbox_remember
 string clear_text_end_icon_content_description
-string close_nav
+string dashboard
 string desc_title
 string dont_have_account
+string email_desc
+string email_title
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string forgot_password
-string hello_blank_fragment
+string gender_desc
+string gender_title
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string input_confirm
@@ -4048,7 +4051,8 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
-string open_nav
+string password_desc
+string password_title
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -4061,6 +4065,8 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string title_page_profile
+string username_profile
 string welcome
 string welcome_desc
 style AlertDialog_AppCompat
@@ -5222,6 +5228,7 @@ styleable Carousel carousel_alignment carousel_backwardTransition carousel_empty
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize
