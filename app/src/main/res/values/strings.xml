@@ -13,4 +13,5 @@
     <string name="make_account">Buat Akun</string>
     <string name="welcome">Selamat datang di SkinSync !</string>
     <string name="welcome_desc">Deteksi kulit wajah Anda dan dapatkan solusi perawatan terbaik untuk kulit yang sehat ? di SkinSync aja!</string>
+    <string name="dashboard">Dashboard</string>
 </resources>
