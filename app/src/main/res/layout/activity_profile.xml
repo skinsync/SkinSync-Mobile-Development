@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.users.profile.ProfileActivity">
+
+    <TextView
+        android:id="@+id/titlePage"
+        android:layout_width="231dp"
+        android:layout_height="35dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/title_page_profile"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="219dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titlePage">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/beige">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/avatarImageProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="115dp"
+                android:layout_marginEnd="115dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/usernameProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/username_profile"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/avatarImageProfile" />
+
+            <TextView
+                android:id="@+id/gmail_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_desc"
+                android:fontFamily="@font/roboto"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/usernameProfile"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/ageTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/age_title"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/card"
+        app:layout_constraintStart_toStartOf="@+id/card"
+        app:layout_constraintTop_toBottomOf="@+id/card" />
+
+    <TextView
+        android:id="@+id/ageDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/age_desc"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ageTitle"
+        app:layout_constraintStart_toStartOf="@+id/ageTitle"
+        app:layout_constraintTop_toBottomOf="@+id/ageTitle"/>
+
+    <TextView
+        android:id="@+id/genderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/gender_title"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/ageDesc"
+        app:layout_constraintStart_toStartOf="@+id/ageDesc"
+        app:layout_constraintTop_toBottomOf="@+id/ageDesc" />
+
+    <TextView
+        android:id="@+id/genderDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/gender_desc"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/genderTitle"
+        app:layout_constraintStart_toStartOf="@+id/genderTitle"
+        app:layout_constraintTop_toBottomOf="@+id/genderTitle"/>
+
+    <TextView
+        android:id="@+id/emailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/email_title"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/genderDesc"
+        app:layout_constraintStart_toStartOf="@+id/genderDesc"
+        app:layout_constraintTop_toBottomOf="@+id/genderDesc" />
+
+    <TextView
+        android:id="@+id/emailDesc2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/email_desc"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/emailTitle"
+        app:layout_constraintStart_toStartOf="@+id/emailTitle"
+        app:layout_constraintTop_toBottomOf="@+id/emailTitle"/>
+
+    <TextView
+        android:id="@+id/passwordTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/password_title"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/emailDesc2"
+        app:layout_constraintStart_toStartOf="@+id/emailDesc2"
+        app:layout_constraintTop_toBottomOf="@+id/emailDesc2" />
+
+    <TextView
+        android:id="@+id/passwordDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/password_desc"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/passwordTitle"
+        app:layout_constraintStart_toStartOf="@+id/passwordTitle"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTitle"/>
+
+    <Button
+        android:id="@+id/buttonEdit"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_peach"
+        android:fontFamily="@font/roboto"
+        android:text="@string/button_edit_profile"
+        android:textSize="14sp"
+        app:backgroundTint="@null"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/passwordDesc"
+        app:layout_constraintStart_toStartOf="@+id/passwordDesc"
+        app:layout_constraintTop_toBottomOf="@+id/passwordDesc" />
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/buttonEdit"
+        app:layout_constraintStart_toStartOf="@+id/buttonEdit"
+        app:layout_constraintTop_toBottomOf="@+id/buttonEdit"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

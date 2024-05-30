@@ -1,198 +1,170 @@
 [
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_fragment_list_product.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/fragment_list_product.xml"
+        "merged": "com.example.skinsync.app-debug-32:/xml_data_extraction_rules.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_icon_user.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/icon_user.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/font_lato_bold.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/font/lato_bold.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_ic_launcher_background.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_person.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_person.xml"
+        "merged": "com.example.skinsync.app-debug-32:/font_josefin_sans_light.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/font/josefin_sans_light.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_edit_profile.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_nav_header.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/nav_header.xml"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_launcher_foreground.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_products.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/products.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_menu.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_menu.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_app_bar_main.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/app_bar_main.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_button_peach.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/button_peach.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_user.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_user.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_books.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/books.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_background_article.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/background_article.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_logo_resize.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/logo_resize.png"
+        "merged": "com.example.skinsync.app-debug-32:/font_lato_bold.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/font/lato_bold.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_field.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/field.xml"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_activity_login.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/activity_login.xml"
+        "merged": "com.example.skinsync.app-debug-32:/font_roboto.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/font/roboto.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_lock.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/lock.png"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/font_josefin_slab.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/font/josefin_slab.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_brands.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/brands.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_welcome.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/welcome.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_search.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_search.xml"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-hdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_fragment_article.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/fragment_article.xml"
+        "merged": "com.example.skinsync.app-debug-32:/font_josefin_slab.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/font/josefin_slab.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_back.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/back.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/font_josefin_sans_light.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/font/josefin_sans_light.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_logo_resize.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/logo_resize.png"
     },
     {
-        "merged": "com.example.skinsync.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "com.example.skinsync.app-main-33:/layout/activity_main.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_view_hide.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/view_hide.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_bucket.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_bucket.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_field.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/field.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_mail.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/mail.png"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_icon_user.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/icon_user.png"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_search_background.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/search_background.xml"
+        "merged": "com.example.skinsync.app-debug-32:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "com.example.skinsync.app-main-34:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/menu_nav_menu.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/menu/nav_menu.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_dashboard.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_custom_search_bar.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/custom_search_bar.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_box.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/box.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_activity_main.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/activity_main.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_button_selector.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/button_selector.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_button_selector.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/button_selector.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_welcome.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_welcome.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/xml_backup_rules.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/xml/backup_rules.xml"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_lock.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/lock.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_view_hide.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/view_hide.png"
+        "merged": "com.example.skinsync.app-debug-32:/drawable_mail.png.flat",
+        "source": "com.example.skinsync.app-main-34:/drawable/mail.png"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_welcome.png.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/welcome.png"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_register.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_article.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_article.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_profile.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_profile.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_fragment_profile.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/fragment_profile.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_login.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_activity_welcome.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/activity_welcome.xml"
+        "merged": "com.example.skinsync.app-debug-32:/layout_activity_main.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_box.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/box.xml"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/layout_activity_register.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/layout/activity_register.xml"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/font_roboto.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/font/roboto.xml"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-31:/drawable_ic_logout.xml.flat",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-33:/drawable/ic_logout.xml"
+        "merged": "com.example.skinsync.app-debug-32:/xml_backup_rules.xml.flat",
+        "source": "com.example.skinsync.app-main-34:/xml/backup_rules.xml"
     }
 ]
