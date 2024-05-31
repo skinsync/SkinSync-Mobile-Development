@@ -3002,6 +3002,7 @@ drawable avd_hide_password
 drawable avd_show_password
 drawable back
 drawable background_article
+drawable baseline_account_circle_24
 drawable books
 drawable box
 drawable brands
@@ -3201,6 +3202,8 @@ id actions
 id activity_chooser_view_content
 id add
 id ageDesc
+id ageEditText
+id ageEditTextLayout
 id ageTitle
 id alertTitle
 id aligned
@@ -3232,10 +3235,12 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id box
+id buttonCancel
 id buttonEdit
 id buttonLogin
 id buttonPanel
 id buttonRegister
+id buttonSave
 id cache_measures
 id callMeasure
 id cancel_button
@@ -3252,6 +3257,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBoxFemale
+id checkBoxMale
 id checkBoxRemember
 id checkbox
 id checked
@@ -3318,6 +3325,8 @@ id edit_query
 id edit_text_id
 id elastic
 id emailDesc2
+id emailEditText
+id emailEditTextLayout
 id emailTitle
 id embed
 id end
@@ -3507,6 +3516,8 @@ id parentPanel
 id parentRelative
 id parent_matrix
 id passwordDesc
+id passwordEditText
+id passwordEditTextLayout
 id passwordTitle
 id password_toggle
 id path
@@ -3652,7 +3663,11 @@ id unchecked
 id uniform
 id unlabeled
 id up
+id uploadImage
+id uploadImageTV
 id useLogo
+id usernameEditText
+id usernameEditTextLayout
 id usernameProfile
 id vertical_only
 id view_offset_helper
@@ -3915,9 +3930,11 @@ string bottomsheet_action_expand
 string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
+string button_cancel
 string button_edit_profile
 string button_login
 string button_register
+string button_save
 string call_notification_answer_action
 string call_notification_answer_video_action
 string call_notification_decline_action
@@ -3941,10 +3958,12 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string forgot_password
-string gender_desc
+string gender_female
+string gender_male
 string gender_title
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string input_age
 string input_confirm
 string input_email
 string input_password
@@ -4065,7 +4084,9 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string title_page_edit_profile
 string title_page_profile
+string upload_image
 string username_profile
 string welcome
 string welcome_desc
