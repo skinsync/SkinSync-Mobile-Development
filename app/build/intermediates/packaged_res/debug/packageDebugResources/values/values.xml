@@ -30,9 +30,11 @@
     <string name="age_desc">21 years old</string>
     <string name="age_title">Age</string>
     <string name="app_name">SkinSync</string>
+    <string name="button_cancel">Cancel</string>
     <string name="button_edit_profile">Edit Profile</string>
     <string name="button_login">Masuk</string>
     <string name="button_register">Daftar</string>
+    <string name="button_save">Save</string>
     <string name="checkbox_remember">Ingat password</string>
     <string name="dashboard">Dashboard</string>
     <string name="desc_title">Skincare Recommendation Based on Facial Skin Condition</string>
@@ -40,8 +42,10 @@
     <string name="email_desc">email@gmail.com</string>
     <string name="email_title">Gmail</string>
     <string name="forgot_password">Lupa Password ?</string>
-    <string name="gender_desc">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_male">Male</string>
     <string name="gender_title">Gender</string>
+    <string name="input_age">Masukkan Usia Anda</string>
     <string name="input_confirm">Konfirmasi Password Anda</string>
     <string name="input_email">Masukkan Email Anda</string>
     <string name="input_password">Masukkan Password Anda</string>
@@ -49,7 +53,9 @@
     <string name="make_account">Buat Akun</string>
     <string name="password_desc">*********</string>
     <string name="password_title">Password</string>
+    <string name="title_page_edit_profile">Edit Profile</string>
     <string name="title_page_profile">Profile</string>
+    <string name="upload_image">Upload Image</string>
     <string name="username_profile">Username</string>
     <string name="welcome">Selamat datang di SkinSync !</string>
     <string name="welcome_desc">Deteksi kulit wajah Anda dan dapatkan solusi perawatan terbaik untuk kulit yang sehat ? di SkinSync aja!</string>

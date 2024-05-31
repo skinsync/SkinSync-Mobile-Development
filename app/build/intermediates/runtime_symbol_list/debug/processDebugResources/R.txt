@@ -3001,6 +3001,7 @@ int drawable avd_hide_password 0x7f080078
 int drawable avd_show_password 0x7f080079
 int drawable back 0x7f0800f4
 int drawable background_article 0x7f08007a
+int drawable baseline_account_circle_24 0x7f0800f6
 int drawable books 0x7f08007b
 int drawable box 0x7f08007c
 int drawable brands 0x7f08007d
@@ -3200,6 +3201,8 @@ int id actions 0x7f0a0045
 int id activity_chooser_view_content 0x7f0a0046
 int id add 0x7f0a0047
 int id ageDesc 0x7f0a0214
+int id ageEditText 0x7f0a0222
+int id ageEditTextLayout 0x7f0a0223
 int id ageTitle 0x7f0a0215
 int id alertTitle 0x7f0a0048
 int id aligned 0x7f0a0049
@@ -3231,10 +3234,12 @@ int id bounceBoth 0x7f0a0061
 int id bounceEnd 0x7f0a0062
 int id bounceStart 0x7f0a0063
 int id box 0x7f0a0064
+int id buttonCancel 0x7f0a022e
 int id buttonEdit 0x7f0a0217
 int id buttonLogin 0x7f0a0065
 int id buttonPanel 0x7f0a0066
 int id buttonRegister 0x7f0a0067
+int id buttonSave 0x7f0a022f
 int id cache_measures 0x7f0a0068
 int id callMeasure 0x7f0a0069
 int id cancel_button 0x7f0a006a
@@ -3251,6 +3256,8 @@ int id center_vertical 0x7f0a0073
 int id chain 0x7f0a0074
 int id chain2 0x7f0a0075
 int id chains 0x7f0a0076
+int id checkBoxFemale 0x7f0a0224
+int id checkBoxMale 0x7f0a0225
 int id checkBoxRemember 0x7f0a0077
 int id checkbox 0x7f0a0078
 int id checked 0x7f0a0079
@@ -3317,6 +3324,8 @@ int id edit_query 0x7f0a00b5
 int id edit_text_id 0x7f0a00b6
 int id elastic 0x7f0a00b7
 int id emailDesc2 0x7f0a0219
+int id emailEditText 0x7f0a0226
+int id emailEditTextLayout 0x7f0a0227
 int id emailTitle 0x7f0a021a
 int id embed 0x7f0a00b8
 int id end 0x7f0a00b9
@@ -3506,6 +3515,8 @@ int id parentPanel 0x7f0a016d
 int id parentRelative 0x7f0a016e
 int id parent_matrix 0x7f0a016f
 int id passwordDesc 0x7f0a021e
+int id passwordEditText 0x7f0a0228
+int id passwordEditTextLayout 0x7f0a0229
 int id passwordTitle 0x7f0a021f
 int id password_toggle 0x7f0a0170
 int id path 0x7f0a0171
@@ -3651,7 +3662,11 @@ int id unchecked 0x7f0a01fb
 int id uniform 0x7f0a01fc
 int id unlabeled 0x7f0a01fd
 int id up 0x7f0a01fe
+int id uploadImage 0x7f0a022a
+int id uploadImageTV 0x7f0a022b
 int id useLogo 0x7f0a01ff
+int id usernameEditText 0x7f0a022c
+int id usernameEditTextLayout 0x7f0a022d
 int id usernameProfile 0x7f0a0221
 int id vertical_only 0x7f0a0200
 int id view_offset_helper 0x7f0a0201
@@ -3914,9 +3929,11 @@ int string bottomsheet_action_expand 0x7f110020
 int string bottomsheet_action_expand_halfway 0x7f110021
 int string bottomsheet_drag_handle_clicked 0x7f110022
 int string bottomsheet_drag_handle_content_description 0x7f110023
+int string button_cancel 0x7f1100c5
 int string button_edit_profile 0x7f1100b7
 int string button_login 0x7f110024
 int string button_register 0x7f110025
+int string button_save 0x7f1100c6
 int string call_notification_answer_action 0x7f110026
 int string call_notification_answer_video_action 0x7f110027
 int string call_notification_decline_action 0x7f110028
@@ -3940,10 +3957,12 @@ int string exposed_dropdown_menu_content_description 0x7f110037
 int string fab_transformation_scrim_behavior 0x7f110038
 int string fab_transformation_sheet_behavior 0x7f110039
 int string forgot_password 0x7f11003a
-int string gender_desc 0x7f1100ba
+int string gender_female 0x7f1100c0
+int string gender_male 0x7f1100c1
 int string gender_title 0x7f1100bb
 int string hide_bottom_view_on_scroll_behavior 0x7f11003b
 int string icon_content_description 0x7f11003c
+int string input_age 0x7f1100c2
 int string input_confirm 0x7f11003d
 int string input_email 0x7f11003e
 int string input_password 0x7f11003f
@@ -4064,7 +4083,9 @@ int string searchview_navigation_content_description 0x7f1100af
 int string side_sheet_accessibility_pane_title 0x7f1100b0
 int string side_sheet_behavior 0x7f1100b1
 int string status_bar_notification_info_overflow 0x7f1100b2
+int string title_page_edit_profile 0x7f1100c3
 int string title_page_profile 0x7f1100be
+int string upload_image 0x7f1100c4
 int string username_profile 0x7f1100bf
 int string welcome 0x7f1100b3
 int string welcome_desc 0x7f1100b4

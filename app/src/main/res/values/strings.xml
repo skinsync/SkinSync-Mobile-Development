@@ -19,10 +19,16 @@
     <string name="age_title">Age</string>
     <string name="age_desc">21 years old</string>
     <string name="gender_title">Gender</string>
-    <string name="gender_desc">Male</string>
+    <string name="gender_male">Male</string>
     <string name="email_title">Gmail</string>
     <string name="email_desc">email@gmail.com</string>
     <string name="password_title">Password</string>
     <string name="password_desc">*********</string>
     <string name="button_edit_profile">Edit Profile</string>
+    <string name="title_page_edit_profile">Edit Profile</string>
+    <string name="upload_image">Upload Image</string>
+    <string name="input_age">Masukkan Usia Anda</string>
+    <string name="gender_female">Female</string>
+    <string name="button_save">Save</string>
+    <string name="button_cancel">Cancel</string>
 </resources>
