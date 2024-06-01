@@ -1,46 +1,50 @@
 [
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_edit_profile.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_edit_profile.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_login.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_login.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_profile.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_profile.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_scan.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_scan.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_register.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_register.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_register.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_register.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/list_article_admin.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/list_article_admin.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_article_admin.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_article_admin.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_dashboard.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_dashboard.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_edit_profile.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_edit_profile.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_article_admin.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_article_admin.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\list_article_admin.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\list_article_admin.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_welcome.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_welcome.xml"
+        "merged": "com.example.skinsync.app-mergeDebugResources-31:/layout/activity_result.xml",
+        "source": "com.example.skinsync.app-main-34:/layout/activity_result.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_create_article.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_create_article.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_profile.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_main.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_main.xml"
     },
     {
-        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-31:/layout/activity_login.xml",
-        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-34:/layout/activity_login.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_dashboard.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_dashboard.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-31:/layout/activity_article_admin.xml",
-        "source": "com.example.skinsync.app-main-34:/layout/activity_article_admin.xml"
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_welcome.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-31:\\layout\\activity_create_article.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-34:\\layout\\activity_create_article.xml"
     }
 ]
