@@ -31,4 +31,15 @@
     <string name="gender_female">Female</string>
     <string name="button_save">Save</string>
     <string name="button_cancel">Cancel</string>
+    <string name="title_page_scan">Know your Facial Skin Type</string>
+    <string name="button_camera">Camera</string>
+    <string name="button_gallery">Gallery</string>
+    <string name="button_upload">Upload</string>
+    <string name="title_page_result">Here\'s your result</string>
+    <string name="title_skin_type">Tipe Kulit Wajahmu:</string>
+    <string name="type_skin">Normal</string>
+    <string name="title_reminder_result">Reminder !</string>
+    <string name="message_reminder">Jangan lupa untuk menggunakan skincare secara rutin.</string>
+    <string name="title_recommend_skincare">Rekomendasi Skincare</string>
+    <string name="message_result">Berdasarkan tipe kulitmu, SkinSync merekomendasikan Skincare dibawah ini untuk digunakan secara rutin agar mendapatkan hasil perawatan kulit wajah terbaik.</string>
 </resources>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.users.scan.result.ResultActivity">
+
+    <TextView
+        android:id="@+id/titlePage"
+        android:layout_width="350dp"
+        android:layout_height="25dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/title_page_result"
+        android:textAlignment="center"
+        android:textColor="@color/grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <ImageView
+        android:id="@+id/previewImageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/titlePage"
+        app:layout_constraintTop_toBottomOf="@id/titlePage"
+        android:src="@drawable/dasha"/>
+
+    <TextView
+        android:id="@+id/titleTypeSkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/title_skin_type"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/titlePage" />
+
+    <TextView
+        android:id="@+id/typeSkin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/type_skin"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/titleTypeSkin"
+        app:layout_constraintStart_toStartOf="@+id/titleTypeSkin"
+        app:layout_constraintTop_toBottomOf="@+id/titleTypeSkin"/>
+
+    <TextView
+        android:id="@+id/titleReminderResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/title_reminder_result"
+        android:textSize="16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/previewImageView"
+        app:layout_constraintTop_toBottomOf="@+id/typeSkin" />
+
+    <TextView
+        android:id="@+id/messageReminder"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:text="@string/message_reminder"
+        android:fontFamily="@font/roboto"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/titleReminderResult"
+        app:layout_constraintTop_toBottomOf="@+id/titleReminderResult"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
