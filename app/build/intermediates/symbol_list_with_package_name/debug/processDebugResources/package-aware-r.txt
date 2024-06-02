@@ -3034,6 +3034,7 @@ drawable ic_call_decline
 drawable ic_call_decline_low
 drawable ic_clear_black_24
 drawable ic_clock_black_24dp
+drawable ic_filter
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -3250,6 +3251,7 @@ id buttonCamera
 id buttonCancel
 id buttonEdit
 id buttonGallery
+id buttonGetProduct
 id buttonLogin
 id buttonPanel
 id buttonRegister
@@ -3262,6 +3264,7 @@ id card
 id card1
 id card2
 id card3
+id cardView
 id carryVelocity
 id center
 id centerCrop
@@ -3308,6 +3311,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descApp
+id descScheduling
 id design_bottom_sheet
 id design_menu_item_action_area
 id design_menu_item_action_area_stub
@@ -3396,6 +3400,7 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
+id horizontalView
 id horizontal_only
 id ib_filter
 id ib_preview_image_ad
@@ -3411,6 +3416,7 @@ id ignore
 id ignoreRequest
 id image
 id imageView
+id image_product
 id immediateStop
 id included
 id indeterminate
@@ -3425,6 +3431,7 @@ id italic
 id item_touch_helper_previous_elevation
 id iv_image_icon_ad
 id iv_image_icon_ca
+id iv_image_product
 id jumpToEnd
 id jumpToStart
 id labeled
@@ -3466,6 +3473,7 @@ id material_value_index
 id matrix
 id message
 id messageReminder
+id messageResult
 id middle
 id mini
 id month_grid
@@ -3499,6 +3507,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id name_product
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3683,7 +3692,9 @@ id title
 id titleApp
 id titleDividerNoCustom
 id titlePage
+id titleRecommendSkincare
 id titleReminderResult
+id titleSchedulingSkincare
 id titleTypeSkin
 id title_template
 id toggle
@@ -3706,10 +3717,12 @@ id tv_article
 id tv_brands
 id tv_create_article_title_ad
 id tv_create_article_title_ca
+id tv_description_product
 id tv_deskripsi_ad
 id tv_deskripsi_ca
 id tv_judul_ad
 id tv_judul_ca
+id tv_name_product
 id tv_product
 id tv_url_ad
 id tv_url_ca
@@ -3865,6 +3878,7 @@ layout activity_detail_article
 layout activity_edit_profile
 layout activity_login
 layout activity_main
+layout activity_product_admin
 layout activity_profile
 layout activity_register
 layout activity_result
@@ -3889,6 +3903,8 @@ layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout list_article_admin
+layout list_product_admin
+layout list_product_users
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title
@@ -3995,9 +4011,11 @@ string button_camera
 string button_cancel
 string button_edit_profile
 string button_gallery
+string button_get_product
 string button_login
 string button_register
 string button_save
+string button_try_now
 string button_upload
 string call_notification_answer_action
 string call_notification_answer_video_action
@@ -4012,6 +4030,7 @@ string character_counter_pattern
 string checkbox_remember
 string clear_text_end_icon_content_description
 string dashboard
+string desc_scheduling_result
 string desc_title
 string dont_have_account
 string email_desc
@@ -4156,6 +4175,7 @@ string title_page_result
 string title_page_scan
 string title_recommend_skincare
 string title_reminder_result
+string title_scheduling_skincare
 string title_skin_type
 string type_skin
 string upload_image

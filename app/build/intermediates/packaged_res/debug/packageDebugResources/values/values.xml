@@ -34,12 +34,15 @@
     <string name="button_cancel">Cancel</string>
     <string name="button_edit_profile">Edit Profile</string>
     <string name="button_gallery">Gallery</string>
+    <string name="button_get_product">Dapatkan disini !</string>
     <string name="button_login">Masuk</string>
     <string name="button_register">Daftar</string>
     <string name="button_save">Save</string>
+    <string name="button_try_now">Coba Sekarang !</string>
     <string name="button_upload">Upload</string>
     <string name="checkbox_remember">Ingat password</string>
     <string name="dashboard">Dashboard</string>
+    <string name="desc_scheduling_result">Coba fitur Scheduling untuk mendapatkan hasil perawatan terbaik.</string>
     <string name="desc_title">Skincare Recommendation Based on Facial Skin Condition</string>
     <string name="dont_have_account">Tidak memiliki Akun ?</string>
     <string name="email_desc">email@gmail.com</string>
@@ -64,6 +67,7 @@
     <string name="title_page_scan">Know your Facial Skin Type</string>
     <string name="title_recommend_skincare">Rekomendasi Skincare</string>
     <string name="title_reminder_result">Reminder !</string>
+    <string name="title_scheduling_skincare">Scheduling Skincare</string>
     <string name="title_skin_type">Tipe Kulit Wajahmu:</string>
     <string name="type_skin">Normal</string>
     <string name="upload_image">Upload Image</string>

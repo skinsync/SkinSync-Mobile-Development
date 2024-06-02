@@ -17,16 +17,18 @@
             android:exported="false" />
         <activity
             android:name=".activity.admin.DetailArticleActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.users.scan.result.ResultActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".activity.users.scan.result.ResultActivity"
-            android:exported="false" />
         <activity
             android:name=".activity.users.scan.ScanActivity"
             android:exported="false" />
