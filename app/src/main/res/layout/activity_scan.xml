@@ -19,13 +19,13 @@
 
     <TextView
         android:id="@+id/titlePage"
-        android:layout_width="268dp"
-        android:layout_height="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
         android:text="@string/title_page_scan"
         android:textAlignment="center"
         android:textColor="@color/grey"
-        android:textSize="20sp"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,8 +34,8 @@
 
     <ImageView
         android:id="@+id/previewImageView"
-        android:layout_width="330dp"
-        android:layout_height="360dp"
+        android:layout_width="@dimen/_260sdp"
+        android:layout_height="@dimen/_280sdp"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="30dp"
         app:layout_constraintRight_toRightOf="parent"
@@ -47,8 +47,8 @@
 
     <Button
         android:id="@+id/buttonCamera"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="15dp"
         android:background="@drawable/button_selector"
@@ -63,8 +63,8 @@
 
     <Button
         android:id="@+id/buttonGallery"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_marginTop="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="15dp"
@@ -81,8 +81,8 @@
 
     <Button
         android:id="@+id/buttonUpload"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_30sdp"
         android:layout_marginTop="90dp"
         android:background="@drawable/button_peach"
         android:fontFamily="@font/roboto"
@@ -96,8 +96,8 @@
         app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
 
     <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_20sdp"
         android:src="@drawable/back"
         android:layout_marginTop="40dp"
         android:layout_marginStart="30dp"
