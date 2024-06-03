@@ -13,14 +13,7 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
-            android:name=".activity.admin.ProductAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.admin.DetailArticleActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".activity.users.scan.result.ResultActivity"
+            android:name=".activity.users.scheduling.night.NightSchedulingActivity"
             android:exported="true">
 
             <intent-filter>
@@ -28,6 +21,23 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.users.scheduling.morning.MorningSchedulingActivity"
+            android:exported="false">
+        </activity>
+        <activity
+            android:name=".activity.admin.ProductAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.admin.DetailArticleActivity"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".activity.users.scan.result.ResultActivity"
+            android:exported="false">
+
         </activity>
         <activity
             android:name=".activity.users.scan.ScanActivity"

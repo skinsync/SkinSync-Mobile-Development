@@ -53,4 +53,10 @@ dependencies {
     //add dependencies for image circle
     implementation("de.hdodenhof:circleimageview:3.1.0")
 
+    //add dependecies responsive layout with sdp
+    implementation("com.intuit.sdp:sdp-android:1.0.6")
+    implementation("com.intuit.ssp:ssp-android:1.0.6")
+
+
+
 }
