@@ -16,8 +16,16 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\list_product_users.xml"
     },
     {
+        "merged": "com.example.skinsync.app-mergeDebugResources-33:/layout/activity_list_product.xml",
+        "source": "com.example.skinsync.app-main-36:/layout/activity_list_product.xml"
+    },
+    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\activity_welcome.xml",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "com.example.skinsync.app-mergeDebugResources-33:/layout/list_of_stored_users.xml",
+        "source": "com.example.skinsync.app-main-36:/layout/list_of_stored_users.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\activity_edit_profile.xml",
@@ -36,10 +44,6 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-33:/layout/activity_night_scheduling.xml",
-        "source": "com.example.skinsync.app-main-36:/layout/activity_night_scheduling.xml"
-    },
-    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\list_product_admin.xml",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\list_product_admin.xml"
     },
@@ -50,6 +54,10 @@
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\list_of_routine_users.xml",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\list_of_routine_users.xml"
+    },
+    {
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\activity_night_scheduling.xml",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-36:\\layout\\activity_night_scheduling.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-33:\\layout\\activity_article_admin.xml",

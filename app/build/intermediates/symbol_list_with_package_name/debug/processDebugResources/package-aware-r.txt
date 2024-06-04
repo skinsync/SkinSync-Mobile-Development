@@ -4169,6 +4169,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontalView
+id horizontalView2
 id horizontal_only
 id ib_filter
 id ib_preview_image_ad
@@ -4347,6 +4348,7 @@ id radio
 id ratio
 id rectangles
 id recyclerView
+id recyclerView2
 id report_drawn
 id reverseSawtooth
 id right
@@ -4473,6 +4475,8 @@ id titlePage
 id titleRecommendSkincare
 id titleReminderResult
 id titleSchedulingSkincare
+id titleSkincareProduct
+id titleStoredProduct
 id titleTypeSkin
 id title_template
 id toggle
@@ -4512,6 +4516,7 @@ id up
 id uploadImage
 id uploadImageTV
 id useLogo
+id userPicture
 id usernameEditText
 id usernameEditTextLayout
 id usernameProfile
@@ -4654,6 +4659,7 @@ layout activity_create_article
 layout activity_dashboard
 layout activity_detail_article
 layout activity_edit_profile
+layout activity_list_product
 layout activity_login
 layout activity_main
 layout activity_morning_scheduling
@@ -4685,6 +4691,7 @@ layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout list_article_admin
 layout list_of_routine_users
+layout list_of_stored_users
 layout list_product_admin
 layout list_product_users
 layout m3_alert_dialog
@@ -4963,6 +4970,7 @@ string text_view_date
 string title_morning_routine
 string title_night_routine
 string title_page_edit_profile
+string title_page_list_product
 string title_page_profile
 string title_page_result
 string title_page_scan
@@ -4971,6 +4979,8 @@ string title_recommend_skincare
 string title_reminder_result
 string title_scheduling_skincare
 string title_skin_type
+string title_skincare_product
+string title_stored_product
 string type_skin
 string upload_image
 string username_profile

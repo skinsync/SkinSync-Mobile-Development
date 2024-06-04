@@ -13,7 +13,7 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
-            android:name=".activity.users.scheduling.night.NightSchedulingActivity"
+            android:name=".activity.users.listproduct.ListProductActivity"
             android:exported="true">
 
             <intent-filter>
@@ -23,8 +23,13 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".activity.users.scheduling.night.NightSchedulingActivity"
+            android:exported="false">
+        </activity>
+        <activity
             android:name=".activity.users.scheduling.morning.MorningSchedulingActivity"
             android:exported="false">
+
         </activity>
         <activity
             android:name=".activity.admin.ProductAdminActivity"

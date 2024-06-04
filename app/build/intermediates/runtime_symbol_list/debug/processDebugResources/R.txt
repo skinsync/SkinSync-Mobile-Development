@@ -4168,6 +4168,7 @@ int id home 0x7f0a0108
 int id homeAsUp 0x7f0a0109
 int id honorRequest 0x7f0a010a
 int id horizontalView 0x7f0a010b
+int id horizontalView2 0x7f0a027a
 int id horizontal_only 0x7f0a010c
 int id ib_filter 0x7f0a010d
 int id ib_preview_image_ad 0x7f0a010e
@@ -4346,6 +4347,7 @@ int id radio 0x7f0a01b9
 int id ratio 0x7f0a01ba
 int id rectangles 0x7f0a01bb
 int id recyclerView 0x7f0a01bc
+int id recyclerView2 0x7f0a027b
 int id report_drawn 0x7f0a01bd
 int id reverseSawtooth 0x7f0a01be
 int id right 0x7f0a01bf
@@ -4472,6 +4474,8 @@ int id titlePage 0x7f0a0237
 int id titleRecommendSkincare 0x7f0a0238
 int id titleReminderResult 0x7f0a0239
 int id titleSchedulingSkincare 0x7f0a023a
+int id titleSkincareProduct 0x7f0a027c
+int id titleStoredProduct 0x7f0a027d
 int id titleTypeSkin 0x7f0a023b
 int id title_template 0x7f0a023c
 int id toggle 0x7f0a023d
@@ -4511,6 +4515,7 @@ int id up 0x7f0a025e
 int id uploadImage 0x7f0a025f
 int id uploadImageTV 0x7f0a0260
 int id useLogo 0x7f0a0261
+int id userPicture 0x7f0a027e
 int id usernameEditText 0x7f0a0262
 int id usernameEditTextLayout 0x7f0a0263
 int id usernameProfile 0x7f0a0264
@@ -4653,6 +4658,7 @@ int layout activity_create_article 0x7f0d001d
 int layout activity_dashboard 0x7f0d001e
 int layout activity_detail_article 0x7f0d001f
 int layout activity_edit_profile 0x7f0d0020
+int layout activity_list_product 0x7f0d0082
 int layout activity_login 0x7f0d0021
 int layout activity_main 0x7f0d0022
 int layout activity_morning_scheduling 0x7f0d0023
@@ -4684,6 +4690,7 @@ int layout ime_base_split_test_activity 0x7f0d003b
 int layout ime_secondary_split_test_activity 0x7f0d003c
 int layout list_article_admin 0x7f0d003d
 int layout list_of_routine_users 0x7f0d003e
+int layout list_of_stored_users 0x7f0d0083
 int layout list_product_admin 0x7f0d003f
 int layout list_product_users 0x7f0d0040
 int layout m3_alert_dialog 0x7f0d0041
@@ -4962,6 +4969,7 @@ int string text_view_date 0x7f1100cd
 int string title_morning_routine 0x7f1100ce
 int string title_night_routine 0x7f1100cf
 int string title_page_edit_profile 0x7f1100d0
+int string title_page_list_product 0x7f1100de
 int string title_page_profile 0x7f1100d1
 int string title_page_result 0x7f1100d2
 int string title_page_scan 0x7f1100d3
@@ -4970,6 +4978,8 @@ int string title_recommend_skincare 0x7f1100d5
 int string title_reminder_result 0x7f1100d6
 int string title_scheduling_skincare 0x7f1100d7
 int string title_skin_type 0x7f1100d8
+int string title_skincare_product 0x7f1100df
+int string title_stored_product 0x7f1100e0
 int string type_skin 0x7f1100d9
 int string upload_image 0x7f1100da
 int string username_profile 0x7f1100db

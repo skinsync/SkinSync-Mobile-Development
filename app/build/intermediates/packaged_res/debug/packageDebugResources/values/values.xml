@@ -70,6 +70,7 @@
     <string name="title_morning_routine">Morning Routine</string>
     <string name="title_night_routine">Night Routine</string>
     <string name="title_page_edit_profile">Edit Profile</string>
+    <string name="title_page_list_product">List of Product</string>
     <string name="title_page_profile">Profile</string>
     <string name="title_page_result">Here\'s your result</string>
     <string name="title_page_scan">Know your Facial Skin Type</string>
@@ -78,6 +79,8 @@
     <string name="title_reminder_result">Reminder !</string>
     <string name="title_scheduling_skincare">Scheduling Skincare</string>
     <string name="title_skin_type">Tipe Kulit Wajahmu:</string>
+    <string name="title_skincare_product">Skincare Products</string>
+    <string name="title_stored_product">Stored Product</string>
     <string name="type_skin">Normal</string>
     <string name="upload_image">Upload Image</string>
     <string name="username_profile">Username</string>
