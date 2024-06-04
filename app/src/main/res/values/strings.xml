@@ -55,4 +55,7 @@
     <string name="completed_routine_night">Night Routine Completed ?</string>
     <string name="input_product">Input Product</string>
     <string name="see_details">See Details</string>
+    <string name="title_page_list_product">List of Product</string>
+    <string name="title_skincare_product">Skincare Products</string>
+    <string name="title_stored_product">Stored Product</string>
 </resources>

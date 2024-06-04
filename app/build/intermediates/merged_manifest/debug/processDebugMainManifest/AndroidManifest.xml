@@ -27,13 +27,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SkinSync" >
         <activity
-            android:name="com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity"
+            android:name="com.example.skinsync.activity.users.listproduct.ListProductActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity"
+            android:exported="false" >
         </activity>
         <activity
             android:name="com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity"
