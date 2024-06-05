@@ -13,9 +13,8 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
-            android:name=".activity.users.listproduct.ListProductActivity"
+            android:name=".activity.admin.CreateProductActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,33 +22,30 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.users.scheduling.night.NightSchedulingActivity"
-            android:exported="false">
+            android:name=".activity.users.listproduct.ListProductActivity"
+            android:exported="true">
         </activity>
+        <activity
+            android:name=".activity.users.scheduling.night.NightSchedulingActivity"
+            android:exported="false"/>
         <activity
             android:name=".activity.users.scheduling.morning.MorningSchedulingActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".activity.admin.ProductAdminActivity"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".activity.admin.DetailArticleActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".activity.users.scan.result.ResultActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".activity.users.scan.ScanActivity"
             android:exported="false" />
         <activity
             android:name=".activity.admin.CreateArticleActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activity.admin.ArticleAdminActivity"
             android:exported="false" />
