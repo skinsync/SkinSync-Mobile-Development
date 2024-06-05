@@ -3758,6 +3758,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable alarm
 drawable avd_hide_password
 drawable avd_show_password
 drawable back
@@ -3778,13 +3779,17 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable button_peach
 drawable button_selector
 drawable close_fullscreen_icon
+drawable cloud_upload
 drawable dasha
+drawable dasha_main
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable expression
 drawable field
+drawable gallery
 drawable ic_add_circle
 drawable ic_arrow_back_black_24
 drawable ic_call_answer
@@ -3807,6 +3812,9 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_search_black_24
+drawable icon_article
+drawable icon_list_product
+drawable icon_logout
 drawable icon_user
 drawable indeterminate_static
 drawable lock
@@ -3890,11 +3898,13 @@ drawable picture_icon
 drawable products
 drawable rounded_background_beige
 drawable rounded_background_peach
+drawable scan
 drawable sun
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable upload_icon
+drawable user_page
 drawable view_hide
 drawable welcome
 font josefin_sans_light
@@ -4022,6 +4032,7 @@ id buttonLogin
 id buttonPanel
 id buttonRegister
 id buttonSave
+id buttonTryNow
 id buttonUpload
 id cache_measures
 id callMeasure
@@ -4070,6 +4081,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dashaImage
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4078,6 +4090,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descApp
+id descMainFitur
 id descScheduling
 id design_bottom_sheet
 id design_menu_item_action_area
@@ -4152,6 +4165,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frame
 id frost
 id fullscreen_header
 id genderDesc
@@ -4162,6 +4176,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id gmailUser
 id gmail_textView
 id gone
 id graph
@@ -4193,7 +4208,11 @@ id ignore
 id ignoreRequest
 id image
 id imageBell
+id imageCloud
+id imageExpression
+id imageGallery
 id imageMoon
+id imageScan
 id imageSun
 id imageView
 id image_product
@@ -4292,6 +4311,12 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id name_product
+id nav_article
+id nav_list_product
+id nav_logout
+id nav_scheduling
+id nav_user
+id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -4302,6 +4327,8 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id next
+id next2
 id noScroll
 id noState
 id none
@@ -4327,6 +4354,7 @@ id open_search_view_search_prefix
 id open_search_view_status_bar_spacer
 id open_search_view_toolbar
 id open_search_view_toolbar_container
+id or
 id outline
 id outward
 id overshoot
@@ -4427,6 +4455,11 @@ id startToEnd
 id startVertical
 id staticLayout
 id staticPostLayout
+id step1
+id step2
+id step3
+id step4
+id stepFitur
 id stop
 id stretch
 id submenuarrow
@@ -4484,6 +4517,7 @@ id time
 id title
 id titleApp
 id titleDividerNoCustom
+id titleMainFitur
 id titleMorningRoutine
 id titleNightRoutine
 id titlePage
@@ -4493,6 +4527,7 @@ id titleSchedulingSkincare
 id titleSkincareProduct
 id titleStoredProduct
 id titleTypeSkin
+id titleWelcomeMain
 id title_template
 id toggle
 id toolbar
@@ -4510,6 +4545,7 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tungguApalagi
 id tv_article
 id tv_brands
 id tv_create_article_title_ad
@@ -4537,10 +4573,12 @@ id up
 id uploadImage
 id uploadImageTV
 id useLogo
+id userImage
 id userPicture
 id usernameEditText
 id usernameEditTextLayout
 id usernameProfile
+id usernameUser
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -4769,6 +4807,7 @@ layout mtrl_picker_text_input_date
 layout mtrl_picker_text_input_date_range
 layout mtrl_search_bar
 layout mtrl_search_view
+layout nav_header
 layout notification_action
 layout notification_action_tombstone
 layout notification_template_custom_big
@@ -4782,6 +4821,7 @@ layout select_dialog_singlechoice_material
 layout sp_example
 layout ssp_example
 layout support_simple_spinner_dropdown_item
+menu nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
@@ -4845,9 +4885,11 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string checkbox_remember
 string clear_text_end_icon_content_description
+string close
 string completed_routine_morn
 string completed_routine_night
 string dashboard
+string desc_main_fitur
 string desc_scheduling_result
 string desc_title
 string dont_have_account
@@ -4975,6 +5017,7 @@ string mtrl_switch_track_decoration_path
 string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
+string open
 string password_desc
 string password_title
 string password_toggle_content_description
@@ -4990,7 +5033,13 @@ string see_details
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string step_1
+string step_2
+string step_3
+string step_4
+string step_fitur
 string text_view_date
+string title_main_fitur
 string title_morning_routine
 string title_night_routine
 string title_page_edit_profile
@@ -5005,6 +5054,8 @@ string title_scheduling_skincare
 string title_skin_type
 string title_skincare_product
 string title_stored_product
+string title_welcome_main
+string tunggu_apalagi
 string type_skin
 string upload_image
 string username_profile

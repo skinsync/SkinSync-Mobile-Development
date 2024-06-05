@@ -4,29 +4,172 @@ package com.example.skinsync.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.HorizontalScrollView;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import com.example.skinsync.R;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.search.SearchBar;
+import com.google.android.material.search.SearchView;
+import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityMainBinding implements ViewBinding {
   @NonNull
-  private final ConstraintLayout rootView;
+  private final DrawerLayout rootView;
 
   @NonNull
-  public final ConstraintLayout main;
+  public final Button buttonTryNow;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull ConstraintLayout main) {
+  @NonNull
+  public final CardView card;
+
+  @NonNull
+  public final CircleImageView dashaImage;
+
+  @NonNull
+  public final TextView descMainFitur;
+
+  @NonNull
+  public final FrameLayout frame;
+
+  @NonNull
+  public final HorizontalScrollView horizontalView;
+
+  @NonNull
+  public final ImageButton ibFilter;
+
+  @NonNull
+  public final ImageView imageCloud;
+
+  @NonNull
+  public final ImageView imageExpression;
+
+  @NonNull
+  public final ImageView imageGallery;
+
+  @NonNull
+  public final ImageView imageScan;
+
+  @NonNull
+  public final DrawerLayout main;
+
+  @NonNull
+  public final NavigationView navView;
+
+  @NonNull
+  public final TextView next;
+
+  @NonNull
+  public final TextView next2;
+
+  @NonNull
+  public final TextView or;
+
+  @NonNull
+  public final RecyclerView recyclerView;
+
+  @NonNull
+  public final SearchBar searchBar;
+
+  @NonNull
+  public final SearchView searchView;
+
+  @NonNull
+  public final TextView step1;
+
+  @NonNull
+  public final TextView step2;
+
+  @NonNull
+  public final TextView step3;
+
+  @NonNull
+  public final TextView step4;
+
+  @NonNull
+  public final TextView stepFitur;
+
+  @NonNull
+  public final TextView titleMainFitur;
+
+  @NonNull
+  public final TextView titleSkincareProduct;
+
+  @NonNull
+  public final TextView titleWelcomeMain;
+
+  @NonNull
+  public final ConstraintLayout toolbar;
+
+  @NonNull
+  public final TextView tungguApalagi;
+
+  @NonNull
+  public final ImageButton userPicture;
+
+  private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull Button buttonTryNow,
+      @NonNull CardView card, @NonNull CircleImageView dashaImage, @NonNull TextView descMainFitur,
+      @NonNull FrameLayout frame, @NonNull HorizontalScrollView horizontalView,
+      @NonNull ImageButton ibFilter, @NonNull ImageView imageCloud,
+      @NonNull ImageView imageExpression, @NonNull ImageView imageGallery,
+      @NonNull ImageView imageScan, @NonNull DrawerLayout main, @NonNull NavigationView navView,
+      @NonNull TextView next, @NonNull TextView next2, @NonNull TextView or,
+      @NonNull RecyclerView recyclerView, @NonNull SearchBar searchBar,
+      @NonNull SearchView searchView, @NonNull TextView step1, @NonNull TextView step2,
+      @NonNull TextView step3, @NonNull TextView step4, @NonNull TextView stepFitur,
+      @NonNull TextView titleMainFitur, @NonNull TextView titleSkincareProduct,
+      @NonNull TextView titleWelcomeMain, @NonNull ConstraintLayout toolbar,
+      @NonNull TextView tungguApalagi, @NonNull ImageButton userPicture) {
     this.rootView = rootView;
+    this.buttonTryNow = buttonTryNow;
+    this.card = card;
+    this.dashaImage = dashaImage;
+    this.descMainFitur = descMainFitur;
+    this.frame = frame;
+    this.horizontalView = horizontalView;
+    this.ibFilter = ibFilter;
+    this.imageCloud = imageCloud;
+    this.imageExpression = imageExpression;
+    this.imageGallery = imageGallery;
+    this.imageScan = imageScan;
     this.main = main;
+    this.navView = navView;
+    this.next = next;
+    this.next2 = next2;
+    this.or = or;
+    this.recyclerView = recyclerView;
+    this.searchBar = searchBar;
+    this.searchView = searchView;
+    this.step1 = step1;
+    this.step2 = step2;
+    this.step3 = step3;
+    this.step4 = step4;
+    this.stepFitur = stepFitur;
+    this.titleMainFitur = titleMainFitur;
+    this.titleSkincareProduct = titleSkincareProduct;
+    this.titleWelcomeMain = titleWelcomeMain;
+    this.toolbar = toolbar;
+    this.tungguApalagi = tungguApalagi;
+    this.userPicture = userPicture;
   }
 
   @Override
   @NonNull
-  public ConstraintLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -47,12 +190,193 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public static ActivityMainBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.buttonTryNow;
+      Button buttonTryNow = ViewBindings.findChildViewById(rootView, id);
+      if (buttonTryNow == null) {
+        break missingId;
+      }
+
+      id = R.id.card;
+      CardView card = ViewBindings.findChildViewById(rootView, id);
+      if (card == null) {
+        break missingId;
+      }
+
+      id = R.id.dashaImage;
+      CircleImageView dashaImage = ViewBindings.findChildViewById(rootView, id);
+      if (dashaImage == null) {
+        break missingId;
+      }
+
+      id = R.id.descMainFitur;
+      TextView descMainFitur = ViewBindings.findChildViewById(rootView, id);
+      if (descMainFitur == null) {
+        break missingId;
+      }
+
+      id = R.id.frame;
+      FrameLayout frame = ViewBindings.findChildViewById(rootView, id);
+      if (frame == null) {
+        break missingId;
+      }
+
+      id = R.id.horizontalView;
+      HorizontalScrollView horizontalView = ViewBindings.findChildViewById(rootView, id);
+      if (horizontalView == null) {
+        break missingId;
+      }
+
+      id = R.id.ib_filter;
+      ImageButton ibFilter = ViewBindings.findChildViewById(rootView, id);
+      if (ibFilter == null) {
+        break missingId;
+      }
+
+      id = R.id.imageCloud;
+      ImageView imageCloud = ViewBindings.findChildViewById(rootView, id);
+      if (imageCloud == null) {
+        break missingId;
+      }
+
+      id = R.id.imageExpression;
+      ImageView imageExpression = ViewBindings.findChildViewById(rootView, id);
+      if (imageExpression == null) {
+        break missingId;
+      }
+
+      id = R.id.imageGallery;
+      ImageView imageGallery = ViewBindings.findChildViewById(rootView, id);
+      if (imageGallery == null) {
+        break missingId;
+      }
+
+      id = R.id.imageScan;
+      ImageView imageScan = ViewBindings.findChildViewById(rootView, id);
+      if (imageScan == null) {
+        break missingId;
+      }
+
+      DrawerLayout main = (DrawerLayout) rootView;
+
+      id = R.id.nav_view;
+      NavigationView navView = ViewBindings.findChildViewById(rootView, id);
+      if (navView == null) {
+        break missingId;
+      }
+
+      id = R.id.next;
+      TextView next = ViewBindings.findChildViewById(rootView, id);
+      if (next == null) {
+        break missingId;
+      }
+
+      id = R.id.next2;
+      TextView next2 = ViewBindings.findChildViewById(rootView, id);
+      if (next2 == null) {
+        break missingId;
+      }
+
+      id = R.id.or;
+      TextView or = ViewBindings.findChildViewById(rootView, id);
+      if (or == null) {
+        break missingId;
+      }
+
+      id = R.id.recyclerView;
+      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
+      if (recyclerView == null) {
+        break missingId;
+      }
+
+      id = R.id.searchBar;
+      SearchBar searchBar = ViewBindings.findChildViewById(rootView, id);
+      if (searchBar == null) {
+        break missingId;
+      }
+
+      id = R.id.searchView;
+      SearchView searchView = ViewBindings.findChildViewById(rootView, id);
+      if (searchView == null) {
+        break missingId;
+      }
+
+      id = R.id.step1;
+      TextView step1 = ViewBindings.findChildViewById(rootView, id);
+      if (step1 == null) {
+        break missingId;
+      }
+
+      id = R.id.step2;
+      TextView step2 = ViewBindings.findChildViewById(rootView, id);
+      if (step2 == null) {
+        break missingId;
+      }
+
+      id = R.id.step3;
+      TextView step3 = ViewBindings.findChildViewById(rootView, id);
+      if (step3 == null) {
+        break missingId;
+      }
+
+      id = R.id.step4;
+      TextView step4 = ViewBindings.findChildViewById(rootView, id);
+      if (step4 == null) {
+        break missingId;
+      }
+
+      id = R.id.stepFitur;
+      TextView stepFitur = ViewBindings.findChildViewById(rootView, id);
+      if (stepFitur == null) {
+        break missingId;
+      }
+
+      id = R.id.titleMainFitur;
+      TextView titleMainFitur = ViewBindings.findChildViewById(rootView, id);
+      if (titleMainFitur == null) {
+        break missingId;
+      }
+
+      id = R.id.titleSkincareProduct;
+      TextView titleSkincareProduct = ViewBindings.findChildViewById(rootView, id);
+      if (titleSkincareProduct == null) {
+        break missingId;
+      }
+
+      id = R.id.titleWelcomeMain;
+      TextView titleWelcomeMain = ViewBindings.findChildViewById(rootView, id);
+      if (titleWelcomeMain == null) {
+        break missingId;
+      }
+
+      id = R.id.toolbar;
+      ConstraintLayout toolbar = ViewBindings.findChildViewById(rootView, id);
+      if (toolbar == null) {
+        break missingId;
+      }
+
+      id = R.id.tungguApalagi;
+      TextView tungguApalagi = ViewBindings.findChildViewById(rootView, id);
+      if (tungguApalagi == null) {
+        break missingId;
+      }
+
+      id = R.id.userPicture;
+      ImageButton userPicture = ViewBindings.findChildViewById(rootView, id);
+      if (userPicture == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((DrawerLayout) rootView, buttonTryNow, card, dashaImage,
+          descMainFitur, frame, horizontalView, ibFilter, imageCloud, imageExpression, imageGallery,
+          imageScan, main, navView, next, next2, or, recyclerView, searchBar, searchView, step1,
+          step2, step3, step4, stepFitur, titleMainFitur, titleSkincareProduct, titleWelcomeMain,
+          toolbar, tungguApalagi, userPicture);
     }
-
-    ConstraintLayout main = (ConstraintLayout) rootView;
-
-    return new ActivityMainBinding((ConstraintLayout) rootView, main);
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

@@ -58,4 +58,15 @@
     <string name="title_page_list_product">List of Product</string>
     <string name="title_skincare_product">Skincare Products</string>
     <string name="title_stored_product">Stored Product</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title_welcome_main">Welcome, User !</string>
+    <string name="title_main_fitur">Ketahui Tipe Kulit Wajahmu</string>
+    <string name="desc_main_fitur">dan dapatkan rekomendasi skincare yang cocok untukmu.</string>
+    <string name="step_fitur">Langkah penggunaan:</string>
+    <string name="step_1">Scan wajah dengan kamera</string>
+    <string name="step_2">Ambil gambar dari galeri</string>
+    <string name="step_3">Upload gambar</string>
+    <string name="step_4">Dapatkan hasil tipe kulitmu dan SkinSync akan merekomendasikan produk skincare untukmu</string>
+    <string name="tunggu_apalagi">Tunggu apalagi ? </string>
 </resources>

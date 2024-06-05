@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
@@ -7,13 +7,395 @@
     android:layout_height="match_parent"
     tools:context=".activity.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:background="@color/white"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.search.SearchBar
+                android:id="@+id/searchBar"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Temukan Produk disini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/userPicture"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/userPicture"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/baseline_account_circle_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            tools:ignore="MissingConstraints">
+
+            <!-- SearchView expanding to cover the main layout while anchored to SearchBar -->
+            <com.google.android.material.search.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:hint="Temukan Artikel disini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbar" />
+
+            <TextView
+                android:id="@+id/titleWelcomeMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/lato_bold"
+                android:text="@string/title_welcome_main"
+                android:textColor="@color/grey"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/dashaImage"
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_235sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:adjustViewBounds="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/dasha_main"
+                android:translationZ="@dimen/_5sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/card"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_215sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_8sdp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleWelcomeMain">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/beige">
+
+                    <TextView
+                        android:id="@+id/titleMainFitur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="@string/title_main_fitur"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_14ssp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/descMainFitur"
+                        android:layout_width="@dimen/_180sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/desc_main_fitur"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/titleMainFitur"
+                        app:layout_constraintTop_toBottomOf="@id/titleMainFitur" />
+
+                    <TextView
+                        android:id="@+id/stepFitur"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/step_fitur"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/descMainFitur"
+                        app:layout_constraintTop_toBottomOf="@id/descMainFitur" />
+
+                    <ImageView
+                        android:id="@+id/imageScan"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="@dimen/_6sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/scan"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/stepFitur"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <TextView
+                        android:id="@+id/or"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="atau"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/imageScan"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <ImageView
+                        android:id="@+id/imageGallery"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="@dimen/_34sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/gallery"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/or"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <TextView
+                        android:id="@+id/next"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="---->"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/imageGallery"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <ImageView
+                        android:id="@+id/imageCloud"
+                        android:layout_width="@dimen/_22sdp"
+                        android:layout_height="@dimen/_22sdp"
+                        android:layout_marginStart="@dimen/_26sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:src="@drawable/cloud_upload"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/next"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <TextView
+                        android:id="@+id/next2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_32sdp"
+                        android:layout_marginTop="@dimen/_12sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="---->"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/imageCloud"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <ImageView
+                        android:id="@+id/imageExpression"
+                        android:layout_width="@dimen/_40sdp"
+                        android:layout_height="@dimen/_40sdp"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:src="@drawable/expression"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/next2"
+                        app:layout_constraintTop_toBottomOf="@id/stepFitur" />
+
+                    <TextView
+                        android:id="@+id/step1"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/step_1"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintEnd_toEndOf="@id/imageScan"
+                        app:layout_constraintStart_toStartOf="@id/imageScan"
+                        app:layout_constraintTop_toBottomOf="@id/imageScan" />
+
+
+                    <TextView
+                        android:id="@+id/step2"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/step_2"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintEnd_toEndOf="@id/imageGallery"
+                        app:layout_constraintStart_toStartOf="@id/imageGallery"
+                        app:layout_constraintTop_toBottomOf="@id/imageGallery" />
+
+                    <TextView
+                        android:id="@+id/step3"
+                        android:layout_width="@dimen/_50sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/step_3"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintEnd_toEndOf="@id/imageCloud"
+                        app:layout_constraintStart_toStartOf="@id/imageCloud"
+                        app:layout_constraintTop_toBottomOf="@id/imageCloud" />
+
+                    <TextView
+                        android:id="@+id/step4"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_4sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/step_4"
+                        android:textAlignment="center"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_8ssp"
+                        app:layout_constraintEnd_toEndOf="@id/imageExpression"
+                        app:layout_constraintStart_toStartOf="@id/imageExpression"
+                        app:layout_constraintTop_toBottomOf="@id/imageCloud" />
+
+                    <TextView
+                        android:id="@+id/tungguApalagi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/tunggu_apalagi"
+                        android:textColor="@color/grey"
+                        android:textSize="@dimen/_10ssp"
+                        app:layout_constraintLeft_toRightOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="@id/stepFitur"
+                        app:layout_constraintTop_toBottomOf="@id/step1" />
+
+                    <Button
+                        android:id="@+id/buttonTryNow"
+                        android:layout_width="110dp"
+                        android:layout_height="35dp"
+                        android:background="@drawable/button_peach"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/button_try_now"
+                        android:textColor="@color/white"
+                        android:textSize="8sp"
+                        app:layout_constraintStart_toStartOf="@id/tungguApalagi"
+                        app:layout_constraintTop_toBottomOf="@+id/tungguApalagi"
+                        app:backgroundTint="@null"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </FrameLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            app:layout_constraintTop_toBottomOf="@id/frame">
+
+            <TextView
+                android:id="@+id/titleSkincareProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:text="@string/title_skincare_product"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@color/grey"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <ImageButton
+                android:id="@+id/ib_filter"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:background="@drawable/ic_filter"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginStart="@dimen/_170sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/titleSkincareProduct" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalView"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="parent"
+                app:layout_constraintStart_toStartOf="@id/titleSkincareProduct"
+                app:layout_constraintTop_toBottomOf="@+id/titleSkincareProduct">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView"
+                    android:layout_width="110dp"
+                    android:layout_height="200dp"
+                    android:orientation="horizontal"
+                    android:padding="8dp"/>
+
+            </HorizontalScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu"
+        android:fitsSystemWindows="true"/>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
