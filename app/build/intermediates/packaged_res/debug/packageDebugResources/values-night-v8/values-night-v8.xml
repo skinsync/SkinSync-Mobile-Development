@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.SkinSync" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.SkinSync" parent="Theme.Material3.DayNight">
         
         
+
+        
+        <item name="colorPrimary">@color/beige</item>
+        <item name="colorOnPrimary">@color/grey</item>
+        
+        <item name="colorSecondary">@color/peach</item>
+        <item name="colorOnSecondary">@color/grey</item>
     </style>
 </resources>

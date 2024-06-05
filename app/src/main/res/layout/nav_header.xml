@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/baseline_account_circle_24" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/usernameUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/username_profile"
+            android:textSize="@dimen/_16ssp" />
+
+        <TextView
+            android:id="@+id/gmailUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/lato_bold"
+            android:text="@string/email_title"
+            android:textSize="@dimen/_12ssp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
