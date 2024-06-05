@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.skinsync.app-mergeDebugResources-32:/values-da/values-da.xml",
+            "outputFile": "com.example.skinsync.app-mergeDebugResources-41:/values-da/values-da.xml",
             "map": [
                 {
                     "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/512dd553433fed0a183acc4f624d5ec9/transformed/core-1.13.1/res/values-da/values-da.xml",
