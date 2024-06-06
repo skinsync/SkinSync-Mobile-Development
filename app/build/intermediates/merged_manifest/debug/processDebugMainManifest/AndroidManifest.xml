@@ -10,6 +10,13 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <uses-feature android:name="android.hardware.camera" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28" />
+
     <permission
         android:name="com.example.skinsync.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
@@ -30,12 +37,19 @@
         android:testOnly="true"
         android:theme="@style/Theme.SkinSync" >
         <activity
+            android:name="com.example.skinsync.activity.users.article.details.ArticleDetailsActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.example.skinsync.activity.users.article.ArticleActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name="com.example.skinsync.activity.admin.CreateProductActivity"
             android:exported="true" />
         <activity
             android:name="com.example.skinsync.activity.users.listproduct.ListProductActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity"
             android:exported="false" />
@@ -53,7 +67,13 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.ScanActivity"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
             android:exported="false" />
@@ -89,11 +109,6 @@
         <activity
             android:name="com.example.skinsync.activity.MainActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data

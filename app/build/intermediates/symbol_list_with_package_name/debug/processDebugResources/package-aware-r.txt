@@ -4081,7 +4081,6 @@ id currentState
 id custom
 id customPanel
 id cut
-id dashaImage
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4090,6 +4089,7 @@ id default_activity_button
 id deltaRelative
 id dependency_ordering
 id descApp
+id descArticle
 id descMainFitur
 id descScheduling
 id design_bottom_sheet
@@ -4212,6 +4212,7 @@ id imageCloud
 id imageExpression
 id imageGallery
 id imageMoon
+id imagePreview
 id imageScan
 id imageSun
 id imageView
@@ -4235,6 +4236,7 @@ id iv_image_icon_cp
 id iv_image_product
 id jumpToEnd
 id jumpToStart
+id justForYou
 id labeled
 id layout
 id left
@@ -4386,6 +4388,7 @@ id ratio
 id rectangles
 id recyclerView
 id recyclerView2
+id recyclerViewJFY
 id report_drawn
 id reverseSawtooth
 id right
@@ -4419,6 +4422,7 @@ id search_plate
 id search_src_text
 id search_voice_btn
 id seeDetails
+id seeMore
 id select_dialog_listview
 id selected
 id selection_type
@@ -4516,6 +4520,7 @@ id til_url_cp
 id time
 id title
 id titleApp
+id titleArticle
 id titleDividerNoCustom
 id titleMainFitur
 id titleMorningRoutine
@@ -4527,6 +4532,7 @@ id titleSchedulingSkincare
 id titleSkincareProduct
 id titleStoredProduct
 id titleTypeSkin
+id titleWelcomeBack
 id titleWelcomeMain
 id title_template
 id toggle
@@ -4713,7 +4719,9 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_article
 layout activity_article_admin
+layout activity_article_details
 layout activity_create_article
 layout activity_create_product
 layout activity_dashboard
@@ -4750,6 +4758,8 @@ layout dp_example
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
 layout list_article_admin
+layout list_article_just_for_u
+layout list_article_users
 layout list_of_routine_users
 layout list_of_stored_users
 layout list_product_admin
@@ -4913,6 +4923,7 @@ string input_password
 string input_product
 string input_username
 string item_view_role_description
+string just_for_u
 string m3_exceed_max_badge_text_suffix
 string m3_ref_typeface_brand_medium
 string m3_ref_typeface_brand_regular
@@ -5030,6 +5041,7 @@ string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
 string see_details
+string see_more
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
@@ -5039,6 +5051,7 @@ string step_3
 string step_4
 string step_fitur
 string text_view_date
+string title_article_page
 string title_main_fitur
 string title_morning_routine
 string title_night_routine
@@ -5060,6 +5073,7 @@ string type_skin
 string upload_image
 string username_profile
 string welcome
+string welcome_back
 string welcome_desc
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

@@ -22,7 +22,6 @@ import com.example.skinsync.R;
 import com.google.android.material.navigation.NavigationView;
 import com.google.android.material.search.SearchBar;
 import com.google.android.material.search.SearchView;
-import de.hdodenhof.circleimageview.CircleImageView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -36,9 +35,6 @@ public final class ActivityMainBinding implements ViewBinding {
 
   @NonNull
   public final CardView card;
-
-  @NonNull
-  public final CircleImageView dashaImage;
 
   @NonNull
   public final TextView descMainFitur;
@@ -122,13 +118,12 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageButton userPicture;
 
   private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull Button buttonTryNow,
-      @NonNull CardView card, @NonNull CircleImageView dashaImage, @NonNull TextView descMainFitur,
-      @NonNull FrameLayout frame, @NonNull HorizontalScrollView horizontalView,
-      @NonNull ImageButton ibFilter, @NonNull ImageView imageCloud,
-      @NonNull ImageView imageExpression, @NonNull ImageView imageGallery,
-      @NonNull ImageView imageScan, @NonNull DrawerLayout main, @NonNull NavigationView navView,
-      @NonNull TextView next, @NonNull TextView next2, @NonNull TextView or,
-      @NonNull RecyclerView recyclerView, @NonNull SearchBar searchBar,
+      @NonNull CardView card, @NonNull TextView descMainFitur, @NonNull FrameLayout frame,
+      @NonNull HorizontalScrollView horizontalView, @NonNull ImageButton ibFilter,
+      @NonNull ImageView imageCloud, @NonNull ImageView imageExpression,
+      @NonNull ImageView imageGallery, @NonNull ImageView imageScan, @NonNull DrawerLayout main,
+      @NonNull NavigationView navView, @NonNull TextView next, @NonNull TextView next2,
+      @NonNull TextView or, @NonNull RecyclerView recyclerView, @NonNull SearchBar searchBar,
       @NonNull SearchView searchView, @NonNull TextView step1, @NonNull TextView step2,
       @NonNull TextView step3, @NonNull TextView step4, @NonNull TextView stepFitur,
       @NonNull TextView titleMainFitur, @NonNull TextView titleSkincareProduct,
@@ -137,7 +132,6 @@ public final class ActivityMainBinding implements ViewBinding {
     this.rootView = rootView;
     this.buttonTryNow = buttonTryNow;
     this.card = card;
-    this.dashaImage = dashaImage;
     this.descMainFitur = descMainFitur;
     this.frame = frame;
     this.horizontalView = horizontalView;
@@ -203,12 +197,6 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.card;
       CardView card = ViewBindings.findChildViewById(rootView, id);
       if (card == null) {
-        break missingId;
-      }
-
-      id = R.id.dashaImage;
-      CircleImageView dashaImage = ViewBindings.findChildViewById(rootView, id);
-      if (dashaImage == null) {
         break missingId;
       }
 
@@ -370,11 +358,11 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((DrawerLayout) rootView, buttonTryNow, card, dashaImage,
-          descMainFitur, frame, horizontalView, ibFilter, imageCloud, imageExpression, imageGallery,
-          imageScan, main, navView, next, next2, or, recyclerView, searchBar, searchView, step1,
-          step2, step3, step4, stepFitur, titleMainFitur, titleSkincareProduct, titleWelcomeMain,
-          toolbar, tungguApalagi, userPicture);
+      return new ActivityMainBinding((DrawerLayout) rootView, buttonTryNow, card, descMainFitur,
+          frame, horizontalView, ibFilter, imageCloud, imageExpression, imageGallery, imageScan,
+          main, navView, next, next2, or, recyclerView, searchBar, searchView, step1, step2, step3,
+          step4, stepFitur, titleMainFitur, titleSkincareProduct, titleWelcomeMain, toolbar,
+          tungguApalagi, userPicture);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
