@@ -69,4 +69,8 @@
     <string name="step_3">Upload gambar</string>
     <string name="step_4">Dapatkan hasil tipe kulitmu dan SkinSync akan merekomendasikan produk skincare untukmu</string>
     <string name="tunggu_apalagi">Tunggu apalagi ? </string>
+    <string name="title_article_page">Article</string>
+    <string name="welcome_back">Welcome back, </string>
+    <string name="just_for_u">Just For You</string>
+    <string name="see_more">See More</string>
 </resources>

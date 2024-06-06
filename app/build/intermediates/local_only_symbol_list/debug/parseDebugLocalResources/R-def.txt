@@ -88,8 +88,8 @@ id checkBoxCompletedRoutine
 id checkBoxFemale
 id checkBoxMale
 id checkBoxRemember
-id dashaImage
 id descApp
+id descArticle
 id descMainFitur
 id descScheduling
 id ed_deskripsi_ad
@@ -131,6 +131,7 @@ id imageCloud
 id imageExpression
 id imageGallery
 id imageMoon
+id imagePreview
 id imageScan
 id imageSun
 id imageView
@@ -144,6 +145,7 @@ id iv_image_icon_ad
 id iv_image_icon_ca
 id iv_image_icon_cp
 id iv_image_product
+id justForYou
 id main
 id manySteps
 id manyStepsNight
@@ -167,11 +169,13 @@ id previewImageView
 id progressIndicator
 id recyclerView
 id recyclerView2
+id recyclerViewJFY
 id row_1
 id row_2
 id searchBar
 id searchView
 id seeDetails
+id seeMore
 id step1
 id step2
 id step3
@@ -196,6 +200,7 @@ id til_url_ad
 id til_url_ca
 id til_url_cp
 id titleApp
+id titleArticle
 id titleMainFitur
 id titleMorningRoutine
 id titleNightRoutine
@@ -206,6 +211,7 @@ id titleSchedulingSkincare
 id titleSkincareProduct
 id titleStoredProduct
 id titleTypeSkin
+id titleWelcomeBack
 id titleWelcomeMain
 id toolbar
 id tungguApalagi
@@ -239,7 +245,9 @@ id usernameProfile
 id usernameUser
 id welcomeDesc
 id welcomeTextView
+layout activity_article
 layout activity_article_admin
+layout activity_article_details
 layout activity_create_article
 layout activity_create_product
 layout activity_dashboard
@@ -257,6 +265,8 @@ layout activity_result
 layout activity_scan
 layout activity_welcome
 layout list_article_admin
+layout list_article_just_for_u
+layout list_article_users
 layout list_of_routine_users
 layout list_of_stored_users
 layout list_product_admin
@@ -301,6 +311,7 @@ string input_email
 string input_password
 string input_product
 string input_username
+string just_for_u
 string make_account
 string many_step
 string message_reminder
@@ -309,12 +320,14 @@ string open
 string password_desc
 string password_title
 string see_details
+string see_more
 string step_1
 string step_2
 string step_3
 string step_4
 string step_fitur
 string text_view_date
+string title_article_page
 string title_main_fitur
 string title_morning_routine
 string title_night_routine
@@ -336,6 +349,7 @@ string type_skin
 string upload_image
 string username_profile
 string welcome
+string welcome_back
 string welcome_desc
 style Base.Theme.SkinSync
 style Theme.SkinSync

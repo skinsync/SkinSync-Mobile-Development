@@ -61,6 +61,7 @@
     <string name="input_password">Masukkan Password Anda</string>
     <string name="input_product">Input Product</string>
     <string name="input_username">Masukkan Nama Anda</string>
+    <string name="just_for_u">Just For You</string>
     <string name="make_account">Buat Akun</string>
     <string name="many_step">5 Steps</string>
     <string name="message_reminder">Jangan lupa untuk menggunakan skincare secara rutin.</string>
@@ -69,12 +70,14 @@
     <string name="password_desc">*********</string>
     <string name="password_title">Password</string>
     <string name="see_details">See Details</string>
+    <string name="see_more">See More</string>
     <string name="step_1">Scan wajah dengan kamera</string>
     <string name="step_2">Ambil gambar dari galeri</string>
     <string name="step_3">Upload gambar</string>
     <string name="step_4">Dapatkan hasil tipe kulitmu dan SkinSync akan merekomendasikan produk skincare untukmu</string>
     <string name="step_fitur">Langkah penggunaan:</string>
     <string name="text_view_date">Saturday, May 24th</string>
+    <string name="title_article_page">Article</string>
     <string name="title_main_fitur">Ketahui Tipe Kulit Wajahmu</string>
     <string name="title_morning_routine">Morning Routine</string>
     <string name="title_night_routine">Night Routine</string>
@@ -96,6 +99,7 @@
     <string name="upload_image">Upload Image</string>
     <string name="username_profile">Username</string>
     <string name="welcome">Selamat datang di SkinSync !</string>
+    <string name="welcome_back">Welcome back, </string>
     <string name="welcome_desc">Deteksi kulit wajah Anda dan dapatkan solusi perawatan terbaik untuk kulit yang sehat ? di SkinSync aja!</string>
     <style name="Base.Theme.SkinSync" parent="Theme.Material3.DayNight">
         
