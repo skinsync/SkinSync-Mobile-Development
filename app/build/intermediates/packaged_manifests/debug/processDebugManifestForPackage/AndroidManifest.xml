@@ -37,6 +37,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.SkinSync" >
         <activity
+            android:name="com.example.skinsync.activity.admin.CreateUserAdminActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.skinsync.activity.admin.DetailUserAdminActivity"
             android:exported="false" />
         <activity
@@ -71,7 +74,12 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.ScanActivity"
-            android:exported="false" >
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
@@ -108,11 +116,6 @@
         <activity
             android:name="com.example.skinsync.activity.MainActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
