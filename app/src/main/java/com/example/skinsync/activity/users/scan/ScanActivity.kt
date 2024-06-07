@@ -53,6 +53,7 @@ class ScanActivity : AppCompatActivity() {
 
         binding.buttonGallery.setOnClickListener { startGallery() }
         binding.buttonCamera.setOnClickListener { startCamera() }
+        binding.buttonUpload.setOnClickListener { uploadImage() }
     }
 
     private fun startGallery() {
@@ -90,6 +91,13 @@ class ScanActivity : AppCompatActivity() {
             Log.d("Image URI", "showImage: $it")
             binding.previewImageView.setImageURI(it)
         }
+    }
+
+    private fun uploadImage() {
+        // TODO: Mengupload gambar yang berhasil ditampilkan.
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra(ResultActivity.EXTRA_IMAGE_URI, currentImageUri.toString())
+        startActivity(intent)
     }
 
     companion object {
