@@ -13,18 +13,18 @@
 11-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <uses-feature android:name="android.hardware.camera" />
-13-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:6:5-60
-13-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:6:19-57
+13-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:7:5-60
+13-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:7:19-57
 14
 15    <uses-permission android:name="android.permission.CAMERA" />
-15-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:7:5-65
-15-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:7:22-62
+15-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:9:5-65
+15-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:9:22-62
 16    <uses-permission
-16-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:8:5-9:38
+16-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:10:5-12:38
 17        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-17-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:8:22-78
+17-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:11:9-65
 18        android:maxSdkVersion="28" />
-18-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:9:9-35
+18-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:12:9-35
 19
 20    <permission
 20-->[androidx.core:core:1.13.1] C:\Users\hi\.gradle\caches\transforms-3\512dd553433fed0a183acc4f624d5ec9\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
@@ -38,237 +38,247 @@
 24-->[androidx.core:core:1.13.1] C:\Users\hi\.gradle\caches\transforms-3\512dd553433fed0a183acc4f624d5ec9\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 25
 26    <application
-26-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:11:5-100:19
+26-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:14:5-107:19
 27        android:allowBackup="true"
-27-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:12:9-35
+27-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:15:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 28-->[androidx.core:core:1.13.1] C:\Users\hi\.gradle\caches\transforms-3\512dd553433fed0a183acc4f624d5ec9\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
 29        android:dataExtractionRules="@xml/data_extraction_rules"
-29-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:13:9-65
+29-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:16:9-65
 30        android:debuggable="true"
 31        android:extractNativeLibs="false"
 32        android:fullBackupContent="@xml/backup_rules"
-32-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:14:9-54
+32-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:17:9-54
 33        android:icon="@mipmap/ic_launcher"
-33-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:15:9-43
+33-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:18:9-43
 34        android:label="@string/app_name"
-34-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:16:9-41
+34-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:19:9-41
 35        android:roundIcon="@mipmap/ic_launcher_round"
-35-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:17:9-54
+35-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:20:9-54
 36        android:supportsRtl="true"
-36-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:18:9-35
+36-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:21:9-35
 37        android:testOnly="true"
 38        android:theme="@style/Theme.SkinSync" >
-38-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:19:9-46
+38-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:22:9-46
 39        <activity
-39-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:21:9-24:20
-40            android:name="com.example.skinsync.activity.users.article.details.ArticleDetailsActivity"
-40-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:22:13-82
-41            android:exported="false" >
-41-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:23:13-37
-42        </activity>
-43        <activity
-43-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:25:9-28:20
-44            android:name="com.example.skinsync.activity.users.article.ArticleActivity"
-44-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:26:13-67
-45            android:exported="false" >
-45-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:27:13-37
-46        </activity>
-47        <activity
-47-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:29:9-31:39
-48            android:name="com.example.skinsync.activity.admin.CreateProductActivity"
-48-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:30:13-65
-49            android:exported="true" />
-49-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:31:13-36
-50        <activity
-50-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:32:9-34:39
-51            android:name="com.example.skinsync.activity.users.listproduct.ListProductActivity"
-51-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:33:13-75
-52            android:exported="true" />
-52-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:34:13-36
-53        <activity
-53-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:35:9-37:40
-54            android:name="com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity"
-54-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:36:13-84
-55            android:exported="false" />
-55-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:37:13-37
-56        <activity
-56-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:38:9-40:40
-57            android:name="com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity"
-57-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:39:13-88
-58            android:exported="false" />
-58-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:40:13-37
-59        <activity
-59-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:41:9-43:40
-60            android:name="com.example.skinsync.activity.admin.ProductAdminActivity"
-60-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:42:13-64
-61            android:exported="false" />
-61-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:43:13-37
-62        <activity
-62-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:44:9-46:40
-63            android:name="com.example.skinsync.activity.admin.DetailArticleActivity"
-63-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:45:13-65
-64            android:exported="false" />
-64-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:46:13-37
-65        <activity
-65-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:47:9-49:40
-66            android:name="com.example.skinsync.activity.users.scan.result.ResultActivity"
-66-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:48:13-70
-67            android:exported="false" />
-67-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:49:13-37
-68        <activity
-68-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:50:9-59:20
-69            android:name="com.example.skinsync.activity.users.scan.ScanActivity"
-69-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:51:13-61
-70            android:exported="true" >
-70-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:52:13-36
-71            <intent-filter>
-71-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:54:13-58:29
-72                <action android:name="android.intent.action.MAIN" />
-72-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:55:17-69
-72-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:55:25-66
-73
-74                <category android:name="android.intent.category.LAUNCHER" />
-74-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:57:17-77
-74-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:57:27-74
-75            </intent-filter>
-76        </activity>
-77        <activity
-77-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:60:9-62:40
-78            android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
-78-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:61:13-65
-79            android:exported="false" />
-79-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:62:13-37
-80        <activity
-80-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:63:9-65:40
-81            android:name="com.example.skinsync.activity.admin.ArticleAdminActivity"
-81-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:64:13-64
-82            android:exported="false" />
-82-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:65:13-37
-83        <activity
-83-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:66:9-68:40
-84            android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
-84-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:67:13-76
-85            android:exported="false" />
-85-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:68:13-37
-86        <activity
-86-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:69:9-71:40
-87            android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
-87-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:70:13-67
-88            android:exported="false" />
-88-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:71:13-37
-89        <activity
-89-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:72:9-74:40
-90            android:name="com.example.skinsync.activity.admin.DashboardActivity"
-90-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:73:13-61
-91            android:exported="false" />
-91-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:74:13-37
-92        <activity
-92-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:75:9-85:20
-93            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
-93-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:76:13-67
-94            android:exported="false" >
-94-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:77:13-37
-95
-96            <!-- <intent-filter> -->
-97            <!-- <action android:name="android.intent.action.MAIN" /> -->
+39-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:24:9-26:40
+40            android:name="com.example.skinsync.activity.admin.DetailUserAdminActivity"
+40-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:25:13-67
+41            android:exported="false" />
+41-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:26:13-37
+42        <activity
+42-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:27:9-29:40
+43            android:name="com.example.skinsync.activity.admin.UserAdminActivity"
+43-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:28:13-61
+44            android:exported="false" />
+44-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:29:13-37
+45        <activity
+45-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:30:9-32:40
+46            android:name="com.example.skinsync.activity.users.article.details.ArticleDetailsActivity"
+46-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:31:13-82
+47            android:exported="false" />
+47-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:32:13-37
+48        <activity
+48-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:33:9-35:40
+49            android:name="com.example.skinsync.activity.users.article.ArticleActivity"
+49-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:34:13-67
+50            android:exported="false" />
+50-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:35:13-37
+51        <activity
+51-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:36:9-38:39
+52            android:name="com.example.skinsync.activity.admin.CreateProductActivity"
+52-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:37:13-65
+53            android:exported="true" />
+53-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:38:13-36
+54        <activity
+54-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:39:9-41:39
+55            android:name="com.example.skinsync.activity.users.listproduct.ListProductActivity"
+55-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:40:13-75
+56            android:exported="true" />
+56-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:41:13-36
+57        <activity
+57-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:42:9-44:40
+58            android:name="com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity"
+58-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:43:13-84
+59            android:exported="false" />
+59-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:44:13-37
+60        <activity
+60-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:45:9-47:40
+61            android:name="com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity"
+61-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:46:13-88
+62            android:exported="false" />
+62-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:47:13-37
+63        <activity
+63-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:48:9-50:40
+64            android:name="com.example.skinsync.activity.admin.ProductAdminActivity"
+64-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:49:13-64
+65            android:exported="false" />
+65-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:50:13-37
+66        <activity
+66-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:51:9-53:40
+67            android:name="com.example.skinsync.activity.admin.DetailArticleAdminActivity"
+67-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:52:13-70
+68            android:exported="false" />
+68-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:53:13-37
+69        <activity
+69-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:54:9-56:40
+70            android:name="com.example.skinsync.activity.users.scan.result.ResultActivity"
+70-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:55:13-70
+71            android:exported="false" />
+71-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:56:13-37
+72        <activity
+72-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:57:9-60:20
+73            android:name="com.example.skinsync.activity.users.scan.ScanActivity"
+73-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:58:13-61
+74            android:exported="false" >
+74-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:59:13-37
+75        </activity>
+76        <activity
+76-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:61:9-63:40
+77            android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
+77-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:62:13-65
+78            android:exported="false" />
+78-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:63:13-37
+79        <activity
+79-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:64:9-66:40
+80            android:name="com.example.skinsync.activity.admin.ArticleAdminActivity"
+80-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:65:13-64
+81            android:exported="false" />
+81-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:66:13-37
+82        <activity
+82-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:67:9-69:40
+83            android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
+83-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:68:13-76
+84            android:exported="false" />
+84-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:69:13-37
+85        <activity
+85-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:70:9-72:40
+86            android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
+86-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:71:13-67
+87            android:exported="false" />
+87-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:72:13-37
+88        <activity
+88-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:73:9-75:40
+89            android:name="com.example.skinsync.activity.admin.DashboardActivity"
+89-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:74:13-61
+90            android:exported="false" />
+90-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:75:13-37
+91        <activity
+91-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:76:9-86:20
+92            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
+92-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:77:13-67
+93            android:exported="false" >
+93-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:78:13-37
+94
+95            <!-- <intent-filter> -->
+96            <!-- <action android:name="android.intent.action.MAIN" /> -->
+97
 98
-99
-100            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-101            <!-- </intent-filter> -->
-102        </activity>
-103        <activity
-103-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:86:9-88:40
-104            android:name="com.example.skinsync.activity.users.LoginActivity"
-104-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:87:13-57
-105            android:exported="false" />
-105-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:88:13-37
-106        <activity
-106-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:89:9-91:40
-107            android:name="com.example.skinsync.activity.users.RegisterActivity"
-107-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:90:13-60
-108            android:exported="false" />
-108-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:91:13-37
-109        <activity
-109-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:92:9-95:20
-110            android:name="com.example.skinsync.activity.MainActivity"
-110-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:93:13-50
-111            android:exported="true" >
-111-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:94:13-36
-112        </activity>
+99            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+100            <!-- </intent-filter> -->
+101        </activity>
+102        <activity
+102-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:87:9-89:40
+103            android:name="com.example.skinsync.activity.users.LoginActivity"
+103-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:88:13-57
+104            android:exported="false" />
+104-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:89:13-37
+105        <activity
+105-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:90:9-92:40
+106            android:name="com.example.skinsync.activity.users.RegisterActivity"
+106-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:91:13-60
+107            android:exported="false" />
+107-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:92:13-37
+108        <activity
+108-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:93:9-102:20
+109            android:name="com.example.skinsync.activity.MainActivity"
+109-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:94:13-50
+110            android:exported="true" >
+110-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:95:13-36
+111            <intent-filter>
+111-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:97:13-101:29
+112                <action android:name="android.intent.action.MAIN" />
+112-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:98:17-69
+112-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:98:25-66
 113
-114        <meta-data
-114-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:97:9-99:57
-115            android:name="preloaded_fonts"
-115-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:98:13-43
-116            android:resource="@array/preloaded_fonts" />
-116-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:99:13-54
+114                <category android:name="android.intent.category.LAUNCHER" />
+114-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:100:17-77
+114-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:100:27-74
+115            </intent-filter>
+116        </activity>
 117
-118        <provider
-118-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-119            android:name="androidx.startup.InitializationProvider"
-119-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-120            android:authorities="com.example.skinsync.androidx-startup"
-120-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-121            android:exported="false" >
-121-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-122            <meta-data
-122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-123                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-124                android:value="androidx.startup" />
-124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-125            <meta-data
-125-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:29:13-31:52
-126                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-126-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:30:17-78
-127                android:value="androidx.startup" />
-127-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:31:17-49
-128            <meta-data
-128-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
-129                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
-129-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
-130                android:value="androidx.startup" />
-130-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
-131        </provider>
-132
-133        <receiver
-133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
-134            android:name="androidx.profileinstaller.ProfileInstallReceiver"
-134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
-135            android:directBootAware="false"
-135-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
-136            android:enabled="true"
-136-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
-137            android:exported="true"
-137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
-138            android:permission="android.permission.DUMP" >
-138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
-139            <intent-filter>
-139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
-140                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
-140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
-140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
-141            </intent-filter>
-142            <intent-filter>
-142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
-143                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
-143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
-143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
-144            </intent-filter>
-145            <intent-filter>
-145-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
-146                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
-146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
-147            </intent-filter>
-148            <intent-filter>
-148-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
-149                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
-149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
-149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
-150            </intent-filter>
-151        </receiver>
-152    </application>
-153
-154</manifest>
+118        <meta-data
+118-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:104:9-106:57
+119            android:name="preloaded_fonts"
+119-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:105:13-43
+120            android:resource="@array/preloaded_fonts" />
+120-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:106:13-54
+121
+122        <provider
+122-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+123            android:name="androidx.startup.InitializationProvider"
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+124            android:authorities="com.example.skinsync.androidx-startup"
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+125            android:exported="false" >
+125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+126            <meta-data
+126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+128                android:value="androidx.startup" />
+128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\hi\.gradle\caches\transforms-3\1f12b346925ae0dccc052cd3dd0b71cd\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+129            <meta-data
+129-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:29:13-31:52
+130                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+130-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:30:17-78
+131                android:value="androidx.startup" />
+131-->[androidx.lifecycle:lifecycle-process:2.8.1] C:\Users\hi\.gradle\caches\transforms-3\54ac4bcdd8d35425ba3168c44609d7b0\transformed\lifecycle-process-2.8.1\AndroidManifest.xml:31:17-49
+132            <meta-data
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+133                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+134                android:value="androidx.startup" />
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+135        </provider>
+136
+137        <receiver
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+138            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+139            android:directBootAware="false"
+139-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+140            android:enabled="true"
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+141            android:exported="true"
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+142            android:permission="android.permission.DUMP" >
+142-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+144                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+147                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+148            </intent-filter>
+149            <intent-filter>
+149-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+150                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+150-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+151            </intent-filter>
+152            <intent-filter>
+152-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+153                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+153-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\hi\.gradle\caches\transforms-3\068272eabbb79df159e6dc3bb77b5a97\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+154            </intent-filter>
+155        </receiver>
+156    </application>
+157
+158</manifest>

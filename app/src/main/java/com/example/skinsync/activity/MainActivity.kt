@@ -1,5 +1,6 @@
 package com.example.skinsync.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -10,6 +11,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.skinsync.R
+import com.example.skinsync.activity.users.article.ArticleActivity
+import com.example.skinsync.activity.users.listproduct.ListProductActivity
+import com.example.skinsync.activity.users.profile.ProfileActivity
+import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
 import com.example.skinsync.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
@@ -35,15 +40,48 @@ class MainActivity : AppCompatActivity() {
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
-        navView.setNavigationItemSelectedListener {
-            when (it.itemId){
-                R.id.nav_user -> Toast.makeText(applicationContext, "Clicked User Profile Page", Toast.LENGTH_SHORT).show()
-                R.id.nav_article -> Toast.makeText(applicationContext, "Clicked Article Page", Toast.LENGTH_SHORT).show()
-                R.id.nav_list_product -> Toast.makeText(applicationContext, "Clicked List of Product Page", Toast.LENGTH_SHORT).show()
-            }
-            true
-        }
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_user -> {
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked User Profile Page",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startActivity(Intent(this, ProfileActivity::class.java))
+                    true
+                }
 
+                R.id.nav_article -> {
+                    Toast.makeText(applicationContext, "Clicked Article Page", Toast.LENGTH_SHORT)
+                        .show()
+                    startActivity(Intent(this, ArticleActivity::class.java))
+                    true
+                }
+
+                R.id.nav_list_product -> {
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked List of Product Page",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startActivity(Intent(this, ListProductActivity::class.java))
+                    true
+                }
+
+                R.id.nav_scheduling -> {
+                    Toast.makeText(
+                        applicationContext,
+                        "Clicked Morning Scheduling Page",
+                        Toast.LENGTH_SHORT
+                    ).show()
+                    startActivity(Intent(this, MorningSchedulingActivity::class.java))
+                    true
+                }
+
+                else -> false
+            }
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

@@ -37,13 +37,17 @@
         android:testOnly="true"
         android:theme="@style/Theme.SkinSync" >
         <activity
+            android:name="com.example.skinsync.activity.admin.DetailUserAdminActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skinsync.activity.admin.UserAdminActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.skinsync.activity.users.article.details.ArticleDetailsActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.article.ArticleActivity"
-            android:exported="false" >
-        </activity>
+            android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.admin.CreateProductActivity"
             android:exported="true" />
@@ -60,19 +64,14 @@
             android:name="com.example.skinsync.activity.admin.ProductAdminActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.skinsync.activity.admin.DetailArticleActivity"
+            android:name="com.example.skinsync.activity.admin.DetailArticleAdminActivity"
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.result.ResultActivity"
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.ScanActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false" >
         </activity>
         <activity
             android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
@@ -109,6 +108,11 @@
         <activity
             android:name="com.example.skinsync.activity.MainActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data
