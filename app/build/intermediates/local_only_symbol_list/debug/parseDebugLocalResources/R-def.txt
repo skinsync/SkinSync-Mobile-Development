@@ -45,6 +45,7 @@ drawable open_fullscreen_icon
 drawable people
 drawable picture_icon
 drawable products
+drawable ripple_effect
 drawable rounded_background_beige
 drawable rounded_background_peach
 drawable scan
@@ -61,12 +62,9 @@ font roboto
 id ImageWelcome
 id act_dropdown_tipe_produk
 id act_dropdown_tipe_wajah
-id ageDesc
-id ageEditText
-id ageEditTextLayout
-id ageTitle
 id avatarImageProfile
 id background
+id birthDate
 id box
 id btn_calendar_cu
 id btn_calendar_ud
@@ -100,6 +98,7 @@ id checkBoxFemale
 id checkBoxMale
 id checkBoxRemember
 id constraint_birthdate
+id dataBirthDate
 id descApp
 id descArticle
 id descMainFitur
@@ -194,6 +193,7 @@ id passwordDesc
 id passwordEditText
 id passwordEditTextLayout
 id passwordTitle
+id pickDate
 id previewImageView
 id progressIndicator
 id radioFemale
@@ -349,6 +349,7 @@ mipmap ic_launcher_round
 string age_desc
 string age_title
 string app_name
+string birth_date
 string button_camera
 string button_cancel
 string button_edit_profile
@@ -364,6 +365,7 @@ string close
 string completed_routine_morn
 string completed_routine_night
 string dashboard
+string data_null_profile
 string desc_main_fitur
 string desc_scheduling_result
 string desc_title
@@ -388,6 +390,7 @@ string message_result
 string open
 string password_desc
 string password_title
+string pick_date
 string see_details
 string see_more
 string step_1

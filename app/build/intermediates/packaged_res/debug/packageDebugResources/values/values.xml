@@ -30,6 +30,7 @@
     <string name="age_desc">21 years old</string>
     <string name="age_title">Age</string>
     <string name="app_name">SkinSync</string>
+    <string name="birth_date">Birth Date</string>
     <string name="button_camera">Camera</string>
     <string name="button_cancel">Cancel</string>
     <string name="button_edit_profile">Edit Profile</string>
@@ -45,6 +46,7 @@
     <string name="completed_routine_morn">Morning Routine Completed ?</string>
     <string name="completed_routine_night">Night Routine Completed ?</string>
     <string name="dashboard">Dashboard</string>
+    <string name="data_null_profile">-----</string>
     <string name="desc_main_fitur">dan dapatkan rekomendasi skincare yang cocok untukmu.</string>
     <string name="desc_scheduling_result">Coba fitur Scheduling untuk mendapatkan hasil perawatan terbaik.</string>
     <string name="desc_title">Skincare Recommendation Based on Facial Skin Condition</string>
@@ -69,6 +71,7 @@
     <string name="open">Open</string>
     <string name="password_desc">*********</string>
     <string name="password_title">Password</string>
+    <string name="pick_date">Pick date</string>
     <string name="see_details">See Details</string>
     <string name="see_more">See More</string>
     <string name="step_1">Scan wajah dengan kamera</string>

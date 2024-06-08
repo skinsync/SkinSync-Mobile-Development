@@ -2,24 +2,24 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activity.users.profile.edit.EditProfileActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
     <TextView
         android:id="@+id/titlePage"
-        android:layout_width="231dp"
-        android:layout_height="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:fontFamily="@font/lato_bold"
         android:text="@string/title_page_edit_profile"
         android:textAlignment="center"
         android:textColor="@color/grey"
-        android:textSize="25sp"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -28,13 +28,14 @@
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/uploadImage"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_marginStart="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:scaleType="centerCrop"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/titlePage"
-        app:layout_constraintStart_toStartOf="@id/titlePage"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titlePage"
         android:src="@drawable/baseline_account_circle_24"/>
 
@@ -42,11 +43,13 @@
         android:id="@+id/uploadImageTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
+        android:background="@drawable/ripple_effect"
         android:text="@string/upload_image"
-        android:textSize="18sp"
+        android:textSize="@dimen/_14ssp"
+        android:textColor="@color/grey"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintStart_toEndOf="@+id/uploadImage"
@@ -56,11 +59,11 @@
         android:id="@+id/usernameProfile"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_24sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/username_profile"
-        android:textSize="18sp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uploadImage" />
 
@@ -69,8 +72,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/usernameProfile">
@@ -87,63 +90,50 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <TextView
-        android:id="@+id/ageTitle"
+        android:id="@+id/birthDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
-        android:text="@string/age_title"
-        android:textSize="18sp"
+        android:text="@string/birth_date"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@+id/usernameEditTextLayout"
         app:layout_constraintStart_toStartOf="@+id/usernameEditTextLayout"
         app:layout_constraintTop_toBottomOf="@+id/usernameEditTextLayout" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/ageEditTextLayout"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ageTitle">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/ageEditText"
-            android:layout_width="match_parent"
+        <Button
+            android:id="@+id/pickDate"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:textColor="@color/peach"
-            android:textColorHint="@color/peach"
-            android:hint="@string/input_age"
-            android:inputType="text" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:textColor="@color/white"
+            android:text="@string/pick_date"
+            app:layout_constraintStart_toStartOf="@id/birthDate"
+            app:layout_constraintTop_toBottomOf="@+id/birthDate" />
 
     <TextView
         android:id="@+id/genderTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/gender_title"
-        android:textSize="18sp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/ageEditTextLayout"
-        app:layout_constraintStart_toStartOf="@+id/ageEditTextLayout"
-        app:layout_constraintTop_toBottomOf="@+id/ageEditTextLayout"/>
+        app:layout_constraintLeft_toRightOf="@+id/pickDate"
+        app:layout_constraintStart_toStartOf="@+id/pickDate"
+        app:layout_constraintTop_toBottomOf="@+id/pickDate"/>
 
         <CheckBox
             android:id="@+id/checkBoxMale"
-            android:layout_width="130dp"
-            android:layout_height="48dp"
-            android:layout_marginStart="10dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_36sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:backgroundTint="@color/peach"
             android:fontFamily="@font/roboto"
             android:text="@string/gender_male"
             android:textColor="@color/peach"
-            android:textSize="15dp"
+            android:textSize="@dimen/_12ssp"
             app:layout_constraintLeft_toRightOf="@+id/genderTitle"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toStartOf="@+id/genderTitle"
@@ -152,13 +142,13 @@
 
         <CheckBox
             android:id="@+id/checkBoxFemale"
-            android:layout_width="130dp"
-            android:layout_height="48dp"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_36sdp"
             android:backgroundTint="@color/peach"
             android:fontFamily="@font/roboto"
             android:text="@string/gender_female"
             android:textColor="@color/peach"
-            android:textSize="15dp"
+            android:textSize="@dimen/_12ssp"
             app:layout_constraintLeft_toRightOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintStart_toEndOf="@+id/checkBoxMale"
@@ -169,14 +159,13 @@
         android:id="@+id/emailTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/email_title"
-        android:textSize="18sp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/usernameProfile"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxMale" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -184,8 +173,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/emailTitle">
@@ -205,14 +194,13 @@
         android:id="@+id/passwordTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="30dp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/password_title"
-        android:textSize="18sp"
+        android:textSize="@dimen/_14ssp"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@id/usernameProfile"
         app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout" />
 
     <com.google.android.material.textfield.TextInputLayout
@@ -220,8 +208,8 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginStart="@dimen/_24sdp"
+        android:layout_marginEnd="@dimen/_24sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/passwordTitle">
@@ -239,30 +227,31 @@
 
         <Button
             android:id="@+id/buttonSave"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="45dp"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="-130dp"
             android:background="@drawable/button_peach"
             android:fontFamily="@font/roboto"
             android:text="@string/button_save"
-            android:textSize="14sp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
             app:backgroundTint="@null"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintLeft_toRightOf="@+id/passwordEditTextLayout"
-            app:layout_constraintStart_toStartOf="@+id/passwordEditTextLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
 
         <Button
             android:id="@+id/buttonCancel"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:layout_marginStart="5dp"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
             android:background="@drawable/button_peach"
             android:fontFamily="@font/roboto"
             android:text="@string/button_cancel"
-            android:textSize="14sp"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/white"
             app:backgroundTint="@null"
             app:layout_constraintLeft_toRightOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -270,14 +259,13 @@
             app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
 
         <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
             android:src="@drawable/back"
-            android:layout_marginTop="40dp"
-            android:layout_marginStart="30dp"
+            android:layout_marginTop="@dimen/_30sdp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="@id/usernameProfile"
             android:clickable="true"
             app:layout_constraintTop_toBottomOf="@+id/buttonSave"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
