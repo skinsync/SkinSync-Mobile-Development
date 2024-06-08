@@ -6,9 +6,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.skinsync.R
+import com.example.skinsync.activity.admin.article.ArticleAdminActivity
 import com.example.skinsync.databinding.ActivityDashboardBinding
-import com.example.skinsync.dataclass.UserModel
 
 class DashboardActivity : AppCompatActivity() {
 
@@ -19,6 +18,7 @@ class DashboardActivity : AppCompatActivity() {
         binding = ActivityDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
         enableEdgeToEdge()
         applyWindowInsets()
         clickListenerSetup()

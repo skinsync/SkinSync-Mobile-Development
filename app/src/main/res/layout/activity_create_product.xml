@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context=".activity.admin.CreateArticleActivity">
+        tools:context=".activity.admin.article.CreateArticleActivity">
 
         <TextView
             android:id="@+id/tv_create_article_title_ca"
