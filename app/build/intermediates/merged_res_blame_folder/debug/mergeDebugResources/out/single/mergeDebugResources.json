@@ -4,12 +4,12 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\layout_list_article_users.xml.flat",
-        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\layout\\list_article_users.xml"
-    },
-    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\layout_activity_welcome.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\layout\\activity_welcome.xml"
+    },
+    {
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\layout_list_article_users.xml.flat",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\layout\\list_article_users.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\layout_list_user_admin.xml.flat",
@@ -100,10 +100,6 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\font\\josefin_sans_light.xml"
     },
     {
-        "merged": "com.example.skinsync.app-debug-43:/layout_activity_login.xml.flat",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_login.xml"
-    },
-    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\drawable_open_fullscreen_icon.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\drawable\\open_fullscreen_icon.xml"
     },
@@ -122,6 +118,10 @@
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\font_josefin_slab.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\font\\josefin_slab.xml"
+    },
+    {
+        "merged": "com.example.skinsync.app-debug-43:/layout_activity_profile.xml.flat",
+        "source": "com.example.skinsync.app-main-45:/layout/activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\drawable_view_hide.png.flat",
@@ -224,12 +224,12 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\layout\\activity_night_scheduling.xml"
     },
     {
-        "merged": "com.example.skinsync.app-debug-43:/layout_activity_register.xml.flat",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_register.xml"
-    },
-    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\drawable_ripple_effect.xml.flat",
+        "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-45:\\drawable\\ripple_effect.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",

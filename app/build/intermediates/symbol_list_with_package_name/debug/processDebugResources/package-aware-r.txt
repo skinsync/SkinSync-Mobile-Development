@@ -3898,6 +3898,7 @@ drawable open_fullscreen_icon
 drawable people
 drawable picture_icon
 drawable products
+drawable ripple_effect
 drawable rounded_background_beige
 drawable rounded_background_peach
 drawable scan
@@ -3988,10 +3989,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id ageDesc
-id ageEditText
-id ageEditTextLayout
-id ageTitle
 id alertTitle
 id aligned
 id all
@@ -4015,6 +4012,7 @@ id baseline
 id beginOnFirstDraw
 id beginning
 id bestChoice
+id birthDate
 id blocking
 id bottom
 id bounce
@@ -4093,6 +4091,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dataBirthDate
 id date_picker_actions
 id decelerate
 id decelerateAndComplete
@@ -4404,6 +4403,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pickDate
 id pin
 id position
 id postLayout
@@ -4936,6 +4936,7 @@ string age_title
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string birth_date
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -4968,6 +4969,7 @@ string close
 string completed_routine_morn
 string completed_routine_night
 string dashboard
+string data_null_profile
 string desc_main_fitur
 string desc_scheduling_result
 string desc_title
@@ -5105,6 +5107,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pick_date
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

@@ -17,6 +17,9 @@
     <string name="title_page_profile">Profile</string>
     <string name="username_profile">Username</string>
     <string name="age_title">Age</string>
+    <string name="data_null_profile">-----</string>
+    <string name="birth_date">Birth Date</string>
+    <string name="pick_date">Pick date</string>
     <string name="age_desc">21 years old</string>
     <string name="gender_title">Gender</string>
     <string name="gender_male">Male</string>

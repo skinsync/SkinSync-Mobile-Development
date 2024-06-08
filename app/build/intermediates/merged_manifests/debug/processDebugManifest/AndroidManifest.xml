@@ -83,21 +83,23 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
         <activity
             android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.skinsync.activity.admin.DashboardActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.skinsync.activity.admin.DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
+            android:exported="true" >
         </activity>
         <activity
             android:name="com.example.skinsync.activity.users.LoginActivity"
