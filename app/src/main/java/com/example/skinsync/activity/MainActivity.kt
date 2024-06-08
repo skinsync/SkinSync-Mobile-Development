@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,10 +16,16 @@ import com.example.skinsync.activity.users.article.ArticleActivity
 import com.example.skinsync.activity.users.listproduct.ListProductActivity
 import com.example.skinsync.activity.users.profile.ProfileActivity
 import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
+import com.example.skinsync.activity.users.welcome.WelcomeActivity
 import com.example.skinsync.databinding.ActivityMainBinding
+import com.example.skinsync.viewmodel.MainViewModel
+import com.example.skinsync.viewmodel.ViewModelFactory
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
+    private val mainViewModel by viewModels<MainViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
 
     private lateinit var binding: ActivityMainBinding
 
@@ -39,6 +46,13 @@ class MainActivity : AppCompatActivity() {
         toogle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        mainViewModel.getSession().observe(this) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(this, WelcomeActivity::class.java))
+                finish()
+            }
+        }
 
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
