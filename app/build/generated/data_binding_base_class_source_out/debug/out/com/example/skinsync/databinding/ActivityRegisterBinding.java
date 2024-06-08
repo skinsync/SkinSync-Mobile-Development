@@ -26,7 +26,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final ImageView background;
 
   @NonNull
-  public final TextView box;
+  public final ConstraintLayout box;
 
   @NonNull
   public final Button buttonRegister;
@@ -35,16 +35,16 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextView descApp;
 
   @NonNull
-  public final TextView fieldConfirmPassword;
+  public final ConstraintLayout fieldConfirmPassword;
 
   @NonNull
-  public final TextView fieldEmail;
+  public final ConstraintLayout fieldEmail;
 
   @NonNull
-  public final TextView fieldPassword;
+  public final ConstraintLayout fieldPassword;
 
   @NonNull
-  public final TextView fieldUsername;
+  public final ConstraintLayout fieldUsername;
 
   @NonNull
   public final ImageView iconConfirmPassword;
@@ -77,9 +77,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final TextView titleApp;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView background,
-      @NonNull TextView box, @NonNull Button buttonRegister, @NonNull TextView descApp,
-      @NonNull TextView fieldConfirmPassword, @NonNull TextView fieldEmail,
-      @NonNull TextView fieldPassword, @NonNull TextView fieldUsername,
+      @NonNull ConstraintLayout box, @NonNull Button buttonRegister, @NonNull TextView descApp,
+      @NonNull ConstraintLayout fieldConfirmPassword, @NonNull ConstraintLayout fieldEmail,
+      @NonNull ConstraintLayout fieldPassword, @NonNull ConstraintLayout fieldUsername,
       @NonNull ImageView iconConfirmPassword, @NonNull ImageView iconEmail,
       @NonNull ImageView iconPassword, @NonNull ImageView iconUser,
       @NonNull EditText inputConfirmPassword, @NonNull EditText inputEmail,
@@ -140,7 +140,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       id = R.id.box;
-      TextView box = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout box = ViewBindings.findChildViewById(rootView, id);
       if (box == null) {
         break missingId;
       }
@@ -158,25 +158,25 @@ public final class ActivityRegisterBinding implements ViewBinding {
       }
 
       id = R.id.fieldConfirmPassword;
-      TextView fieldConfirmPassword = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldConfirmPassword = ViewBindings.findChildViewById(rootView, id);
       if (fieldConfirmPassword == null) {
         break missingId;
       }
 
       id = R.id.fieldEmail;
-      TextView fieldEmail = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldEmail = ViewBindings.findChildViewById(rootView, id);
       if (fieldEmail == null) {
         break missingId;
       }
 
       id = R.id.fieldPassword;
-      TextView fieldPassword = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldPassword = ViewBindings.findChildViewById(rootView, id);
       if (fieldPassword == null) {
         break missingId;
       }
 
       id = R.id.fieldUsername;
-      TextView fieldUsername = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldUsername = ViewBindings.findChildViewById(rootView, id);
       if (fieldUsername == null) {
         break missingId;
       }

@@ -1,134 +1,138 @@
 [
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_product_users.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_product_users.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_user_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_create_user_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_list_product.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_list_product.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_article.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_create_article.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_article.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_create_article.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_user_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_user_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_article.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article_details.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_article_details.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_user_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_create_user_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_list_product.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_list_product.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_profile.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_profile.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_tipe_wajah.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_tipe_wajah.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_article_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_main.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_result.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_result.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_profile.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_night_scheduling.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_night_scheduling.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_article.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_detail_article_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_detail_article_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_article_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_tipe_wajah.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_tipe_wajah.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_detail_article_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_detail_article_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_just_for_u.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_article_just_for_u.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_article_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_scan.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_scan.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_morning_scheduling.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_morning_scheduling.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_tipe_product.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_tipe_product.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_detail_user_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_detail_user_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_users.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_article_users.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_product_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_product_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_user_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_user_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_product_users.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_product_users.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/nav_header.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/nav_header.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_login.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_login.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_product_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_product_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_user_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_user_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_product_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_product_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_users.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_article_users.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_of_routine_users.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_of_routine_users.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_product_admin.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_product_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_article_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_dashboard.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_product.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_create_product.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_article_just_for_u.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_article_just_for_u.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_edit_profile.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_edit_profile.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_edit_profile.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_edit_profile.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/list_of_stored_users.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/list_of_stored_users.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_tipe_product.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_tipe_product.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_of_routine_users.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_of_routine_users.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_create_product.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_create_product.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/list_of_stored_users.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/list_of_stored_users.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_welcome.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_welcome.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_scan.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_scan.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/nav_header.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/nav_header.xml"
+    },
+    {
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_result.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_result.xml"
     },
     {
         "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_register.xml",
         "source": "com.example.skinsync.app-main-45:/layout/activity_register.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_morning_scheduling.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_morning_scheduling.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_night_scheduling.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_night_scheduling.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_login.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_login.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_welcome.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_welcome.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_dashboard.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_dashboard.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_main.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_main.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_article_details.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_article_details.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_user_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_user_admin.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-42:/layout/activity_detail_user_admin.xml",
-        "source": "com.example.skinsync.app-main-45:/layout/activity_detail_user_admin.xml"
+        "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-42:/layout/activity_register.xml",
+        "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-45:/layout/activity_register.xml"
     }
 ]

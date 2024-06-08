@@ -14,7 +14,7 @@
         tools:context=".activity.admin.DetailUserAdminActivity">
 
         <TextView
-            android:id="@+id/tv_detail_user_title_ad"
+            android:id="@+id/tv_detail_user_title_ud"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="User Detail"
@@ -33,7 +33,7 @@
             android:background="@drawable/rounded_background_beige">
 
             <ImageView
-                android:id="@+id/iv_image_icon_ad"
+                android:id="@+id/iv_image_icon_ud"
                 android:layout_width="60dp"
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
@@ -46,11 +46,11 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintStart_toEndOf="@id/iv_image_icon_ad"
+                app:layout_constraintStart_toEndOf="@id/iv_image_icon_ud"
                 app:layout_constraintBottom_toBottomOf="parent" />
 
             <ImageView
-                android:id="@+id/ib_preview_image_ad"
+                android:id="@+id/ib_preview_image_ud"
                 android:layout_width="20dp"
                 android:layout_height="match_parent"
                 android:layout_margin="6dp"
@@ -299,7 +299,7 @@
                     android:layout_marginStart="15dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/btn_calendar_ad">
+                    app:layout_constraintEnd_toStartOf="@+id/btn_calendar_ud">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/ed_birthdate_ud"
@@ -315,7 +315,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <androidx.appcompat.widget.AppCompatButton
-                    android:id="@+id/btn_calendar_ad"
+                    android:id="@+id/btn_calendar_ud"
                     android:layout_width="33dp"
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/calendar"
@@ -387,7 +387,7 @@
                 android:clickable="true"/>
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_edit_ad"
+                android:id="@+id/btn_edit_ud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
@@ -401,7 +401,7 @@
                 />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_save_ad"
+                android:id="@+id/btn_save_ud"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
