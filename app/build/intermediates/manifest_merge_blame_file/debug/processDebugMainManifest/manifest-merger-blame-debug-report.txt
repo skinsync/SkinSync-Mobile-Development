@@ -38,7 +38,11 @@
 24-->[androidx.core:core:1.13.1] C:\Users\hi\.gradle\caches\transforms-3\512dd553433fed0a183acc4f624d5ec9\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
 25
 26    <application
+<<<<<<< HEAD
 26-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:14:5-103:19
+=======
+26-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:14:5-102:19
+>>>>>>> set token user pref
 27        android:allowBackup="true"
 27-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:15:9-35
 28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -169,6 +173,7 @@
 92            android:exported="false" />
 92-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:77:13-37
 93        <activity
+<<<<<<< HEAD
 93-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:78:9-88:20
 94            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
 94-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:79:13-67
@@ -280,3 +285,115 @@
 151    </application>
 152
 153</manifest>
+=======
+93-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:78:9-80:38
+94            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
+94-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:79:13-67
+95            android:exported="true" />
+95-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:80:13-36
+96        <activity
+96-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:81:9-83:40
+97            android:name="com.example.skinsync.activity.users.LoginActivity"
+97-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:82:13-57
+98            android:exported="false" />
+98-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:83:13-37
+99        <activity
+99-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:84:9-86:40
+100            android:name="com.example.skinsync.activity.users.RegisterActivity"
+100-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:85:13-60
+101            android:exported="false" />
+101-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:86:13-37
+102        <activity
+102-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:87:9-97:20
+103            android:name="com.example.skinsync.activity.MainActivity"
+103-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:88:13-50
+104            android:exported="true" >
+104-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:89:13-36
+105            <intent-filter>
+105-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:91:13-96:29
+106                <action android:name="android.intent.action.MAIN" />
+106-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:92:17-69
+106-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:92:25-66
+107
+108                <category android:name="android.intent.category.LAUNCHER" />
+108-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:95:17-77
+108-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:95:27-74
+109            </intent-filter>
+110        </activity>
+111
+112        <meta-data
+112-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:99:9-101:57
+113            android:name="preloaded_fonts"
+113-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:100:13-43
+114            android:resource="@array/preloaded_fonts" />
+114-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:101:13-54
+115
+116        <provider
+116-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+117            android:name="androidx.startup.InitializationProvider"
+117-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:25:13-67
+118            android:authorities="com.example.skinsync.androidx-startup"
+118-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:26:13-68
+119            android:exported="false" >
+119-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:27:13-37
+120            <meta-data
+120-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+121                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+121-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+122                android:value="androidx.startup" />
+122-->[androidx.emoji2:emoji2:1.2.0] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/1f12b346925ae0dccc052cd3dd0b71cd/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
+123            <meta-data
+123-->[androidx.lifecycle:lifecycle-process:2.8.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/54ac4bcdd8d35425ba3168c44609d7b0/transformed/lifecycle-process-2.8.1/AndroidManifest.xml:29:13-31:52
+124                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+124-->[androidx.lifecycle:lifecycle-process:2.8.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/54ac4bcdd8d35425ba3168c44609d7b0/transformed/lifecycle-process-2.8.1/AndroidManifest.xml:30:17-78
+125                android:value="androidx.startup" />
+125-->[androidx.lifecycle:lifecycle-process:2.8.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/54ac4bcdd8d35425ba3168c44609d7b0/transformed/lifecycle-process-2.8.1/AndroidManifest.xml:31:17-49
+126            <meta-data
+126-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:29:13-31:52
+127                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+127-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:30:17-85
+128                android:value="androidx.startup" />
+128-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:31:17-49
+129        </provider>
+130
+131        <receiver
+131-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:34:9-52:20
+132            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+132-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:35:13-76
+133            android:directBootAware="false"
+133-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:36:13-44
+134            android:enabled="true"
+134-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:37:13-35
+135            android:exported="true"
+135-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:38:13-36
+136            android:permission="android.permission.DUMP" >
+136-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:39:13-57
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:40:13-42:29
+138                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:17-91
+138-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:41:25-88
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:43:13-45:29
+141                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:17-85
+141-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:44:25-82
+142            </intent-filter>
+143            <intent-filter>
+143-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:46:13-48:29
+144                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:17-88
+144-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:47:25-85
+145            </intent-filter>
+146            <intent-filter>
+146-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:49:13-51:29
+147                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:17-95
+147-->[androidx.profileinstaller:profileinstaller:1.3.1] /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/068272eabbb79df159e6dc3bb77b5a97/transformed/profileinstaller-1.3.1/AndroidManifest.xml:50:25-92
+148            </intent-filter>
+149        </receiver>
+150    </application>
+151
+152</manifest>
+>>>>>>> set token user pref

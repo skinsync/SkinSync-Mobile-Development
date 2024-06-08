@@ -92,13 +92,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name="com.example.skinsync.activity.users.LoginActivity"
             android:exported="false" />
@@ -108,6 +102,11 @@
         <activity
             android:name="com.example.skinsync.activity.MainActivity"
             android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data

@@ -3,6 +3,7 @@ package com.example.skinsync.viewmodel
 import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.dataclass.AuthRepository
 
 class ViewModelFactory(private val authRepository: AuthRepository) : ViewModelProvider.NewInstanceFactory() {
@@ -12,6 +13,9 @@ class ViewModelFactory(private val authRepository: AuthRepository) : ViewModelPr
         return when {
             modelClass.isAssignableFrom(LoginViewModel::class.java) -> {
                 LoginViewModel(authRepository) as T
+            }
+            modelClass.isAssignableFrom(MainViewModel::class.java) -> {
+                MainViewModel(authRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
