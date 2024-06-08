@@ -21,18 +21,17 @@ class RegisterActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         val userPreference = UserPreference.getInstance(this.dataStore)
         authRepository = AuthRepository.getInstance(userPreference)
 
         binding.buttonRegister.setOnClickListener {
-            // Logika registrasi Anda di sini
             val name = binding.inputUsername.text.toString()
             val email = binding.inputEmail.text.toString()
             val password = binding.inputPassword.text.toString()
             authRepository.register(RegisterRequest(name = name, email = email, password = password)){ response, error ->
                 if (response != null) {
                     Log.d("Auth", "Registration successful: ${response.message}")
-                        // Setelah registrasi berhasil, mulai MainActivity
                     val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                     startActivity(intent)
                 } else {

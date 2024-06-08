@@ -4021,14 +4021,16 @@ int id bounceBoth 0x7f0a0068
 int id bounceEnd 0x7f0a0069
 int id bounceStart 0x7f0a006a
 int id box 0x7f0a006b
-int id btn_calendar_ad 0x7f0a006c
 int id btn_calendar_cu 0x7f0a006d
+int id btn_calendar_ud 0x7f0a02f0
 int id btn_create_ca 0x7f0a006e
 int id btn_create_cp 0x7f0a006f
 int id btn_edit_ad 0x7f0a0070
 int id btn_edit_cu 0x7f0a0071
+int id btn_edit_ud 0x7f0a02f1
 int id btn_save_ad 0x7f0a0072
 int id btn_save_cu 0x7f0a0073
+int id btn_save_ud 0x7f0a02f2
 int id buttonCamera 0x7f0a0074
 int id buttonCancel 0x7f0a0075
 int id buttonEdit 0x7f0a0076
@@ -4219,6 +4221,7 @@ int id ib_preview_image_ad 0x7f0a012e
 int id ib_preview_image_ca 0x7f0a012f
 int id ib_preview_image_cp 0x7f0a0130
 int id ib_preview_image_cu 0x7f0a0131
+int id ib_preview_image_ud 0x7f0a02f3
 int id icon 0x7f0a0132
 int id iconConfirmPassword 0x7f0a0133
 int id iconEmail 0x7f0a0134
@@ -4256,6 +4259,7 @@ int id iv_image_icon_ad 0x7f0a0153
 int id iv_image_icon_ca 0x7f0a0154
 int id iv_image_icon_cp 0x7f0a0155
 int id iv_image_icon_cu 0x7f0a0156
+int id iv_image_icon_ud 0x7f0a02f4
 int id iv_image_product 0x7f0a0157
 int id iv_img_user 0x7f0a0158
 int id jumpToEnd 0x7f0a0159
@@ -4602,8 +4606,8 @@ int id tv_deskripsi_ad 0x7f0a02ad
 int id tv_deskripsi_ca 0x7f0a02ae
 int id tv_deskripsi_cp 0x7f0a02af
 int id tv_detail_article_title_ad 0x7f0a02b0
-int id tv_detail_user_title_ad 0x7f0a02b1
 int id tv_detail_user_title_cu 0x7f0a02b2
+int id tv_detail_user_title_ud 0x7f0a02f5
 int id tv_email 0x7f0a02b3
 int id tv_email_cu 0x7f0a02b4
 int id tv_email_ud 0x7f0a02b5

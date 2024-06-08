@@ -4022,14 +4022,16 @@ id bounceBoth
 id bounceEnd
 id bounceStart
 id box
-id btn_calendar_ad
 id btn_calendar_cu
+id btn_calendar_ud
 id btn_create_ca
 id btn_create_cp
 id btn_edit_ad
 id btn_edit_cu
+id btn_edit_ud
 id btn_save_ad
 id btn_save_cu
+id btn_save_ud
 id buttonCamera
 id buttonCancel
 id buttonEdit
@@ -4220,6 +4222,7 @@ id ib_preview_image_ad
 id ib_preview_image_ca
 id ib_preview_image_cp
 id ib_preview_image_cu
+id ib_preview_image_ud
 id icon
 id iconConfirmPassword
 id iconEmail
@@ -4257,6 +4260,7 @@ id iv_image_icon_ad
 id iv_image_icon_ca
 id iv_image_icon_cp
 id iv_image_icon_cu
+id iv_image_icon_ud
 id iv_image_product
 id iv_img_user
 id jumpToEnd
@@ -4603,8 +4607,8 @@ id tv_deskripsi_ad
 id tv_deskripsi_ca
 id tv_deskripsi_cp
 id tv_detail_article_title_ad
-id tv_detail_user_title_ad
 id tv_detail_user_title_cu
+id tv_detail_user_title_ud
 id tv_email
 id tv_email_cu
 id tv_email_ud
