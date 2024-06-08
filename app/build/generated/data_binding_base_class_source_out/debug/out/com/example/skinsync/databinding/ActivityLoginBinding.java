@@ -27,7 +27,7 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ImageView background;
 
   @NonNull
-  public final TextView box;
+  public final ConstraintLayout box;
 
   @NonNull
   public final Button buttonLogin;
@@ -39,10 +39,10 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView descApp;
 
   @NonNull
-  public final TextView fieldEmail;
+  public final ConstraintLayout fieldEmail;
 
   @NonNull
-  public final TextView fieldPassword;
+  public final ConstraintLayout fieldPassword;
 
   @NonNull
   public final ImageView iconEmail;
@@ -72,8 +72,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final TextView titleApp;
 
   private ActivityLoginBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView background,
-      @NonNull TextView box, @NonNull Button buttonLogin, @NonNull CheckBox checkBoxRemember,
-      @NonNull TextView descApp, @NonNull TextView fieldEmail, @NonNull TextView fieldPassword,
+      @NonNull ConstraintLayout box, @NonNull Button buttonLogin,
+      @NonNull CheckBox checkBoxRemember, @NonNull TextView descApp,
+      @NonNull ConstraintLayout fieldEmail, @NonNull ConstraintLayout fieldPassword,
       @NonNull ImageView iconEmail, @NonNull ImageView iconPassword, @NonNull EditText inputEmail,
       @NonNull EditText inputPassword, @NonNull ConstraintLayout main,
       @NonNull TextView textDontHaveAccount, @NonNull TextView textForgot,
@@ -131,7 +132,7 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       id = R.id.box;
-      TextView box = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout box = ViewBindings.findChildViewById(rootView, id);
       if (box == null) {
         break missingId;
       }
@@ -155,13 +156,13 @@ public final class ActivityLoginBinding implements ViewBinding {
       }
 
       id = R.id.fieldEmail;
-      TextView fieldEmail = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldEmail = ViewBindings.findChildViewById(rootView, id);
       if (fieldEmail == null) {
         break missingId;
       }
 
       id = R.id.fieldPassword;
-      TextView fieldPassword = ViewBindings.findChildViewById(rootView, id);
+      ConstraintLayout fieldPassword = ViewBindings.findChildViewById(rootView, id);
       if (fieldPassword == null) {
         break missingId;
       }
