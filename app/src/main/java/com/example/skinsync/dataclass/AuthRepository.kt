@@ -1,11 +1,19 @@
 package com.example.skinsync.dataclass
 
 import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.collect
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.runBlocking
 
 class AuthRepository private constructor(
     private val userPreference: UserPreference
 ) {
 
+    private val authService: ApiService = ApiConfig.getApiService()
+
+    private val authServiceToken: ApiService = ApiConfig.getApiService(runBlocking {
+        userPreference.getSession().first().token
+    })
     suspend fun saveSession(user: UserModel) {
         userPreference.saveSession(user)
     }
@@ -17,7 +25,6 @@ class AuthRepository private constructor(
     suspend fun logout() {
         userPreference.logout()
     }
-    private val authService: ApiService = ApiConfig.getApiService()
 
     fun register(request: RegisterRequest, callback: (AuthResponse?, Throwable?) -> Unit) {
         authService.register(request).enqueue(object : retrofit2.Callback<AuthResponse> {

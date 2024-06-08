@@ -52,7 +52,7 @@
             android:name=".activity.admin.ProductAdminActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.admin.DetailArticleAdminActivity"
+            android:name=".activity.admin.article.DetailArticleAdminActivity"
             android:exported="false" />
         <activity
             android:name=".activity.users.scan.result.ResultActivity"
@@ -61,10 +61,10 @@
             android:name=".activity.users.scan.ScanActivity"
             android:exported="true" />
         <activity
-            android:name=".activity.admin.CreateArticleActivity"
+            android:name=".activity.admin.article.CreateArticleActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.admin.ArticleAdminActivity"
+            android:name=".activity.admin.article.ArticleAdminActivity"
             android:exported="false" />
         <activity
             android:name=".activity.users.profile.edit.EditProfileActivity"
@@ -72,15 +72,7 @@
         </activity>
         <activity
             android:name=".activity.users.profile.ProfileActivity"
-            android:exported="true">
-
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true"/>
         <activity
             android:name=".activity.admin.DashboardActivity"
             android:exported="false" />
@@ -97,6 +89,10 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <meta-data

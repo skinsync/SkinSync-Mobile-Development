@@ -25,6 +25,10 @@ class RegisterActivity : AppCompatActivity() {
         val userPreference = UserPreference.getInstance(this.dataStore)
         authRepository = AuthRepository.getInstance(userPreference)
 
+        buttonSetup()
+    }
+
+    private fun buttonSetup() {
         binding.buttonRegister.setOnClickListener {
             val name = binding.inputUsername.text.toString()
             val email = binding.inputEmail.text.toString()
@@ -34,15 +38,11 @@ class RegisterActivity : AppCompatActivity() {
                     Log.d("Auth", "Registration successful: ${response.message}")
                     val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
                     startActivity(intent)
+                    finish()
                 } else {
                     Log.e("Auth", "Registration failed: ${error?.message}")
                 }
             }
-
-            // Setelah registrasi berhasil, mulai MainActivity
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish() // Tutup RegisterActivity sehingga pengguna tidak kembali ke sini dengan back button
         }
     }
 }
