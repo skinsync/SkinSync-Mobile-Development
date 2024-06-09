@@ -1,4 +1,4 @@
-package com.example.skinsync.dataclass
+package com.example.skinsync.data.auth
 
 data class RegisterRequest(
     val name: String,

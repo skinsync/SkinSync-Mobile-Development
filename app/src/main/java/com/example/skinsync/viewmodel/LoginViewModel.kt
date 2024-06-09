@@ -4,8 +4,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.skinsync.dataclass.AuthRepository
-import com.example.skinsync.dataclass.UserModel
+import com.example.skinsync.data.auth.AuthRepository
+import com.example.skinsync.data.UserModel
 import kotlinx.coroutines.launch
 
 class LoginViewModel(private val repository: AuthRepository) : ViewModel() {
