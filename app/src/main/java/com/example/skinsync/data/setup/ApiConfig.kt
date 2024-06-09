@@ -1,4 +1,4 @@
-package com.example.skinsync.dataclass
+package com.example.skinsync.data.setup
 
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient

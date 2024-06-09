@@ -33,6 +33,7 @@ drawable ic_add_circle
 drawable ic_filter
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable icon_article
 drawable icon_list_product
 drawable icon_logout
@@ -73,6 +74,7 @@ id btn_create_cp
 id btn_edit_ad
 id btn_edit_cu
 id btn_edit_ud
+id btn_logout
 id btn_save_ad
 id btn_save_cu
 id btn_save_ud

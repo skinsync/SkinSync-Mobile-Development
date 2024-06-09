@@ -7,14 +7,13 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import com.example.skinsync.activity.MainActivity
-import com.example.skinsync.activity.admin.DashboardActivity
+import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.databinding.ActivityLoginBinding
-import com.example.skinsync.dataclass.AuthRepository
-import com.example.skinsync.dataclass.LoginRequest
-import com.example.skinsync.dataclass.UserModel
-import com.example.skinsync.dataclass.UserPreference
-import com.example.skinsync.dataclass.dataStore
+import com.example.skinsync.data.auth.AuthRepository
+import com.example.skinsync.data.auth.LoginRequest
+import com.example.skinsync.data.UserModel
+import com.example.skinsync.data.UserPreference
+import com.example.skinsync.data.dataStore
 import com.example.skinsync.viewmodel.LoginViewModel
 import com.example.skinsync.viewmodel.ViewModelFactory
 
@@ -45,7 +44,9 @@ class LoginActivity : AppCompatActivity() {
                 if (response != null) {
                     Log.d("Auth", "Login successful: ${response.message}")
                     toastMessage("Login successful\n${response.message}")
-                    viewModel.saveSession(UserModel(email, response.token, true))
+                    val userData = response.data
+                    Log.d("UserData", userData.toString())
+                    viewModel.saveSession(UserModel(email, response.token!!, userData!!.role!!, true))
                     val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)

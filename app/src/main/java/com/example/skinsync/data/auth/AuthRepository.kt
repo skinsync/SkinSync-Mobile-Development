@@ -1,7 +1,10 @@
-package com.example.skinsync.dataclass
+package com.example.skinsync.data.auth
 
+import com.example.skinsync.data.UserModel
+import com.example.skinsync.data.UserPreference
+import com.example.skinsync.data.setup.ApiConfig
+import com.example.skinsync.data.setup.ApiService
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking
 
@@ -26,9 +29,9 @@ class AuthRepository private constructor(
         userPreference.logout()
     }
 
-    fun register(request: RegisterRequest, callback: (AuthResponse?, Throwable?) -> Unit) {
-        authService.register(request).enqueue(object : retrofit2.Callback<AuthResponse> {
-            override fun onResponse(call: retrofit2.Call<AuthResponse>, response: retrofit2.Response<AuthResponse>) {
+    fun register(request: RegisterRequest, callback: (RegisterResponse?, Throwable?) -> Unit) {
+        authService.register(request).enqueue(object : retrofit2.Callback<RegisterResponse> {
+            override fun onResponse(call: retrofit2.Call<RegisterResponse>, response: retrofit2.Response<RegisterResponse>) {
                 if (response.isSuccessful) {
                     callback(response.body(), null)
                 } else {
@@ -36,15 +39,15 @@ class AuthRepository private constructor(
                 }
             }
 
-            override fun onFailure(call: retrofit2.Call<AuthResponse>, t: Throwable) {
+            override fun onFailure(call: retrofit2.Call<RegisterResponse>, t: Throwable) {
                 callback(null, t)
             }
         })
     }
 
-    fun login(request: LoginRequest, callback: (AuthResponse?, Throwable?) -> Unit) {
-        authService.login(request).enqueue(object : retrofit2.Callback<AuthResponse> {
-            override fun onResponse(call: retrofit2.Call<AuthResponse>, response: retrofit2.Response<AuthResponse>) {
+    fun login(request: LoginRequest, callback: (LoginResponse?, Throwable?) -> Unit) {
+        authService.login(request).enqueue(object : retrofit2.Callback<LoginResponse> {
+            override fun onResponse(call: retrofit2.Call<LoginResponse>, response: retrofit2.Response<LoginResponse>) {
                 if (response.isSuccessful) {
                     callback(response.body(), null)
                 } else {
@@ -52,7 +55,7 @@ class AuthRepository private constructor(
                 }
             }
 
-            override fun onFailure(call: retrofit2.Call<AuthResponse>, t: Throwable) {
+            override fun onFailure(call: retrofit2.Call<LoginResponse>, t: Throwable) {
                 callback(null, t)
             }
         })

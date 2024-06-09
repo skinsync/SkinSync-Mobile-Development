@@ -67,7 +67,7 @@
             android:name="com.example.skinsync.activity.admin.ProductAdminActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.skinsync.activity.admin.DetailArticleAdminActivity"
+            android:name="com.example.skinsync.activity.admin.article.DetailArticleAdminActivity"
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.result.ResultActivity"
@@ -76,10 +76,10 @@
             android:name="com.example.skinsync.activity.users.scan.ScanActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.skinsync.activity.admin.CreateArticleActivity"
+            android:name="com.example.skinsync.activity.admin.article.CreateArticleActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.skinsync.activity.admin.ArticleAdminActivity"
+            android:name="com.example.skinsync.activity.admin.article.ArticleAdminActivity"
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
@@ -89,7 +89,7 @@
             android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
             android:exported="true" />
         <activity
-            android:name="com.example.skinsync.activity.admin.DashboardActivity"
+            android:name="com.example.skinsync.activity.admin.dashboard.DashboardActivity"
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"

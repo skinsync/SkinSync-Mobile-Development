@@ -4,15 +4,11 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.databinding.ActivityRegisterBinding
-import com.example.skinsync.dataclass.AuthRepository
-import com.example.skinsync.dataclass.RegisterRequest
-import com.example.skinsync.dataclass.UserModel
-import com.example.skinsync.dataclass.UserPreference
-import com.example.skinsync.dataclass.dataStore
-import kotlinx.coroutines.MainScope
-import kotlinx.coroutines.launch
+import com.example.skinsync.data.auth.AuthRepository
+import com.example.skinsync.data.auth.RegisterRequest
+import com.example.skinsync.data.UserPreference
+import com.example.skinsync.data.dataStore
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var binding: ActivityRegisterBinding

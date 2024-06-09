@@ -3805,6 +3805,7 @@ drawable ic_filter
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_logout
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -4027,6 +4028,7 @@ id btn_create_cp
 id btn_edit_ad
 id btn_edit_cu
 id btn_edit_ud
+id btn_logout
 id btn_save_ad
 id btn_save_cu
 id btn_save_ud
@@ -4199,6 +4201,7 @@ id give_us_a_review_landmine_button
 id give_us_a_review_landmine_main_layout
 id give_us_a_review_landmine_text_1
 id give_us_a_review_landmine_text_2
+id glide_custom_view_target_tag
 id gmailUser
 id gmail_textView
 id gone

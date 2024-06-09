@@ -12,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.example.skinsync.R
+import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.activity.users.article.ArticleActivity
 import com.example.skinsync.activity.users.listproduct.ListProductActivity
 import com.example.skinsync.activity.users.profile.ProfileActivity
@@ -34,7 +35,17 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-
+        mainViewModel.getSession().observe(this) { user ->
+            if (!user.isLogin) {
+                startActivity(Intent(this, WelcomeActivity::class.java))
+                finish()
+            } else {
+                if (user.role.equals("admin")) {
+                    startActivity(Intent(this, DashboardActivity::class.java))
+                    finish()
+                }
+            }
+        }
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -46,14 +57,6 @@ class MainActivity : AppCompatActivity() {
         toogle.syncState()
 
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-
-        mainViewModel.getSession().observe(this) { user ->
-            if (!user.isLogin) {
-                startActivity(Intent(this, WelcomeActivity::class.java))
-                finish()
-            }
-        }
-
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_user -> {
@@ -90,6 +93,11 @@ class MainActivity : AppCompatActivity() {
                         Toast.LENGTH_SHORT
                     ).show()
                     startActivity(Intent(this, MorningSchedulingActivity::class.java))
+                    true
+                }
+
+                R.id.nav_logout -> {
+                    mainViewModel.logout()
                     true
                 }
 
