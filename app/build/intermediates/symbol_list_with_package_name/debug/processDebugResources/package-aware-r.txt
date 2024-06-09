@@ -4795,6 +4795,7 @@ layout activity_create_product
 layout activity_create_user_admin
 layout activity_dashboard
 layout activity_detail_article_admin
+layout activity_detail_product_admin
 layout activity_detail_user_admin
 layout activity_edit_profile
 layout activity_list_product

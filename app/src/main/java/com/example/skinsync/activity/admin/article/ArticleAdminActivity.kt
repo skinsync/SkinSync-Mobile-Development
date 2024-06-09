@@ -1,6 +1,7 @@
 package com.example.skinsync.activity.admin.article
 
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -20,7 +21,6 @@ class ArticleAdminActivity : AppCompatActivity() {
     private lateinit var articleAdminAdapter: ArticleAdminAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         supportActionBar?.hide()
         binding = ActivityArticleAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
@@ -35,6 +35,7 @@ class ArticleAdminActivity : AppCompatActivity() {
         recyclerView.adapter = articleAdminAdapter
 
         articleAdminViewModel.article.observe(this) {
+            Log.e("Article Data: ", "$it")
             articleAdminAdapter.submitData(lifecycle, it)
         }
     }

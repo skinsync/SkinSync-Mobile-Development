@@ -1,4 +1,4 @@
-#Sun Jun 09 11:08:32 WIB 2024
+#Sun Jun 09 19:10:14 WIB 2024
 base.0=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/4/classes.dex
@@ -6,8 +6,7 @@ base.11=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/int
 base.12=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/7/classes.dex
 base.13=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/8/classes.dex
 base.14=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/9/classes.dex
-base.15=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
-base.2=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/1/classes.dex
+base.2=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeExtDexDebug/classes2.dex
 base.3=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/10/classes.dex
 base.4=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
 base.5=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/12/classes.dex
@@ -22,8 +21,7 @@ path.11=6/classes.dex
 path.12=7/classes.dex
 path.13=8/classes.dex
 path.14=9/classes.dex
-path.15=classes2.dex
-path.2=1/classes.dex
+path.2=classes2.dex
 path.3=10/classes.dex
 path.4=11/classes.dex
 path.5=12/classes.dex
@@ -38,7 +36,6 @@ renamed.11=classes12.dex
 renamed.12=classes13.dex
 renamed.13=classes14.dex
 renamed.14=classes15.dex
-renamed.15=classes16.dex
 renamed.2=classes3.dex
 renamed.3=classes4.dex
 renamed.4=classes5.dex
