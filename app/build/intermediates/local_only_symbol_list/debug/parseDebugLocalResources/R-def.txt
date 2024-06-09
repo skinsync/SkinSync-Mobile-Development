@@ -379,6 +379,7 @@ string forgot_password
 string gender_female
 string gender_male
 string gender_title
+string image_classifier_failed
 string input_age
 string input_confirm
 string input_email
@@ -390,6 +391,7 @@ string make_account
 string many_step
 string message_reminder
 string message_result
+string no_prediction
 string open
 string password_desc
 string password_title
