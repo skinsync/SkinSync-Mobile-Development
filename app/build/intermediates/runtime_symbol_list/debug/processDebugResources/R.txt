@@ -4794,6 +4794,7 @@ int layout activity_create_product 0x7f0d0020
 int layout activity_create_user_admin 0x7f0d0021
 int layout activity_dashboard 0x7f0d0022
 int layout activity_detail_article_admin 0x7f0d0023
+int layout activity_detail_product_admin 0x7f0d0090
 int layout activity_detail_user_admin 0x7f0d0024
 int layout activity_edit_profile 0x7f0d0025
 int layout activity_list_product 0x7f0d0026

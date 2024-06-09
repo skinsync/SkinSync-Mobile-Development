@@ -7,12 +7,11 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.skinsync.activity.admin.ProductAdminActivity
-import com.example.skinsync.activity.admin.UserAdminActivity
+import com.example.skinsync.activity.admin.product.ProductAdminActivity
+import com.example.skinsync.activity.admin.user.UserAdminActivity
 import com.example.skinsync.activity.admin.article.ArticleAdminActivity
 import com.example.skinsync.activity.users.welcome.WelcomeActivity
 import com.example.skinsync.databinding.ActivityDashboardBinding
-import com.example.skinsync.viewmodel.MainViewModel
 import com.example.skinsync.viewmodel.ViewModelFactory
 
 class DashboardActivity : AppCompatActivity() {
