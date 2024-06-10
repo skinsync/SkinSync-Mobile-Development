@@ -79,12 +79,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.scan.ScanActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false" >
         </activity>
         <activity
             android:name="com.example.skinsync.activity.admin.article.CreateArticleAdminActivity"
@@ -97,7 +92,13 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
-            android:exported="true" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.example.skinsync.activity.admin.dashboard.DashboardActivity"
             android:exported="false" />
@@ -112,7 +113,7 @@
             android:exported="false" />
         <activity
             android:name="com.example.skinsync.activity.MainActivity"
-            android:exported="false" >
+            android:exported="true" >
         </activity>
 
         <meta-data

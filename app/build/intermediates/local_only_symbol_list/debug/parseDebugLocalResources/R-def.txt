@@ -64,6 +64,7 @@ id ImageWelcome
 id act_dropdown_tipe_produk
 id act_dropdown_tipe_wajah
 id avatarImageProfile
+id back
 id background
 id birthDate
 id box
@@ -138,6 +139,7 @@ id fieldPassword
 id fieldUsername
 id frame
 id genderDesc
+id genderRadioGroup
 id genderTitle
 id gmailUser
 id gmail_textView
