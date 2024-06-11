@@ -3,6 +3,7 @@ package com.example.skinsync.activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -16,6 +17,7 @@ import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.activity.users.article.ArticleActivity
 import com.example.skinsync.activity.users.listproduct.ListProductActivity
 import com.example.skinsync.activity.users.profile.ProfileActivity
+import com.example.skinsync.activity.users.scan.ScanActivity
 import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
 import com.example.skinsync.activity.users.welcome.WelcomeActivity
 import com.example.skinsync.databinding.ActivityMainBinding
@@ -103,6 +105,12 @@ class MainActivity : AppCompatActivity() {
 
                 else -> false
             }
+        }
+
+        val buttonTryNow = findViewById<Button>(R.id.buttonTryNow)
+        buttonTryNow.setOnClickListener {
+            val intent = Intent(this, ScanActivity::class.java)
+            startActivity(intent) // Memulai MainActivity
         }
     }
 
