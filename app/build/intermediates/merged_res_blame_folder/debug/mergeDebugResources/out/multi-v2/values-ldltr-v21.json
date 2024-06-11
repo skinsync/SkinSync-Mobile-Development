@@ -4,7 +4,7 @@
             "outputFile": "com.example.skinsync.app-mergeDebugResources-46:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\d210184e223e9b5fbe2ac4f093111409\\transformed\\appcompat-1.6.1\\res\\values-ldltr-v21\\values-ldltr-v21.xml",
+                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/d210184e223e9b5fbe2ac4f093111409/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

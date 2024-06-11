@@ -4,7 +4,7 @@
             "outputFile": "com.example.skinsync.app-mergeDebugResources-46:/values-w360dp-port-v13/values-w360dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\2e3959fb27310abd185e2de95dbf2767\\transformed\\material-1.12.0\\res\\values-w360dp-port-v13\\values-w360dp-port-v13.xml",
+                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/2e3959fb27310abd185e2de95dbf2767/transformed/material-1.12.0/res/values-w360dp-port-v13/values-w360dp-port-v13.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",

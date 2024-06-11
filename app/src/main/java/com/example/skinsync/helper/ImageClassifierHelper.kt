@@ -2,135 +2,53 @@ package com.example.skinsync.helper
 
 import android.content.Context
 import android.graphics.Bitmap
-import android.net.Uri
-import android.os.SystemClock
-import android.provider.MediaStore
-import android.util.Log
-import android.view.Surface
-import androidx.camera.core.ImageProxy
-import com.example.skinsync.R
-import org.tensorflow.lite.DataType
-import org.tensorflow.lite.support.common.ops.CastOp
-import org.tensorflow.lite.support.image.ImageProcessor
-import org.tensorflow.lite.support.image.TensorImage
-import org.tensorflow.lite.support.image.ops.ResizeOp
-import org.tensorflow.lite.task.core.BaseOptions
-import org.tensorflow.lite.task.core.vision.ImageProcessingOptions
-import org.tensorflow.lite.task.vision.classifier.Classifications
-import org.tensorflow.lite.task.vision.classifier.ImageClassifier
+import org.tensorflow.lite.Interpreter
+import java.io.FileInputStream
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+import java.nio.MappedByteBuffer
+import java.nio.channels.FileChannel
 
-class ImageClassifierHelper(
-    var threshold: Float = 0.1f,
-    var maxResults: Int = 3,
-    val modelName: String = "converted_model.tflite",
-    val context: Context,
-    val classifierListener: ClassifierListener?
-) {
-    private var imageClassifier: ImageClassifier? = null
+class ImageClassifierHelper(context: Context) {
+    private val inputSize = 224
+    private val numClasses = 4
+    private lateinit var tflite: Interpreter
+
     init {
-        setupImageClassifier()
+        tflite = Interpreter(loadModelFile(context))
     }
-    private fun setupImageClassifier() {
-        // TODO: Menyiapkan Image Classifier untuk memproses gambar.
-        val optionsBuilder = ImageClassifier.ImageClassifierOptions.builder()
-            .setScoreThreshold(threshold)
-            .setMaxResults(maxResults)
-        val baseOptionsBuilder = BaseOptions.builder()
-            .setNumThreads(4)
-        optionsBuilder.setBaseOptions(baseOptionsBuilder.build())
 
-        try {
-            imageClassifier = ImageClassifier.createFromFileAndOptions(
-                context,
-                modelName,
-                optionsBuilder.build()
-            )
-        } catch (e: IllegalStateException) {
-            classifierListener?.onError(context.getString(R.string.image_classifier_failed))
-            Log.e(TAG, e.message.toString())
+    private fun loadModelFile(context: Context): MappedByteBuffer {
+        val fileDescriptor = context.assets.openFd("converted_model.tflite")
+        val inputStream = FileInputStream(fileDescriptor.fileDescriptor)
+        val fileChannel = inputStream.channel
+        val startOffset = fileDescriptor.startOffset
+        val declaredLength = fileDescriptor.declaredLength
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength)
+    }
+
+    private fun convertBitmapToByteBuffer(bitmap: Bitmap): ByteBuffer {
+        val byteBuffer = ByteBuffer.allocateDirect(4 * inputSize * inputSize * 3)
+        byteBuffer.order(ByteOrder.nativeOrder())
+        val intValues = IntArray(inputSize * inputSize)
+        val scaledBitmap = Bitmap.createScaledBitmap(bitmap, inputSize, inputSize, true)
+        scaledBitmap.getPixels(intValues, 0, scaledBitmap.width, 0, 0, scaledBitmap.width, scaledBitmap.height)
+        var pixel = 0
+        for (i in 0 until inputSize) {
+            for (j in 0 until inputSize) {
+                val value = intValues[pixel++]
+                byteBuffer.putFloat(((value shr 16) and 0xFF) * (1f / 255f))
+                byteBuffer.putFloat(((value shr 8) and 0xFF) * (1f / 255f))
+                byteBuffer.putFloat((value and 0xFF) * (1f / 255f))
+            }
         }
+        return byteBuffer
     }
 
-    fun classifyStaticImage(imageUri: Uri) {
-        // TODO: mengklasifikasikan imageUri dari gambar statis.
-        if (imageClassifier == null) {
-            setupImageClassifier()
-        }
-
-        // Mengubah Uri menjadi Bitmap
-        val bitmap = MediaStore.Images.Media.getBitmap(context.contentResolver, imageUri)
-
-        val imageProcessor = ImageProcessor.Builder()
-            .add(ResizeOp(224, 224, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
-            .add(CastOp(DataType.UINT8))
-            .build()
-        val tensorImage = imageProcessor.process(TensorImage.fromBitmap(bitmap))
-
-        var inferenceTime = SystemClock.uptimeMillis()
-        val results = imageClassifier?.classify(tensorImage)
-        inferenceTime = SystemClock.uptimeMillis() - inferenceTime
-        classifierListener?.onResults(
-            results,
-            inferenceTime
-        )
-    }
-
-    //this
-    fun classifyImage(image: ImageProxy) {
-        if (imageClassifier == null) {
-            setupImageClassifier()
-        }
-
-        val imageProcessor = ImageProcessor.Builder()
-            .add(ResizeOp(224, 224, ResizeOp.ResizeMethod.NEAREST_NEIGHBOR))
-            .add(CastOp(DataType.UINT8))
-            .build()
-        val tensorImage = imageProcessor.process(TensorImage.fromBitmap(toBitmap(image)))
-
-        val imageProcessingOptions = ImageProcessingOptions.builder()
-            .setOrientation(getOrientationFromRotation(image.imageInfo.rotationDegrees))
-            .build()
-
-        var inferenceTime = SystemClock.uptimeMillis()
-        val results = imageClassifier?.classify(tensorImage, imageProcessingOptions)
-        inferenceTime = SystemClock.uptimeMillis() - inferenceTime
-        classifierListener?.onResults(
-            results,
-            inferenceTime
-        )
-    }//end
-
-    //konversi bitmap
-    private fun toBitmap(image: ImageProxy): Bitmap {
-        val bitmapBuffer = Bitmap.createBitmap(
-            image.width,
-            image.height,
-            Bitmap.Config.ARGB_8888
-        )
-        image.use { bitmapBuffer.copyPixelsFromBuffer(image.planes[0].buffer) }
-        image.close()
-        return bitmapBuffer
-    }
-
-    //
-    private fun getOrientationFromRotation(rotation: Int): ImageProcessingOptions.Orientation {
-        return when (rotation) {
-            Surface.ROTATION_270 -> ImageProcessingOptions.Orientation.BOTTOM_RIGHT
-            Surface.ROTATION_180 -> ImageProcessingOptions.Orientation.RIGHT_BOTTOM
-            Surface.ROTATION_90 -> ImageProcessingOptions.Orientation.TOP_LEFT
-            else -> ImageProcessingOptions.Orientation.RIGHT_TOP
-        }
-    }
-
-    interface ClassifierListener {
-        fun onError(error: String)
-        fun onResults(
-            results: List<Classifications>?,
-            inferenceTime: Long
-        )
-    }
-
-    companion object {
-        private const val TAG = "ImageClassifierHelper"
+    fun classifyImage(bitmap: Bitmap): Int {
+        val inputBuffer = convertBitmapToByteBuffer(bitmap)
+        val output = Array(1) { FloatArray(numClasses) }
+        tflite.run(inputBuffer, output)
+        return output[0].indices.maxByOrNull { output[0][it] } ?: -1
     }
 }
