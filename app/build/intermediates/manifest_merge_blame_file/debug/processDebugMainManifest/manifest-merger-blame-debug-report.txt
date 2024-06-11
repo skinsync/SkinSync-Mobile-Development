@@ -40,7 +40,7 @@
 26    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 27
 28    <application
-28-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:14:5-107:19
+28-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:14:5-106:19
 29        android:allowBackup="true"
 29-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:15:9-35
 30        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -141,86 +141,86 @@
 79            android:exported="false" />
 79-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:62:13-37
 80        <activity
-80-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:63:9-71:20
+80-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:63:9-66:20
 81            android:name="com.example.skinsync.activity.users.scan.ScanActivity"
 81-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:64:13-61
 82            android:exported="true" >
 82-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:65:13-36
-83            <intent-filter>
-83-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:66:13-70:29
-84                <action android:name="android.intent.action.MAIN" />
-84-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:67:17-69
-84-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:67:25-66
-85
-86                <category android:name="android.intent.category.LAUNCHER" />
-86-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:69:17-77
-86-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:69:27-74
-87            </intent-filter>
-88        </activity>
-89        <activity
-89-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:72:9-74:40
-90            android:name="com.example.skinsync.activity.admin.article.CreateArticleAdminActivity"
-90-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:73:13-78
-91            android:exported="false" />
-91-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:74:13-37
-92        <activity
-92-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:75:9-77:40
-93            android:name="com.example.skinsync.activity.admin.article.ArticleAdminActivity"
-93-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:76:13-72
-94            android:exported="false" />
-94-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:77:13-37
-95        <activity
-95-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:78:9-80:40
-96            android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
-96-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:79:13-76
-97            android:exported="false" />
-97-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:80:13-37
-98        <activity
-98-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:81:9-84:20
-99            android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
-99-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:82:13-67
-100            android:exported="true" >
-100-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:83:13-36
-101        </activity>
-102        <activity
-102-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:85:9-87:40
-103            android:name="com.example.skinsync.activity.admin.dashboard.DashboardActivity"
-103-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:86:13-71
-104            android:exported="false" />
-104-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:87:13-37
-105        <activity
-105-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:88:9-92:20
-106            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
-106-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:89:13-67
-107            android:exported="true" >
-107-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:90:13-36
+83        </activity>
+84        <activity
+84-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:67:9-69:40
+85            android:name="com.example.skinsync.activity.admin.article.CreateArticleAdminActivity"
+85-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:68:13-78
+86            android:exported="false" />
+86-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:69:13-37
+87        <activity
+87-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:70:9-72:40
+88            android:name="com.example.skinsync.activity.admin.article.ArticleAdminActivity"
+88-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:71:13-72
+89            android:exported="false" />
+89-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:72:13-37
+90        <activity
+90-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:73:9-75:40
+91            android:name="com.example.skinsync.activity.users.profile.edit.EditProfileActivity"
+91-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:74:13-76
+92            android:exported="false" />
+92-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:75:13-37
+93        <activity
+93-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:76:9-79:20
+94            android:name="com.example.skinsync.activity.users.profile.ProfileActivity"
+94-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:77:13-67
+95            android:exported="true" >
+95-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:78:13-36
+96        </activity>
+97        <activity
+97-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:80:9-82:40
+98            android:name="com.example.skinsync.activity.admin.dashboard.DashboardActivity"
+98-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:81:13-71
+99            android:exported="false" />
+99-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:82:13-37
+100        <activity
+100-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:83:9-91:20
+101            android:name="com.example.skinsync.activity.users.welcome.WelcomeActivity"
+101-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:84:13-67
+102            android:exported="true" >
+102-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:85:13-36
+103            <intent-filter>
+103-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:86:13-90:29
+104                <action android:name="android.intent.action.MAIN" />
+104-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:87:17-69
+104-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:87:25-66
+105
+106                <category android:name="android.intent.category.LAUNCHER" />
+106-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:89:17-77
+106-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:89:27-74
+107            </intent-filter>
 108        </activity>
 109        <activity
-109-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:93:9-95:40
+109-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:92:9-94:40
 110            android:name="com.example.skinsync.activity.users.LoginActivity"
-110-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:94:13-57
+110-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:93:13-57
 111            android:exported="false" />
-111-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:95:13-37
+111-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:94:13-37
 112        <activity
-112-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:96:9-98:40
+112-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:95:9-97:40
 113            android:name="com.example.skinsync.activity.users.RegisterActivity"
-113-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:97:13-60
+113-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:96:13-60
 114            android:exported="false" />
-114-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:98:13-37
+114-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:97:13-37
 115        <activity
-115-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:99:9-102:20
+115-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:98:9-101:20
 116            android:name="com.example.skinsync.activity.MainActivity"
-116-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:100:13-50
+116-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:99:13-50
 117            android:exported="true" >
-117-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:101:13-36
+117-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:100:13-36
 118        </activity>
 119
 120        <meta-data
-120-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:104:9-106:57
+120-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:103:9-105:57
 121            android:name="preloaded_fonts"
-121-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:105:13-43
+121-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:104:13-43
 122            android:resource="@array/preloaded_fonts" />
-122-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:106:13-54
+122-->/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/src/main/AndroidManifest.xml:105:13-54
 123        <!--
 124        Service for holding metadata. Cannot be instantiated.
 125        Metadata will be merged from other manifests.

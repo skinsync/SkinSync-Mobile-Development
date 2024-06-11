@@ -63,11 +63,6 @@
         <activity
             android:name=".activity.users.scan.ScanActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.admin.article.CreateArticleAdminActivity"
@@ -88,7 +83,11 @@
         <activity
             android:name=".activity.users.welcome.WelcomeActivity"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity.users.LoginActivity"

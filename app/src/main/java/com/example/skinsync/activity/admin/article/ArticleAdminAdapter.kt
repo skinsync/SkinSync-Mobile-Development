@@ -2,6 +2,7 @@ package com.example.skinsync.activity.admin.article
 
 import android.app.Activity
 import android.content.Intent
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.app.ActivityOptionsCompat
@@ -29,6 +30,7 @@ class ArticleAdminAdapter : PagingDataAdapter<ArticleData, ArticleAdminAdapter.A
 
     class ArticleAdminViewHolder(private val binding: ListArticleAdminBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(article: ArticleData) {
+            Log.i("Adapter Data: ", article.toString())
             binding.apply {
 
                 textTitle.text = article.title
@@ -36,12 +38,6 @@ class ArticleAdminAdapter : PagingDataAdapter<ArticleData, ArticleAdminAdapter.A
                 Glide.with(itemView.context)
                     .load(article.picture)
                     .into(imageView)
-
-//                tvItemName.text = story.name
-//                tvItemDesc.text = story.description!!.replace("\"", "")
-//                Glide.with(itemView.context)
-//                    .load(story.photoUrl)
-//                    .into(ivItemPhoto)
 
                 root.setOnClickListener {
                     val intent = Intent(itemView.context, DetailArticleAdminActivity::class.java)

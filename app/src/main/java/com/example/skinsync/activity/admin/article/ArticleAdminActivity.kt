@@ -35,7 +35,8 @@ class ArticleAdminActivity : AppCompatActivity() {
         recyclerView.adapter = articleAdminAdapter
 
         articleAdminViewModel.article.observe(this) {
-            Log.e("Article Data: ", "$it")
+            println("masuk observe")
+            Log.e("Article Data: ", it.toString())
             articleAdminAdapter.submitData(lifecycle, it)
         }
     }
