@@ -1,5 +1,6 @@
 package com.example.skinsync.data.articleadmin
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.liveData
 import androidx.paging.Pager
@@ -14,6 +15,7 @@ class ArticleAdminRepository (private val pref: UserPreference
 ) {
     fun getArticle(): LiveData<PagingData<ArticleData>> = liveData {
         val token = pref.getSession().first().token
+        Log.i("Token: ", token)
         val apiService = ApiConfig.getApiService(token)
         emitSource(
             Pager(

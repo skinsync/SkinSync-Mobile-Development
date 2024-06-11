@@ -1,5 +1,6 @@
 package com.example.skinsync.data.articleadmin
 
+import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.skinsync.data.setup.ApiService
@@ -16,6 +17,7 @@ class ArticlePagingSource(private val apiService: ApiService) : PagingSource<Int
                 sortBy = "id"
             )
             val articles = response.data
+            Log.i("APS Artcle Data: ", articles.toString())
 
             LoadResult.Page(
                 data = articles,
