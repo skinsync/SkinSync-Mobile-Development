@@ -1,13 +1,16 @@
 package com.example.skinsync.activity.users.scheduling.night
 
+import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.skinsync.R
+import com.example.skinsync.activity.MainActivity
 import java.util.Locale
 
 class NightSchedulingActivity : AppCompatActivity() {
@@ -29,5 +32,12 @@ class NightSchedulingActivity : AppCompatActivity() {
 
         // Menampilkan tanggal di TextView
         textViewDate.text = currentDate
+
+        // Set up button back
+        val backButton = findViewById<ImageView>(R.id.back)
+        backButton.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent) // Memulai MainActivity
+        }
     }
 }

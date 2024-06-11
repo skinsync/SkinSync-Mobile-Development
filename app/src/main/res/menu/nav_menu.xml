@@ -5,7 +5,8 @@
     <group
         android:checkableBehavior="single">
         <item
-            android:title="">
+            android:title=""
+            android:iconTint="@color/beige">
             <menu></menu>
         </item>
         <item
@@ -24,34 +25,30 @@
             android:id="@+id/nav_scheduling"
             android:icon="@drawable/alarm"
             android:title="Scheduling"/>
+        <item
+            android:title=""
+            />
+        <item
+            android:title=""
+            />
+        <item
+            android:title=""
+            />
+        <item
+            android:title=""
+            />
+        <item
+            android:title=""
+            />
+        <item
+            android:title=""
+            />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/icon_logout"
+            android:title="Logout"/>
     </group>
 
-    <item
-        android:title="">
-        <menu>
-            <item
-                android:title=""
-                />
-            <item
-                android:title=""
-                />
-            <item
-                android:title=""
-                />
-            <item
-                android:title=""
-                />
-            <item
-                android:title=""
-                />
-            <item
-                android:title=""
-                />
-            <item
-                android:id="@+id/nav_logout"
-                android:icon="@drawable/icon_logout"
-                android:title="Logout"/>
-        </menu>
-    </item>
+
 
 </menu>

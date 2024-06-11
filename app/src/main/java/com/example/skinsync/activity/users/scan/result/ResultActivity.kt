@@ -1,16 +1,19 @@
 package com.example.skinsync.activity.users.scan.result
 
+import android.content.Intent
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.skinsync.R
+import com.example.skinsync.activity.users.scan.ScanActivity
 import com.example.skinsync.databinding.ActivityResultBinding
 import com.example.skinsync.helper.ImageClassifierHelper
 import org.tensorflow.lite.task.vision.classifier.Classifications
@@ -25,6 +28,13 @@ class ResultActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        // Set up button back
+        val backButton = findViewById<ImageView>(R.id.back)
+        backButton.setOnClickListener {
+            val intent = Intent(this, ScanActivity::class.java)
+            startActivity(intent) // Memulai MainActivity
+        }
 
         val imageUri = Uri.parse(intent.getStringExtra(EXTRA_IMAGE_URI))
         imageUri?.let {
