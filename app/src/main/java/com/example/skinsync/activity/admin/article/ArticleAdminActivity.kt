@@ -1,5 +1,6 @@
 package com.example.skinsync.activity.admin.article
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.activity.enableEdgeToEdge
@@ -9,6 +10,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.skinsync.R
+import com.example.skinsync.data.articleadmin.ArticleData
 import com.example.skinsync.databinding.ActivityArticleAdminBinding
 import com.example.skinsync.viewmodel.ViewModelFactory
 
@@ -25,6 +27,14 @@ class ArticleAdminActivity : AppCompatActivity() {
         binding = ActivityArticleAdminBinding.inflate(layoutInflater)
         setContentView(binding.root)
         loadArticle()
+        buttonConfig()
+    }
+
+    private fun buttonConfig() {
+        binding.fab.setOnClickListener {
+            val intent = Intent(this, CreateArticleAdminActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun loadArticle() {
@@ -35,8 +45,6 @@ class ArticleAdminActivity : AppCompatActivity() {
         recyclerView.adapter = articleAdminAdapter
 
         articleAdminViewModel.article.observe(this) {
-            println("masuk observe")
-            Log.e("Article Data: ", it.toString())
             articleAdminAdapter.submitData(lifecycle, it)
         }
     }

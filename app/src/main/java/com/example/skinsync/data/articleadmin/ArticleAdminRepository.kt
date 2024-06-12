@@ -9,13 +9,15 @@ import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.example.skinsync.data.UserPreference
 import com.example.skinsync.data.setup.ApiConfig
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.withContext
+import retrofit2.awaitResponse
 
 class ArticleAdminRepository (private val pref: UserPreference
 ) {
     fun getArticle(): LiveData<PagingData<ArticleData>> = liveData {
         val token = pref.getSession().first().token
-        Log.i("Token: ", token)
         val apiService = ApiConfig.getApiService(token)
         emitSource(
             Pager(
@@ -23,6 +25,26 @@ class ArticleAdminRepository (private val pref: UserPreference
                 pagingSourceFactory = { ArticlePagingSource(apiService) }
             ).liveData
         )
+    }
+
+    suspend fun addArticle(title: String, deskripsi: String, picture: String, url: String): ArticlesResponse? {
+        val token = pref.getSession().first().token
+        val apiService = ApiConfig.getApiService(token)
+        return withContext(Dispatchers.IO) {
+            try {
+                val articleRequest = ArticleRequest(title, deskripsi, picture, url)
+                val response = apiService.postArticle(articleRequest).awaitResponse()
+                if (response.isSuccessful) {
+                    response.body()
+                } else {
+                    // Handle error
+                    null
+                }
+            } catch (e: Exception) {
+                // Handle exception (e.g., log error, return a specific error response)
+                null
+            }
+        }
     }
 
     companion object {

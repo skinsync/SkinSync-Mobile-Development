@@ -100,6 +100,7 @@ id checkBoxCompletedRoutine
 id checkBoxFemale
 id checkBoxMale
 id checkBoxRemember
+id choose_image
 id constraint_birthdate
 id dataBirthDate
 id descApp
@@ -177,6 +178,7 @@ id iv_image_icon_cu
 id iv_image_icon_ud
 id iv_image_product
 id iv_img_user
+id iv_preview_image_ca
 id justForYou
 id main
 id manySteps
@@ -302,6 +304,7 @@ id tv_tipe_wajah_cp
 id tv_url_ad
 id tv_url_ca
 id tv_url_cp
+id tv_url_link
 id tv_user
 id typeSkin
 id uploadImage
@@ -331,6 +334,7 @@ layout activity_main
 layout activity_morning_scheduling
 layout activity_night_scheduling
 layout activity_product_admin
+layout activity_product_type_admin
 layout activity_profile
 layout activity_register
 layout activity_result

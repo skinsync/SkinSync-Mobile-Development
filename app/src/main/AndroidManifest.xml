@@ -22,6 +22,9 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity.admin.producttype.ProductTypeAdminActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.admin.product.DetailProductAdminActivity"
             android:exported="false" />
         <activity
@@ -62,8 +65,7 @@
             android:exported="false" />
         <activity
             android:name=".activity.users.scan.ScanActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activity.admin.article.CreateArticleAdminActivity"
             android:exported="false" />
@@ -75,15 +77,13 @@
             android:exported="false" />
         <activity
             android:name=".activity.users.profile.ProfileActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activity.admin.dashboard.DashboardActivity"
             android:exported="false" />
         <activity
             android:name=".activity.users.welcome.WelcomeActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activity.users.LoginActivity"
             android:exported="false" />
@@ -93,7 +93,6 @@
         <activity
             android:name=".activity.MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

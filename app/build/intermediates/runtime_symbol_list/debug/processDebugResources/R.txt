@@ -4068,6 +4068,7 @@ int id checkBoxMale 0x7f0a0095
 int id checkBoxRemember 0x7f0a0096
 int id checkbox 0x7f0a0097
 int id checked 0x7f0a0098
+int id choose_image 0x7f0a02f7
 int id chronometer 0x7f0a0099
 int id circle_center 0x7f0a009a
 int id clear_text 0x7f0a009b
@@ -4266,6 +4267,7 @@ int id iv_image_icon_cu 0x7f0a015b
 int id iv_image_icon_ud 0x7f0a015c
 int id iv_image_product 0x7f0a015d
 int id iv_img_user 0x7f0a015e
+int id iv_preview_image_ca 0x7f0a02f8
 int id jumpToEnd 0x7f0a015f
 int id jumpToStart 0x7f0a0160
 int id justForYou 0x7f0a0161
@@ -4639,6 +4641,7 @@ int id tv_tipe_wajah_cp 0x7f0a02d0
 int id tv_url_ad 0x7f0a02d1
 int id tv_url_ca 0x7f0a02d2
 int id tv_url_cp 0x7f0a02d3
+int id tv_url_link 0x7f0a02f9
 int id tv_user 0x7f0a02d4
 int id typeSkin 0x7f0a02d5
 int id unchecked 0x7f0a02d6
@@ -4805,6 +4808,7 @@ int layout activity_main 0x7f0d0029
 int layout activity_morning_scheduling 0x7f0d002a
 int layout activity_night_scheduling 0x7f0d002b
 int layout activity_product_admin 0x7f0d002c
+int layout activity_product_type_admin 0x7f0d0091
 int layout activity_profile 0x7f0d002d
 int layout activity_register 0x7f0d002e
 int layout activity_result 0x7f0d002f
