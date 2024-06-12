@@ -6,12 +6,14 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.skinsync.activity.admin.article.ArticleAdminViewModel
 import com.example.skinsync.activity.admin.dashboard.DashboardViewModel
 import com.example.skinsync.data.articleadmin.ArticleAdminRepository
+import com.example.skinsync.data.articleuser.ArticleUserRepository
 import com.example.skinsync.data.auth.AuthRepository
 import com.example.skinsync.data.setup.Injection
 
 class CombinedRepository(
     val authRepository: AuthRepository,
     val articleAdminRepository: ArticleAdminRepository,
+    val articleUserRepository: ArticleUserRepository
 )
 class ViewModelFactory(private val combinedRepository: CombinedRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -29,6 +31,9 @@ class ViewModelFactory(private val combinedRepository: CombinedRepository) : Vie
             }
             modelClass.isAssignableFrom(ArticleAdminViewModel::class.java) -> {
                 ArticleAdminViewModel(combinedRepository.articleAdminRepository) as T
+            }
+            modelClass.isAssignableFrom(ArticleUserViewModel::class.java) -> {
+                ArticleUserViewModel(combinedRepository.articleUserRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
