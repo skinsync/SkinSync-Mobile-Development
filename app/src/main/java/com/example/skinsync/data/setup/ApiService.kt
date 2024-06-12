@@ -3,6 +3,7 @@ package com.example.skinsync.data.setup
 import com.example.skinsync.data.articleadmin.ArticleAdminResponse
 import com.example.skinsync.data.articleadmin.ArticleRequest
 import com.example.skinsync.data.articleadmin.ArticlesResponse
+import com.example.skinsync.data.articleuser.ArticleUserResponse
 import com.example.skinsync.data.auth.LoginRequest
 import com.example.skinsync.data.auth.LoginResponse
 import com.example.skinsync.data.auth.RegisterRequest
@@ -33,4 +34,13 @@ interface ApiService {
     fun postArticle(
         @Body articleRequest: ArticleRequest
     ): Call<ArticlesResponse>
+
+    @GET("articles")
+    suspend fun getUserArticles(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int,
+        @Query("sortBy") sortBy: String,
+        @Query("order") order: String,
+        @Query("search") search: String
+    ): Call<ArticleUserResponse>
 }
