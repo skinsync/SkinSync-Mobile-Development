@@ -388,17 +388,17 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-<!--    <de.hdodenhof.circleimageview.CircleImageView-->
-<!--        android:id="@+id/dashaImages"-->
-<!--        android:layout_width="@dimen/_50sdp"-->
-<!--        android:layout_height="@dimen/_50sdp"-->
-<!--        android:layout_marginBottom="@dimen/_260sdp"-->
-<!--        android:layout_marginStart="@dimen/_215sdp"-->
-<!--        android:src="@drawable/dasha_main"-->
-<!--        android:translationZ="@dimen/_5sdp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toStartOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"/>-->
+    <!--    <de.hdodenhof.circleimageview.CircleImageView-->
+    <!--        android:id="@+id/dashaImages"-->
+    <!--        android:layout_width="@dimen/_50sdp"-->
+    <!--        android:layout_height="@dimen/_50sdp"-->
+    <!--        android:layout_marginBottom="@dimen/_260sdp"-->
+    <!--        android:layout_marginStart="@dimen/_215sdp"-->
+    <!--        android:src="@drawable/dasha_main"-->
+    <!--        android:translationZ="@dimen/_5sdp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toStartOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"/>-->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
@@ -406,6 +406,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_gravity="start"
+        app:itemIconTint="@color/beige"
+        app:itemTextColor="@color/beige"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         android:fitsSystemWindows="true"/>
