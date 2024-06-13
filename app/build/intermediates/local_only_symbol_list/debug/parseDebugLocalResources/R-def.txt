@@ -51,6 +51,7 @@ drawable rounded_background_beige
 drawable rounded_background_peach
 drawable scan
 drawable sun
+drawable text_click_effect
 drawable types
 drawable upload_icon
 drawable user_page
