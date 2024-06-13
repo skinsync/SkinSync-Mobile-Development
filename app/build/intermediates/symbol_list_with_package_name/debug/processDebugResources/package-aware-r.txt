@@ -4247,6 +4247,7 @@ id imagePreview
 id imageScan
 id imageSun
 id imageView
+id image_article
 id image_product
 id immediateStop
 id included
@@ -4639,6 +4640,7 @@ id tv_role_cu
 id tv_role_ud
 id tv_tipe_cp
 id tv_tipe_wajah_cp
+id tv_title_article
 id tv_url_ad
 id tv_url_ca
 id tv_url_cp

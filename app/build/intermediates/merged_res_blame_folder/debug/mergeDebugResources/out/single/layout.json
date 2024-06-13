@@ -32,6 +32,10 @@
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/layout/activity_night_scheduling.xml"
     },
     {
+        "merged": "com.example.skinsync.app-mergeDebugResources-47:/layout/list_article_users.xml",
+        "source": "com.example.skinsync.app-main-50:/layout/list_article_users.xml"
+    },
+    {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-47:/layout/activity_scan.xml",
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/layout/activity_scan.xml"
     },
@@ -58,10 +62,6 @@
     {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-47:/layout/list_product_users.xml",
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/layout/list_product_users.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-mergeDebugResources-47:/layout/activity_create_article.xml",
-        "source": "com.example.skinsync.app-main-50:/layout/activity_create_article.xml"
     },
     {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-mergeDebugResources-47:/layout/list_tipe_product.xml",

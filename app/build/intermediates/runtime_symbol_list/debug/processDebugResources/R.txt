@@ -4246,6 +4246,7 @@ int id imagePreview 0x7f0a0146
 int id imageScan 0x7f0a0147
 int id imageSun 0x7f0a0148
 int id imageView 0x7f0a0149
+int id image_article 0x7f0a02fa
 int id image_product 0x7f0a014a
 int id immediateStop 0x7f0a014b
 int id included 0x7f0a014c
@@ -4638,6 +4639,7 @@ int id tv_role_cu 0x7f0a02cd
 int id tv_role_ud 0x7f0a02ce
 int id tv_tipe_cp 0x7f0a02cf
 int id tv_tipe_wajah_cp 0x7f0a02d0
+int id tv_title_article 0x7f0a02fc
 int id tv_url_ad 0x7f0a02d1
 int id tv_url_ca 0x7f0a02d2
 int id tv_url_cp 0x7f0a02d3
