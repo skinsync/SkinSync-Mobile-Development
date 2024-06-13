@@ -35,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
         authRepository = AuthRepository.getInstance(userPreference)
 
         buttonSetup()
+        setupMakeAccountLink()
     }
 
     private fun buttonSetup() {
@@ -64,6 +65,13 @@ class LoginActivity : AppCompatActivity() {
 
     private fun toastMessage(message: String) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    private fun setupMakeAccountLink() {
+        binding.textMakeAccount.setOnClickListener {
+            val intent = Intent(this@LoginActivity, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
 }
