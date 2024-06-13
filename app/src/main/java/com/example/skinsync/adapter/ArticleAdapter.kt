@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.skinsync.R
-import com.example.skinsync.data.articleuser.Article
+import com.example.skinsync.activity.users.article.Article
 
 class ArticleAdapter(private var articleList: List<Article>) :
     RecyclerView.Adapter<ArticleAdapter.ArticleViewHolder>() {
@@ -35,12 +35,12 @@ class ArticleAdapter(private var articleList: List<Article>) :
     class ArticleViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val imageViewArticle: ImageView = itemView.findViewById(R.id.image_article)
         private val titleTextView: TextView = itemView.findViewById(R.id.tv_title_article)
-        private val descriptionTextView: TextView = itemView.findViewById(R.id.tv_description_article)
+        //private val descriptionTextView: TextView = itemView.findViewById(R.id.tv_description_article)
 
         fun bind(article: Article) {
             imageViewArticle.setImageResource(R.drawable.dasha)
             titleTextView.text = article.title
-            descriptionTextView.text = article.content
+                //descriptionTextView.text = article.content
         }
     }
 }

@@ -56,6 +56,10 @@
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/layout/activity_dashboard.xml"
     },
     {
+        "merged": "com.example.skinsync.app-debug-48:/layout_list_article_users.xml.flat",
+        "source": "com.example.skinsync.app-main-50:/layout/list_article_users.xml"
+    },
+    {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-48:/layout_activity_product_admin.xml.flat",
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/layout/activity_product_admin.xml"
     },
@@ -238,10 +242,6 @@
     {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-48:/xml_backup_rules.xml.flat",
         "source": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-main-50:/xml/backup_rules.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-debug-48:/layout_activity_create_article.xml.flat",
-        "source": "com.example.skinsync.app-main-50:/layout/activity_create_article.xml"
     },
     {
         "merged": "/Users/muhammadrazirizzardi/.gradle/daemon/8.4/com.example.skinsync.app-debug-48:/drawable_icon_article.png.flat",

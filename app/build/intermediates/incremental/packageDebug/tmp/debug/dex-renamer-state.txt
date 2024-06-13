@@ -1,4 +1,4 @@
-#Wed Jun 12 18:11:54 WIB 2024
+#Thu Jun 13 13:00:04 WIB 2024
 base.0=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/dex/debug/mergeProjectDexDebug/6/classes.dex

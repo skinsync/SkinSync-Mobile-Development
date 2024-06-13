@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="@dimen/_150sdp"
+    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardBackgroundColor="@color/beige"
     app:cardCornerRadius="@dimen/_15sdp"
@@ -21,13 +21,13 @@
             android:scaleType="centerCrop"
             android:id="@+id/image_article"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_125sdp"/>
+            android:layout_height="@dimen/_75sdp"/>
 
         <TextView
             android:textColor="@color/grey"
             android:padding="@dimen/_5sdp"
             android:layout_margin="@dimen/_5sdp"
-            android:textSize="@dimen/_14ssp"
+            android:textSize="@dimen/_11ssp"
             android:fontFamily="@font/lato_bold"
             android:text="Product_Name"
             android:layout_gravity="start"
@@ -35,18 +35,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
-        <TextView
-            android:textColor="@color/grey"
-            android:padding="@dimen/_5sdp"
-            android:layout_margin="@dimen/_5sdp"
-            android:textSize="@dimen/_12ssp"
-            android:fontFamily="@font/roboto"
-            android:text="Product_Desc"
-            android:layout_gravity="start"
-            android:maxLines="3"
-            android:id="@+id/tv_description_article"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+<!--        <TextView-->
+<!--            android:textColor="@color/grey"-->
+<!--            android:padding="@dimen/_5sdp"-->
+<!--            android:layout_margin="@dimen/_5sdp"-->
+<!--            android:textSize="@dimen/_9ssp"-->
+<!--            android:fontFamily="@font/roboto"-->
+<!--            android:text="Product_Desc"-->
+<!--            android:layout_gravity="start"-->
+<!--            android:maxLines="3"-->
+<!--            android:id="@+id/tv_description_article"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
 
     </LinearLayout>
 

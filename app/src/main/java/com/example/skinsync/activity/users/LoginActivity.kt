@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.databinding.ActivityLoginBinding
 import com.example.skinsync.data.auth.AuthRepository
@@ -45,9 +46,11 @@ class LoginActivity : AppCompatActivity() {
                     Log.d("Auth", "Login successful: ${response.message}")
                     toastMessage("Login successful\n${response.message}")
                     val userData = response.data
-                    Log.d("UserData", userData.toString())
                     viewModel.saveSession(UserModel(email, response.token!!, userData!!.role!!, true))
-                    val intent = Intent(this@LoginActivity, DashboardActivity::class.java)
+                    var intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    if (userData.role == "admin") {
+                        intent = Intent(this@LoginActivity, DashboardActivity::class.java)
+                    }
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()
