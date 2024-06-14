@@ -4,7 +4,10 @@ import com.example.skinsync.data.articleadmin.ArticleAdminResponse
 import com.example.skinsync.data.articleadmin.ArticleRequest
 import com.example.skinsync.data.articleadmin.ArticlesResponse
 import com.example.skinsync.activity.users.article.ArticleUserResponse
+import com.example.skinsync.activity.users.profile.DataEditProfile
+import com.example.skinsync.activity.users.profile.EditProfileResponse
 import com.example.skinsync.activity.users.profile.ProfileResponse
+import com.example.skinsync.activity.users.profile.edit.EditProfileRequest
 import com.example.skinsync.data.auth.LoginRequest
 import com.example.skinsync.data.auth.LoginResponse
 import com.example.skinsync.data.auth.RegisterRequest
@@ -13,6 +16,7 @@ import retrofit2.http.POST
 import retrofit2.http.Body
 import retrofit2.Call
 import retrofit2.http.GET
+import retrofit2.http.PUT
 import retrofit2.http.Query
 
 interface ApiService {
@@ -47,5 +51,10 @@ interface ApiService {
 
     @GET("profile")
     suspend fun getMyProfile(): ProfileResponse
+
+    @PUT("profile/edit")
+    suspend fun editMyProfile(
+        @Body profileRequest: EditProfileRequest
+    ): Call<EditProfileResponse>
 
 }
