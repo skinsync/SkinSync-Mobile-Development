@@ -4,7 +4,7 @@
             "outputFile": "com.example.skinsync.app-mergeDebugResources-49:/values-ldrtl-v17/values-ldrtl-v17.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\2e3959fb27310abd185e2de95dbf2767\\transformed\\material-1.12.0\\res\\values-ldrtl-v17\\values-ldrtl-v17.xml",
+                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/2e3959fb27310abd185e2de95dbf2767/transformed/material-1.12.0/res/values-ldrtl-v17/values-ldrtl-v17.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

@@ -53,6 +53,7 @@ class MainActivity : AppCompatActivity() {
 
         val drawerLayout : DrawerLayout = findViewById(R.id.main)
         val navView : NavigationView = findViewById(R.id.nav_view)
+        
 
         toogle = ActionBarDrawerToggle(this, drawerLayout, R.string.open, R.string.close)
         drawerLayout.addDrawerListener(toogle)

@@ -1337,10 +1337,10 @@ int attr yearStyle 0x7f0404e2
 int attr yearTodayStyle 0x7f0404e3
 int bool abc_action_bar_embed_tabs 0x7f050000
 int bool abc_config_actionMenuItemAllCaps 0x7f050001
-int bool enable_system_alarm_service_default 0x7f050003
-int bool enable_system_foreground_service_default 0x7f050004
-int bool enable_system_job_service_default 0x7f050005
-int bool mtrl_btn_textappearance_all_caps 0x7f050002
+int bool enable_system_alarm_service_default 0x7f050002
+int bool enable_system_foreground_service_default 0x7f050003
+int bool enable_system_job_service_default 0x7f050004
+int bool mtrl_btn_textappearance_all_caps 0x7f050005
 int bool workmanager_test_configuration 0x7f050006
 int color abc_background_cache_hint_selector_material_dark 0x7f060000
 int color abc_background_cache_hint_selector_material_light 0x7f060001
@@ -3920,6 +3920,7 @@ int drawable serum_oily 0x7f08011a
 int drawable sun 0x7f080109
 int drawable sunscreen_oily 0x7f08011b
 int drawable test_level_drawable 0x7f08010a
+<<<<<<< Updated upstream
 int drawable text_click_effect 0x7f080112
 int drawable toner_oily 0x7f08011c
 int drawable tooltip_frame_dark 0x7f08010b
@@ -3929,6 +3930,16 @@ int drawable upload_icon 0x7f08010e
 int drawable user_page 0x7f08010f
 int drawable view_hide 0x7f080110
 int drawable welcome 0x7f080111
+=======
+int drawable text_click_effect 0x7f08010b
+int drawable tooltip_frame_dark 0x7f08010c
+int drawable tooltip_frame_light 0x7f08010d
+int drawable types 0x7f08010e
+int drawable upload_icon 0x7f08010f
+int drawable user_page 0x7f080110
+int drawable view_hide 0x7f080111
+int drawable welcome 0x7f080112
+>>>>>>> Stashed changes
 int font josefin_sans_light 0x7f090000
 int font josefin_slab 0x7f090001
 int font lato_bold 0x7f090002

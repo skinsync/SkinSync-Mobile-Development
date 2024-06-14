@@ -48,54 +48,18 @@ class ProfileActivity : AppCompatActivity() {
 
         viewModel.fetchProfile()
         viewModel.myProfile.observe(this) { profileResponse ->
-            if (profileResponse != null && profileResponse.data != null) {
+            if (profileResponse?.data != null) {
                 val userData = profileResponse.data
                 Log.i("ProfileActivity", "Profile data observed: $userData")
                 binding.usernameProfile.text = userData.name
                 binding.dataBirthDate.text = userData.birthdate?.toString() ?: "N/A"
                 binding.genderDesc.text = userData.gender?.toString() ?: "N/A"
                 binding.gmailTextView.text = userData.email
+                binding.emailDesc2.text = userData.email
                 binding.passwordDesc.text = userData.password
             } else {
                 Log.e("ProfileActivity", "Profile data is null")
             }
         }
-//        // Terima data yang dikirim dari EditProfileActivity
-//        intent.extras?.let {
-//            val imageUri = it.getString("uploadedImageUri")
-//            val username = it.getString("username")
-//            val birthDate = it.getString("selectedDate")
-//            val gender = it.getString("gender")
-//            val email = it.getString("email")
-//            val password= it.getString("password")
-//
-//            imageUri?.let { uri ->
-//                binding.avatarImageProfile.setImageURI(Uri.parse(uri))
-//            }
-//        }
     }
-
-//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-//        super.onActivityResult(requestCode, resultCode, data)
-//        if (requestCode == 1 && resultCode == RESULT_OK) {
-//            data?.extras?.let {
-//                val imageUri = it.getString("uploadedImageUri")
-//                val username = it.getString("username")
-//                val birthDate = it.getString("selectedDate")
-//                val gender = it.getString("gender")
-//                val email = it.getString("email")
-//                val password= it.getString("password")
-//
-//                imageUri?.let { uri ->
-//                    binding.avatarImageProfile.setImageURI(Uri.parse(uri))
-//                }
-//                binding.usernameProfile.text = username
-//                binding.dataBirthDate.text = birthDate
-//                binding.genderDesc.text = gender
-//                binding.gmailTextView.text = email
-//                binding.emailDesc2.text = email
-//                binding.passwordDesc.text = password
-//            }
-//        }
-//    }
 }
