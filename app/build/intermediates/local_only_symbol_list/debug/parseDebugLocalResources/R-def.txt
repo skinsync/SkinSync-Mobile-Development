@@ -3,6 +3,9 @@ local
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array data_name_product
+array data_photo_product
+array data_type_product
 array preloaded_fonts
 color beige
 color black
@@ -27,6 +30,7 @@ drawable cloud_upload
 drawable dasha
 drawable dasha_main
 drawable expression
+drawable facewash_oily
 drawable field
 drawable gallery
 drawable ic_add_circle
@@ -42,6 +46,12 @@ drawable lock
 drawable logo_resize
 drawable mail
 drawable moon
+drawable mosturizer_oily
+drawable normal_facewash
+drawable normal_moisturizer
+drawable normal_serum
+drawable normal_sunscreen
+drawable normal_toner
 drawable open_fullscreen_icon
 drawable people
 drawable picture_icon
@@ -50,8 +60,11 @@ drawable ripple_effect
 drawable rounded_background_beige
 drawable rounded_background_peach
 drawable scan
+drawable serum_oily
 drawable sun
+drawable sunscreen_oily
 drawable text_click_effect
+drawable toner_oily
 drawable types
 drawable upload_icon
 drawable user_page
@@ -213,6 +226,7 @@ id recyclerViewJFY
 id row_1
 id row_2
 id row_3
+id rvProduct
 id searchBar
 id searchView
 id seeDetails
@@ -304,6 +318,7 @@ id tv_role_ud
 id tv_tipe_cp
 id tv_tipe_wajah_cp
 id tv_title_article
+id tv_type_product
 id tv_url_ad
 id tv_url_ca
 id tv_url_cp

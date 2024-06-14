@@ -80,6 +80,9 @@ animator mtrl_fab_transformation_sheet_expand_spec
 array com_google_android_gms_fonts_certs
 array com_google_android_gms_fonts_certs_dev
 array com_google_android_gms_fonts_certs_prod
+array data_name_product
+array data_photo_product
+array data_type_product
 array preloaded_fonts
 attr SharedValue
 attr SharedValueId
@@ -3793,6 +3796,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable expression
+drawable facewash_oily
 drawable field
 drawable gallery
 drawable ic_add_circle
@@ -3848,6 +3852,7 @@ drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
 drawable moon
+drawable mosturizer_oily
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3886,6 +3891,11 @@ drawable mtrl_switch_track
 drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
+drawable normal_facewash
+drawable normal_moisturizer
+drawable normal_serum
+drawable normal_sunscreen
+drawable normal_toner
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3907,9 +3917,12 @@ drawable ripple_effect
 drawable rounded_background_beige
 drawable rounded_background_peach
 drawable scan
+drawable serum_oily
 drawable sun
+drawable sunscreen_oily
 drawable test_level_drawable
 drawable text_click_effect
+drawable toner_oily
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
 drawable types
@@ -4445,6 +4458,7 @@ id row_1
 id row_2
 id row_3
 id row_index_key
+id rvProduct
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -4646,6 +4660,7 @@ id tv_role_ud
 id tv_tipe_cp
 id tv_tipe_wajah_cp
 id tv_title_article
+id tv_type_product
 id tv_url_ad
 id tv_url_ca
 id tv_url_cp

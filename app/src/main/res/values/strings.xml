@@ -78,4 +78,43 @@
     <string name="see_more">See More</string>
     <string name="image_classifier_failed">Image classifier failed to initialize. See error logs for details</string>
     <string name="no_prediction">No prediction available</string>
+
+    <integer-array name="data_photo_product">
+        <item>@drawable/facewash_oily</item>
+        <item>@drawable/toner_oily</item>
+        <item>@drawable/sunscreen_oily</item>
+        <item>@drawable/serum_oily</item>
+        <item>@drawable/mosturizer_oily</item>
+        <item>@drawable/normal_serum</item>
+        <item>@drawable/normal_toner</item>
+        <item>@drawable/normal_sunscreen</item>
+        <item>@drawable/normal_facewash</item>
+        <item>@drawable/normal_moisturizer</item>
+    </integer-array>
+
+    <string-array name="data_type_product">
+        <item>Face Wash - Oily Skin Type</item>
+        <item>Toner - Oily Skin Type</item>
+        <item>Sunscreen - Oily Skin Type</item>
+        <item>Serum - Oily Skin Type</item>
+        <item>Moisturizer - Oily Skin Type</item>
+        <item>Serum - Normal Skin Type</item>
+        <item>Toner - Normal Skin Type</item>
+        <item>Sunscreen - Normal Skin Type</item>
+        <item>Face Wash - Normal Skin Type</item>
+        <item>Moisturizer - Normal Skin Type</item>
+    </string-array>
+
+    <string-array name="data_name_product">
+        <item>ACWELL Bubble Free PH Balancing Cleanser</item>
+        <item>ACWELL Aquaseal Soothing Tonic</item>
+        <item>AVOSKIN The Great Shield SPF 50 PA++++</item>
+        <item>AHC Peony Bright Luminous Serum</item>
+        <item>AIZEN Whitifique Face Cream</item>
+        <item>AZARINE C white lightening serum</item>
+        <item>AIZEN Incredipeel Exfoliating + Purifying Facial Toner</item>
+        <item>BANANA BOAT Protective Tanning Oil SPF8</item>
+        <item>Brightening Facial Cleanser</item>
+        <item>Azarine C White Ultralight Hydraglow Day Cream</item>
+    </string-array>
 </resources>

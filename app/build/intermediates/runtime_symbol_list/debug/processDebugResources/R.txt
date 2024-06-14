@@ -79,6 +79,9 @@ int animator mtrl_fab_transformation_sheet_expand_spec 0x7f020021
 int array com_google_android_gms_fonts_certs 0x7f030000
 int array com_google_android_gms_fonts_certs_dev 0x7f030001
 int array com_google_android_gms_fonts_certs_prod 0x7f030002
+int array data_name_product 0x7f030004
+int array data_photo_product 0x7f030005
+int array data_type_product 0x7f030006
 int array preloaded_fonts 0x7f030003
 int attr SharedValue 0x7f040000
 int attr SharedValueId 0x7f040001
@@ -3792,6 +3795,7 @@ int drawable design_ic_visibility_off 0x7f080093
 int drawable design_password_eye 0x7f080094
 int drawable design_snackbar_background 0x7f080095
 int drawable expression 0x7f080096
+int drawable facewash_oily 0x7f080113
 int drawable field 0x7f080097
 int drawable gallery 0x7f080098
 int drawable ic_add_circle 0x7f080099
@@ -3847,6 +3851,7 @@ int drawable material_ic_keyboard_arrow_right_black_24dp 0x7f0800ca
 int drawable material_ic_menu_arrow_down_black_24dp 0x7f0800cb
 int drawable material_ic_menu_arrow_up_black_24dp 0x7f0800cc
 int drawable moon 0x7f0800cd
+int drawable mosturizer_oily 0x7f080114
 int drawable mtrl_bottomsheet_drag_handle 0x7f0800ce
 int drawable mtrl_checkbox_button 0x7f0800cf
 int drawable mtrl_checkbox_button_checked_unchecked 0x7f0800d0
@@ -3885,6 +3890,11 @@ int drawable mtrl_switch_track 0x7f0800f0
 int drawable mtrl_switch_track_decoration 0x7f0800f1
 int drawable mtrl_tabs_default_indicator 0x7f0800f2
 int drawable navigation_empty_icon 0x7f0800f3
+int drawable normal_facewash 0x7f080115
+int drawable normal_moisturizer 0x7f080116
+int drawable normal_serum 0x7f080117
+int drawable normal_sunscreen 0x7f080118
+int drawable normal_toner 0x7f080119
 int drawable notification_action_background 0x7f0800f4
 int drawable notification_bg 0x7f0800f5
 int drawable notification_bg_low 0x7f0800f6
@@ -3906,9 +3916,12 @@ int drawable ripple_effect 0x7f080105
 int drawable rounded_background_beige 0x7f080106
 int drawable rounded_background_peach 0x7f080107
 int drawable scan 0x7f080108
+int drawable serum_oily 0x7f08011a
 int drawable sun 0x7f080109
+int drawable sunscreen_oily 0x7f08011b
 int drawable test_level_drawable 0x7f08010a
 int drawable text_click_effect 0x7f080112
+int drawable toner_oily 0x7f08011c
 int drawable tooltip_frame_dark 0x7f08010b
 int drawable tooltip_frame_light 0x7f08010c
 int drawable types 0x7f08010d
@@ -4444,6 +4457,7 @@ int id row_1 0x7f0a0208
 int id row_2 0x7f0a0209
 int id row_3 0x7f0a020a
 int id row_index_key 0x7f0a020b
+int id rvProduct 0x7f0a02fc
 int id save_non_transition_alpha 0x7f0a020c
 int id save_overlay_view 0x7f0a020d
 int id sawtooth 0x7f0a020e
@@ -4645,6 +4659,7 @@ int id tv_role_ud 0x7f0a02d1
 int id tv_tipe_cp 0x7f0a02d2
 int id tv_tipe_wajah_cp 0x7f0a02d3
 int id tv_title_article 0x7f0a02d4
+int id tv_type_product 0x7f0a02fd
 int id tv_url_ad 0x7f0a02d5
 int id tv_url_ca 0x7f0a02d6
 int id tv_url_cp 0x7f0a02d7
