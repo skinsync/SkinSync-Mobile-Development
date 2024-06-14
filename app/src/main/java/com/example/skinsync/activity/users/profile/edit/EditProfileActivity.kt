@@ -5,6 +5,8 @@ import android.content.Intent
 import android.icu.util.Calendar
 import android.net.Uri
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.CheckBox
 import android.widget.DatePicker
@@ -14,43 +16,66 @@ import android.widget.RadioGroup
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import com.example.skinsync.R
+import com.bumptech.glide.Glide
+import com.example.skinsync.activity.users.profile.DataEditProfile
+import com.example.skinsync.activity.users.profile.DataProfile
 import com.example.skinsync.activity.users.profile.ProfileActivity
+import com.example.skinsync.activity.users.profile.ProfileViewModel
+import com.example.skinsync.databinding.ActivityEditProfileBinding
+import com.example.skinsync.databinding.ActivityProfileBinding
+import com.example.skinsync.viewmodel.ViewModelFactory
 import com.google.android.material.textfield.TextInputEditText
+import java.net.URL
 
 class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener {
+    private val viewModel by viewModels<ProfileViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
 
-    private lateinit var pickDateButton: Button
-    private lateinit var uploadImageTV: TextView
-    private lateinit var uploadImage: ImageView
+    private lateinit var binding: ActivityEditProfileBinding
     private var uploadedImageUri: Uri? = null
 
     private val selectImageLauncher =
-        this.registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
+        registerForActivityResult(ActivityResultContracts.GetContent()) { uri: Uri? ->
             uri?.let {
                 uploadedImageUri = it
-                uploadImage.setImageURI(it)
+                binding.uploadImage.setImageURI(it)
             }
         }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_edit_profile)
-        enableEdgeToEdge()
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityEditProfileBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+        supportActionBar?.hide()
+        val user = intent.getParcelableExtra<DataProfile>("user")
+        if (user != null) {
+            with(binding) {
+                usernameEditText.setText(user.name)
+                pickDate.text = user.birthdate?:""
+                // Loop through each radio button in the RadioGroup
+                for (i in 0 until genderRadioGroup.childCount) {
+                    val radioButton = genderRadioGroup.getChildAt(i) as? RadioButton
+                    // Check if the RadioButton is not null and its text matches the gender value
+                    if (radioButton != null && user.gender != null && radioButton.text.toString() == user.gender) {
+                        radioButton.isChecked = true // Set the radio button as checked
+                        break // Exit the loop once the radio button is found and checked
+                    }
+                }
+                emailEditText.setText(user.email)
+                pickDate.text = user.birthdate?:"Pick date"
+                //passwordEditText.setText(user.password)
+            }
         }
 
-        pickDateButton = findViewById(R.id.pickDate)
-        uploadImageTV = findViewById(R.id.uploadImageTV)
-        uploadImage = findViewById(R.id.uploadImage)
-
-        pickDateButton.setOnClickListener {
+        viewModel.isEditSuccess.observe(this) {
+            if (it!!) {
+                startActivity(Intent(this@EditProfileActivity, ProfileActivity::class.java))
+            }
+        }
+        binding.pickDate.setOnClickListener {
             val c = Calendar.getInstance()
             val year = c.get(Calendar.YEAR)
             val month = c.get(Calendar.MONTH)
@@ -59,43 +84,38 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
             DatePickerDialog(this, this, year, month, day).show()
         }
 
-        uploadImageTV.setOnClickListener {
+        binding.uploadImageTV.setOnClickListener {
             selectImageFromGallery()
         }
 
-        val buttonSave = findViewById<Button>(R.id.buttonSave)
-        val buttonCancel = findViewById<Button>(R.id.buttonCancel)
-        val backButton = findViewById<ImageView>(R.id.back)
+        binding.buttonSave.setOnClickListener {
+            val username = binding.usernameEditText.text.toString()
+            val selectedDate = binding.pickDate.text.toString()
+            val selectedGenderId = binding.genderRadioGroup.checkedRadioButtonId
+            val genderRadioButton = findViewById<RadioButton>(selectedGenderId)
+            val gender = genderRadioButton?.text.toString()
+            val email = binding.emailEditText.text.toString()
+            val password = binding.passwordEditText.text.toString()
+            Log.d("EditProfileActivity", "Uploaded image URI: $uploadedImageUri")
+            val imageUrlString = uploadedImageUri.toString()
+            Log.d("EditProfileActivity", "Image URL string: $imageUrlString")
+            val profileRequest = EditProfileRequest(
+                name = username,
+                email = email,
+                gender = gender,
+                birthdate = selectedDate,
+                profile_picture = uploadedImageUri.toString(),
+                password = password
+            )
+            viewModel.editProfile(profileRequest)
 
-        buttonSave.setOnClickListener {
-            // Mengambil nilai dari setiap elemen yang diedit
-            val username = findViewById<TextInputEditText>(R.id.usernameEditText).text.toString()
-            val selectedDate = findViewById<Button>(R.id.pickDate).text.toString()
-            val genderRadioGroup = findViewById<RadioGroup>(R.id.genderRadioGroup)
-            val selectedRadioButtonId = genderRadioGroup.checkedRadioButtonId
-            val selectedRadioButton = findViewById<RadioButton>(selectedRadioButtonId)
-            val gender = selectedRadioButton.text.toString()
-            val email = findViewById<TextInputEditText>(R.id.emailEditText).text.toString()
-            val password = findViewById<TextInputEditText>(R.id.passwordEditText).text.toString()
-
-            // Mengirim data menggunakan Intent
-            val intent = Intent().apply {
-                putExtra("uploadedImageUri", uploadedImageUri.toString())
-                putExtra("username", username)
-                putExtra("selectedDate", selectedDate)
-                putExtra("gender", gender)
-                putExtra("email", email)
-                putExtra("password", maskPassword(password))
-            }
-            setResult(RESULT_OK, intent)
-            finish()
         }
 
-        buttonCancel.setOnClickListener {
+        binding.buttonCancel.setOnClickListener {
             navigateToProfileActivity()
         }
 
-        backButton.setOnClickListener {
+        binding.back.setOnClickListener {
             navigateToProfileActivity()
         }
     }
@@ -108,14 +128,13 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
 
     override fun onDateSet(view: DatePicker, year: Int, month: Int, day: Int) {
         val selectedDate = "$day/${month + 1}/$year"
-        pickDateButton.text = selectedDate
+        binding.pickDate.text = selectedDate
     }
 
     private fun selectImageFromGallery() {
         selectImageLauncher.launch("image/*")
     }
 
-    // Fungsi untuk menyamarkan password
     private fun maskPassword(password: String): String {
         return "*".repeat(password.length)
     }

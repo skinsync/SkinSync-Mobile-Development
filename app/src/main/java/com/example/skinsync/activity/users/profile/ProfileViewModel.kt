@@ -8,12 +8,16 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import com.example.skinsync.activity.users.article.ArticleUserRepository
+import com.example.skinsync.activity.users.profile.edit.EditProfileRequest
 import com.example.skinsync.data.articleadmin.ArticleData
 import kotlinx.coroutines.launch
 
 class ProfileViewModel(private val repository: ProfileRepository) : ViewModel() {
     private val _myProfile = MutableLiveData<ProfileResponse?>()
     val myProfile: LiveData<ProfileResponse?> get() = _myProfile
+
+    private val _isEditSuccess = MutableLiveData<Boolean?>()
+    val isEditSuccess: LiveData<Boolean?> get() = _isEditSuccess
 
     private val _isLoading = MutableLiveData<Boolean>()
     val isLoading: LiveData<Boolean> get() = _isLoading
@@ -30,6 +34,19 @@ class ProfileViewModel(private val repository: ProfileRepository) : ViewModel() 
                 _myProfile.value = null
             } finally {
                 _isLoading.value = false
+            }
+        }
+    }
+
+    fun editProfile(profileRequest: EditProfileRequest) {
+        viewModelScope.launch {
+            try {
+                _isEditSuccess.value = repository.editMyProfile(profileRequest).value
+                // Refresh profile data after updating
+                fetchProfile()
+                Log.i("ProfileViewModel", "Profile updated successfully")
+            } catch (e: Exception) {
+                Log.e("ProfileViewModel", "Error updating profile: ${e.message}")
             }
         }
     }
