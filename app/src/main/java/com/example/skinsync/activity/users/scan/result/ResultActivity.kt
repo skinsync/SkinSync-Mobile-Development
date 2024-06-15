@@ -6,18 +6,15 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.example.skinsync.R
 import com.example.skinsync.activity.users.scan.ScanActivity
+import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
 import com.example.skinsync.databinding.ActivityResultBinding
 import com.example.skinsync.helper.ImageClassifierHelper
-import org.tensorflow.lite.task.vision.classifier.Classifications
-import java.text.NumberFormat
 
 class ResultActivity : AppCompatActivity() {
 
@@ -34,6 +31,13 @@ class ResultActivity : AppCompatActivity() {
         backButton.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)
             startActivity(intent) // Memulai MainActivity
+        }
+
+        //Set up button scheduling
+        val buttonTryNow = findViewById<Button>(R.id.buttonTryNow)
+        buttonTryNow.setOnClickListener {
+            val intent = Intent(this, MorningSchedulingActivity::class.java)
+            startActivity(intent)
         }
 
         val imageUri = Uri.parse(intent.getStringExtra(EXTRA_IMAGE_URI))

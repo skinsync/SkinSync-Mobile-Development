@@ -93,13 +93,10 @@
         android:id="@+id/ib_filter"
         android:layout_width="@dimen/_20sdp"
         android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
         android:background="@drawable/ic_filter"
-        android:layout_marginTop="@dimen/_20sdp"
-        android:layout_marginStart="@dimen/_170sdp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/titleSkincareProduct"
-        app:layout_constraintTop_toBottomOf="@+id/titlePage" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleSkincareProduct" />
 
     <HorizontalScrollView
         android:id="@+id/horizontalView"

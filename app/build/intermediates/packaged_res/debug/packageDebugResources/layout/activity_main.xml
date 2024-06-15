@@ -48,7 +48,7 @@
         <FrameLayout
             android:id="@+id/frame"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_270sdp"
             app:layout_constraintTop_toBottomOf="@+id/toolbar"
             tools:ignore="MissingConstraints">
 
@@ -358,12 +358,11 @@
                 android:id="@+id/ib_filter"
                 android:layout_width="@dimen/_20sdp"
                 android:layout_height="@dimen/_20sdp"
-                android:layout_marginStart="@dimen/_170sdp"
-                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
                 android:background="@drawable/ic_filter"
-                app:layout_constraintLeft_toRightOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/titleSkincareProduct" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/titleSkincareProduct"
+                tools:ignore="MissingConstraints" />
 
             <HorizontalScrollView
                 android:id="@+id/horizontalView"

@@ -192,7 +192,7 @@
                 android:layout_marginStart="@dimen/_200sdp"
                 android:text="@string/see_details"
                 android:textSize="@dimen/_12ssp"
-                android:textColor="@color/peach"
+                android:textColor="@drawable/text_click_effect"
                 app:layout_constraintStart_toStartOf="@id/titleMorningRoutine"
                 app:layout_constraintTop_toTopOf="parent" />
 

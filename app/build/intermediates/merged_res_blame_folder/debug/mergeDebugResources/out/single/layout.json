@@ -56,10 +56,6 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-53:\\layout\\activity_user_admin.xml"
     },
     {
-        "merged": "com.example.skinsync.app-mergeDebugResources-50:/layout/activity_list_product.xml",
-        "source": "com.example.skinsync.app-main-53:/layout/activity_list_product.xml"
-    },
-    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-50:\\layout\\activity_detail_article_admin.xml",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-53:\\layout\\activity_detail_article_admin.xml"
     },
@@ -82,6 +78,10 @@
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-50:\\layout\\list_product_users.xml",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-53:\\layout\\list_product_users.xml"
+    },
+    {
+        "merged": "com.example.skinsync.app-mergeDebugResources-50:/layout/activity_result.xml",
+        "source": "com.example.skinsync.app-main-53:/layout/activity_result.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-mergeDebugResources-50:\\layout\\activity_main.xml",
