@@ -1,5 +1,5 @@
-com.example.skinsync.test.app-annotation-experimental-1.4.0-0 /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/168d98ad2ac81c48a06c104950d47bb7/transformed/annotation-experimental-1.4.0/res
-com.example.skinsync.test.app-core-1.5.0-1 /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/18319edf6936886e4f4a47a1bfe3b140/transformed/core-1.5.0/res
+com.example.skinsync.test.app-core-1.5.0-0 /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/89fdcedeeeeea7fbbe67f1a12c054c25/transformed/core-1.5.0/res
+com.example.skinsync.test.app-annotation-experimental-1.4.0-1 /Users/muhammadrazirizzardi/.gradle/caches/transforms-3/cd78113ea2bccd8658759b67c630f7c5/transformed/annotation-experimental-1.4.0/res
 com.example.skinsync.test.app-androidTest-2 /Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/generated/res/resValues/androidTest/debug
 com.example.skinsync.test.app-mergeDebugAndroidTestResources-3 /Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
 com.example.skinsync.test.app-mergeDebugAndroidTestResources-4 /Users/muhammadrazirizzardi/AndroidStudioProjects/SkinSync/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir

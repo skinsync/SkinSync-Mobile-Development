@@ -4,6 +4,7 @@ import com.example.skinsync.data.articleadmin.ArticleAdminResponse
 import com.example.skinsync.data.articleadmin.ArticleRequest
 import com.example.skinsync.data.articleadmin.ArticlesResponse
 import com.example.skinsync.activity.users.article.ArticleUserResponse
+import com.example.skinsync.activity.users.listproduct.ListProductResponse
 import com.example.skinsync.activity.users.profile.EditProfileResponse
 import com.example.skinsync.activity.users.profile.ProfileResponse
 import com.example.skinsync.data.auth.LoginRequest
@@ -65,5 +66,14 @@ interface ApiService {
         @Part("birthdate") birthdate: RequestBody?,
         @Part profile_picture: MultipartBody.Part
     ): Call<EditProfileResponse>
+
+    @GET("products")
+    suspend fun getProducts(
+        @Query("page") page: Int,
+        @Query("limit") limit: Int,
+        @Query("sortBy") sortBy: String,
+        @Query("order") order: String,
+        @Query("search") search: String
+    ): ListProductResponse
 
 }

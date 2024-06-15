@@ -4,7 +4,7 @@
             "outputFile": "com.example.skinsync.test.app-mergeDebugAndroidTestResources-3:/values-v28/values-v28.xml",
             "map": [
                 {
-                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/18319edf6936886e4f4a47a1bfe3b140/transformed/core-1.5.0/res/values-v28/values.xml",
+                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/89fdcedeeeeea7fbbe67f1a12c054c25/transformed/core-1.5.0/res/values-v28/values.xml",
                     "from": {
                         "startLines": "4,13",
                         "startColumns": "0,0",
