@@ -108,7 +108,7 @@
         android:layout_marginEnd="@dimen/_15sdp"
         android:text="@string/see_more"
         android:textSize="@dimen/_12ssp"
-        android:textColor="@color/peach"
+        android:textColor="@drawable/text_click_effect"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@id/justForYou" />
 

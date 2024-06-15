@@ -15,7 +15,9 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.activity.users.scheduling.NotificationReceiver
-import java.util.*
+import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
+import java.util.Calendar
+import java.util.Locale
 
 class NightSchedulingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +48,13 @@ class NightSchedulingActivity : AppCompatActivity() {
 
         // Set up night routine alarm
         setNightRoutineAlarm()
+
+        // Set up click listener for seeDetails
+        val seeDetails: TextView = findViewById(R.id.seeDetails)
+        seeDetails.setOnClickListener {
+            val intent = Intent(this, MorningSchedulingActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun setNightRoutineAlarm() {
