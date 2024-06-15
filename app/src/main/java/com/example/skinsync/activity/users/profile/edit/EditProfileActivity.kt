@@ -25,9 +25,14 @@ import com.example.skinsync.activity.users.profile.ProfileActivity
 import com.example.skinsync.activity.users.profile.ProfileViewModel
 import com.example.skinsync.databinding.ActivityEditProfileBinding
 import com.example.skinsync.databinding.ActivityProfileBinding
+import com.example.skinsync.uriToFile
 import com.example.skinsync.viewmodel.ViewModelFactory
 import com.google.android.material.textfield.TextInputEditText
+import java.io.ByteArrayOutputStream
+import java.io.File
+import java.io.FileInputStream
 import java.net.URL
+import android.util.Base64
 
 class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener {
     private val viewModel by viewModels<ProfileViewModel> {
@@ -97,17 +102,24 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
             val email = binding.emailEditText.text.toString()
             val password = binding.passwordEditText.text.toString()
             Log.d("EditProfileActivity", "Uploaded image URI: $uploadedImageUri")
-            val imageUrlString = uploadedImageUri.toString()
-            Log.d("EditProfileActivity", "Image URL string: $imageUrlString")
-            val profileRequest = EditProfileRequest(
+            //val imageUrlString = uploadedImageUri.toString()
+            val profilePictureFile = uploadedImageUri?.let { uriToFile(it, this) }
+            val profilePictureBase64 = profilePictureFile?.let { file ->
+                encodeImageToBase64(file)
+            } ?: ""
+            Log.d("EditProfileActivity", "Username: $username")
+            Log.d("EditProfileActivity", "Selected Date: $selectedDate")
+            Log.d("EditProfileActivity", "Gender: $gender")
+            Log.d("EditProfileActivity", "Email: $email")
+            Log.d("EditProfileActivity", "Password: $password")
+
+            viewModel.editProfile(
                 name = username,
+                password = password,
                 email = email,
                 gender = gender,
                 birthdate = selectedDate,
-                profile_picture = uploadedImageUri.toString(),
-                password = password
-            )
-            viewModel.editProfile(profileRequest)
+                profilePictureFile = profilePictureFile)
 
         }
 
@@ -118,6 +130,18 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
         binding.back.setOnClickListener {
             navigateToProfileActivity()
         }
+    }
+
+    private fun encodeImageToBase64(imageFile: File): String {
+        val inputStream = FileInputStream(imageFile)
+        val bytes = ByteArrayOutputStream()
+        val buffer = ByteArray(1024)
+        var bytesRead: Int
+        while (inputStream.read(buffer).also { bytesRead = it } != -1) {
+            bytes.write(buffer, 0, bytesRead)
+        }
+        val imageBytes: ByteArray = bytes.toByteArray()
+        return Base64.encodeToString(imageBytes, Base64.DEFAULT)
     }
 
     private fun navigateToProfileActivity() {
