@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
+import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -11,11 +12,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
-import com.example.skinsync.adapter.ListProductAdapter
 import com.example.skinsync.data.listproduct.DataListProduct
+import com.example.skinsync.viewmodel.ListProductViewModel
+import com.example.skinsync.viewmodel.ViewModelFactory
 
 class ListProductActivity : AppCompatActivity() {
 
+    private val viewModel by viewModels<ListProductViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
     private lateinit var rvProduct: RecyclerView
     private val list = ArrayList<DataListProduct>()
 
@@ -23,11 +28,6 @@ class ListProductActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_list_product)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
 
         // Set up button back
         val backButton = findViewById<ImageView>(R.id.back)
@@ -39,8 +39,16 @@ class ListProductActivity : AppCompatActivity() {
         rvProduct = findViewById(R.id.rvProduct)
         rvProduct.setHasFixedSize(true)
 
-        list.addAll(getListProduct())
-        showRecyclerList()
+        //list.addAll(getListProduct())
+        rvProduct.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+        val listProductAdapter = ListProductAdapter()
+        rvProduct.adapter = listProductAdapter
+        println("luar observe")
+        viewModel.products.observe(this) {
+            println("masuk observe $it")
+            listProductAdapter.submitData(lifecycle, it)
+        }
+        //showRecyclerList()
     }
 
     private fun getListProduct(): ArrayList<DataListProduct> {
@@ -55,9 +63,9 @@ class ListProductActivity : AppCompatActivity() {
         return listProduct
     }
 
-    private fun showRecyclerList() {
-        rvProduct.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
-        val listProductAdapter = ListProductAdapter(list)
-        rvProduct.adapter = listProductAdapter
-    }
+//    private fun showRecyclerList() {
+//        rvProduct.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+//        val listProductAdapter = com.example.skinsync.activity.users.listproduct.ListProductAdapter()
+//        rvProduct.adapter = listProductAdapter
+//    }
 }
