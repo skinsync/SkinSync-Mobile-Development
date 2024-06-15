@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.skinsync.app-mergeDebugResources-49:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
+            "outputFile": "com.example.skinsync.app-mergeDebugResources-50:/values-h320dp-port-v13/values-h320dp-port-v13.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\2e3959fb27310abd185e2de95dbf2767\\transformed\\material-1.12.0\\res\\values-h320dp-port-v13\\values-h320dp-port-v13.xml",
+                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/641384f6b6222ce7eba838b45e0e4db7/transformed/material-1.12.0/res/values-h320dp-port-v13/values-h320dp-port-v13.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
