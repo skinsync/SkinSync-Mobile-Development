@@ -11,6 +11,7 @@ import com.example.skinsync.activity.users.article.ArticleUserRepository
 import com.example.skinsync.activity.users.profile.edit.EditProfileRequest
 import com.example.skinsync.data.articleadmin.ArticleData
 import kotlinx.coroutines.launch
+import java.io.File
 
 class ProfileViewModel(private val repository: ProfileRepository) : ViewModel() {
     private val _myProfile = MutableLiveData<ProfileResponse?>()
@@ -38,15 +39,15 @@ class ProfileViewModel(private val repository: ProfileRepository) : ViewModel() 
         }
     }
 
-    fun editProfile(profileRequest: EditProfileRequest) {
+    fun editProfile(name: String, password: String, email: String, gender: String, birthdate: String, profilePictureFile: File?) {
         viewModelScope.launch {
             try {
-                _isEditSuccess.value = repository.editMyProfile(profileRequest).value
-                // Refresh profile data after updating
-                fetchProfile()
-                Log.i("ProfileViewModel", "Profile updated successfully")
+                val result = repository.editMyProfile(name, password, email, gender, birthdate, profilePictureFile).value
+                _isEditSuccess.value = result == true
+                Log.i("ProfileViewModel", "Profile updated successfully: $result")
             } catch (e: Exception) {
                 Log.e("ProfileViewModel", "Error updating profile: ${e.message}")
+                _isEditSuccess.value = false
             }
         }
     }

@@ -222,7 +222,7 @@
             android:ems="10"
             android:textColor="@color/peach"
             android:textColorHint="@color/peach"
-            android:hint="@string/input_email"
+            android:hint="@string/input_password"
             android:inputType="text" />
     </com.google.android.material.textfield.TextInputLayout>
 
