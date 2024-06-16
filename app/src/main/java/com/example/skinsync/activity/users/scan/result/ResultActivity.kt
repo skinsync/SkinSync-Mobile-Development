@@ -6,6 +6,9 @@ import android.graphics.BitmapFactory
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.Toast
@@ -15,11 +18,19 @@ import com.example.skinsync.activity.users.scan.ScanActivity
 import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
 import com.example.skinsync.databinding.ActivityResultBinding
 import com.example.skinsync.helper.ImageClassifierHelper
+import android.widget.AutoCompleteTextView
+import android.widget.ListView
+import android.widget.Spinner
+import androidx.appcompat.app.AlertDialog
+import androidx.lifecycle.ViewModelProvider
+import com.example.skinsync.helper.MultiSelectAdapter
 
-class ResultActivity : AppCompatActivity() {
+class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
     private lateinit var binding: ActivityResultBinding
     private lateinit var imageClassifierHelper: ImageClassifierHelper
+    private lateinit var adapter: MultiSelectAdapter
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +50,21 @@ class ResultActivity : AppCompatActivity() {
             val intent = Intent(this, MorningSchedulingActivity::class.java)
             startActivity(intent)
         }
+
+        val listTipeProduct = listOf("Face Wash", "Moisturizer", "Serum")
+        val adapter1 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeProduct)
+        binding.actDropdownTipeProduk.setAdapter(adapter1)
+
+        val spinner: Spinner = findViewById(R.id.spinner)
+        val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")
+        adapter = MultiSelectAdapter(this, R.layout.item_multiselect, items)
+
+        spinner.adapter = adapter
+        spinner.onItemSelectedListener = this
+
+//        val listTipeWajah = listOf("Kering", "Berminyak", "Campuran")
+//        val adapter2 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeWajah)
+//        binding.actDropdownNotable.setAdapter(adapter2)
 
         val imageUri = Uri.parse(intent.getStringExtra(EXTRA_IMAGE_URI))
         imageUri?.let {
@@ -130,8 +156,21 @@ class ResultActivity : AppCompatActivity() {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
+
+
     companion object {
         const val EXTRA_IMAGE_URI = "extra_image_uri"
         const val EXTRA_RESULT = "extra_result"
+    }
+
+    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+        val selectedItems = adapter.getSelectedItems()
+        // Do something with the selected items
+        // For example, you can display the selected items in a Toast
+        Toast.makeText(this, "Selected items: $selectedItems", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onNothingSelected(parent: AdapterView<*>?) {
+        TODO("Not yet implemented")
     }
 }

@@ -3930,6 +3930,7 @@ drawable upload_icon
 drawable user_page
 drawable view_hide
 drawable welcome
+drawable xml_border_bottom
 font josefin_sans_light
 font josefin_slab
 font lato_bold
@@ -4056,10 +4057,12 @@ id buttonCancel
 id buttonEdit
 id buttonGallery
 id buttonGetProduct
+id buttonGetRecommendation
 id buttonLogin
 id buttonPanel
 id buttonRegister
 id buttonSave
+id buttonSavedProduct
 id buttonTryNow
 id buttonUpload
 id cache_measures
@@ -4081,6 +4084,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBox
 id checkBoxCompletedRoutine
 id checkBoxFemale
 id checkBoxMale
@@ -4302,6 +4306,7 @@ id line3
 id linear
 id listMode
 id list_item
+id lvItems
 id m3_side_sheet
 id main
 id manySteps
@@ -4504,6 +4509,7 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinner
 id spline
 id split_action_bar
 id spread
@@ -4556,6 +4562,7 @@ id textSpacerNoTitle
 id textStart
 id textTitle
 id textTop
+id textView
 id textViewDate
 id text_input_end_icon
 id text_input_error_icon
@@ -4585,6 +4592,7 @@ id til_pass_ud
 id til_priority_cp
 id til_role_cu
 id til_role_ud
+id til_tipe
 id til_tipe_cp
 id til_tipe_wajah_cp
 id til_url_ad
@@ -4604,6 +4612,7 @@ id titleReminderResult
 id titleSchedulingSkincare
 id titleSkincareProduct
 id titleStoredProduct
+id titleTextView
 id titleTypeSkin
 id titleWelcomeBack
 id titleWelcomeMain
@@ -4855,9 +4864,11 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout dialog_multiselect
 layout dp_example
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_multiselect
 layout list_article_admin
 layout list_article_just_for_u
 layout list_article_users
@@ -4926,7 +4937,9 @@ layout notification_template_custom_big
 layout notification_template_icon_group
 layout notification_template_part_chronometer
 layout notification_template_part_time
+layout row_multi_select_item
 layout sdp_example
+layout searchable_list_layout
 layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material

@@ -50,8 +50,6 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.androidx.paging.common.android)
     implementation(libs.androidx.paging.runtime.ktx)
-//    implementation(libs.tensorflow.lite.support)
-//    implementation(libs.tensorflow.lite.metadata)
     implementation(libs.androidx.camera.core)
     implementation(libs.androidx.databinding.runtime)
     testImplementation(libs.junit)
@@ -83,6 +81,5 @@ dependencies {
 
     //add dependencies for notification scheduling
     implementation("androidx.work:work-runtime-ktx:2.7.1")
-
 
 }
