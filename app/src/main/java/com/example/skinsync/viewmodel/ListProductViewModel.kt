@@ -1,5 +1,6 @@
 package com.example.skinsync.viewmodel
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -10,6 +11,7 @@ import com.example.skinsync.activity.users.article.ArticleUserRepository
 import com.example.skinsync.activity.users.listproduct.ListProductRepository
 import com.example.skinsync.activity.users.listproduct.ProductDataItem
 import com.example.skinsync.data.articleadmin.ArticleData
+import kotlinx.coroutines.launch
 
 class ListProductViewModel (private val repository: ListProductRepository) : ViewModel() {
 

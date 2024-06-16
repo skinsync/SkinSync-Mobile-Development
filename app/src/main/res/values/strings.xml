@@ -45,7 +45,7 @@
     <string name="message_reminder">Jangan lupa untuk menggunakan skincare secara rutin.</string>
     <string name="title_recommend_skincare">Rekomendasi Skincare</string>
     <string name="message_result">Berdasarkan tipe kulitmu, SkinSync merekomendasikan Skincare dibawah ini untuk digunakan secara rutin agar mendapatkan hasil perawatan kulit wajah terbaik.</string>
-    <string name="button_get_product">Dapatkan disini !</string>
+    <string name="button_get_product">Simpan Produk</string>
     <string name="title_scheduling_skincare">Scheduling Skincare</string>
     <string name="desc_scheduling_result">Coba fitur Scheduling untuk mendapatkan hasil perawatan terbaik.</string>
     <string name="button_try_now">Coba Sekarang !</string>

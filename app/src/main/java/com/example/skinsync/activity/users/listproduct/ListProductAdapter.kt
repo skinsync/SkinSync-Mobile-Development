@@ -20,8 +20,7 @@ class ListProductAdapter : PagingDataAdapter<ProductDataItem, ListProductAdapter
 
     override fun onBindViewHolder(holder: ListProductViewHolder, position: Int) {
         val product = getItem(position)
-        Log.i("Adapter Data: ", product.toString())
-        println("ppppp2")
+        Log.d("ListProductAdapter", "Binding product at position $position: $product")
         if (product != null) {
             holder.bind(product)
         }
@@ -29,11 +28,11 @@ class ListProductAdapter : PagingDataAdapter<ProductDataItem, ListProductAdapter
 
     class ListProductViewHolder(private val binding: ListProductUsersBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(product: ProductDataItem) {
-            Log.i("Adapter Data: ", product.toString())
+            Log.d("ListProductViewHolder", "Binding product: $product")
             binding.apply {
 
                 tvNameProduct.text = product.name
-                tvTypeProduct.text = product.productType!!.name
+                //tvTypeProduct.text = product.productType!!.name
                 Glide.with(itemView.context)
                     .load(product.picture)
                     .into(imageProduct)

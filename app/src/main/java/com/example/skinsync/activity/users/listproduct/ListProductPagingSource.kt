@@ -17,7 +17,7 @@ class ListProductPagingSource(private val apiService: ApiService) : PagingSource
                 sortBy = "id"
             )
             val products = response.data
-            Log.i("APS products Data: ", products.toString())
+            Log.d("ListProductPagingSource", "Loaded products: ${products.size}, Page: $position")
 
             LoadResult.Page(
                 data = products,
@@ -25,6 +25,7 @@ class ListProductPagingSource(private val apiService: ApiService) : PagingSource
                 nextKey = if (products.isEmpty()) null else position + 1
             )
         } catch (exception: Exception) {
+            Log.e("ListProductPagingSource", "Error loading products", exception)
             LoadResult.Error(exception)
         }
     }
