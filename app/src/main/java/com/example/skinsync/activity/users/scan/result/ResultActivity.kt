@@ -15,11 +15,18 @@ import com.example.skinsync.activity.users.scan.ScanActivity
 import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
 import com.example.skinsync.databinding.ActivityResultBinding
 import com.example.skinsync.helper.ImageClassifierHelper
+import com.example.skinsync.helper.RecommendedClassifier
 
 class ResultActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityResultBinding
     private lateinit var imageClassifierHelper: ImageClassifierHelper
+
+    // Daftar tipe produk yang mungkin
+    val productTypes = listOf("Moisturizer", "Serum", "Sunscreen", "Face Wash", "Toner")
+
+    // Daftar efek yang mungkin
+    val notableEffects = listOf("Hydrating", "Anti-Aging", "Brightening", "Acne Control", "Soothing")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -106,6 +113,27 @@ class ResultActivity : AppCompatActivity() {
 //
 //        // Analisis gambar setelah activity dibuat
 //        uploadImage(imageUri)
+
+        val buttonGetRecommendations = findViewById<Button>(R.id.buttonGetRecommendations)
+        buttonGetRecommendations.setOnClickListener {
+            // Dapatkan input untuk getRecommendations
+            val inputSkinType = binding.typeSkin.text.toString()
+
+            // Pilih tipe produk secara acak
+            val inputProductType = productTypes.random()
+
+            // Pilih efek yang diinginkan secara acak
+            val inputNotableEffects = notableEffects.random()
+
+            // Inisialisasi RecommendedClassifier
+            val recommendedClassifier = RecommendedClassifier(this)
+
+            // Dapatkan rekomendasi produk
+            val recommendations = recommendedClassifier.getRecommendations(inputSkinType, inputProductType, inputNotableEffects)
+
+            // Tampilkan rekomendasi ke dalam UI (contoh: cetak di logcat)
+            Log.d("Recommendations", recommendations.toString())
+        }
 
     }
 
