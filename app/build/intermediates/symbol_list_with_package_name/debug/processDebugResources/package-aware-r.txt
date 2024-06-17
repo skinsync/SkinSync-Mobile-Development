@@ -4056,6 +4056,7 @@ id buttonCancel
 id buttonEdit
 id buttonGallery
 id buttonGetProduct
+id buttonGetRecommendations
 id buttonLogin
 id buttonPanel
 id buttonRegister

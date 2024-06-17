@@ -2862,6 +2862,7 @@ com.example.skinsync:style/Base.V14.Theme.MaterialComponents.Light.DarkActionBar
 com.example.skinsync:styleable/MotionHelper = 0x7f140065
 com.example.skinsync:attr/dividerHorizontal = 0x7f040182
 com.example.skinsync:style/ShapeAppearanceOverlay.Material3.Chip = 0x7f130182
+com.example.skinsync:id/buttonGetRecommendations = 0x7f0a02ff
 com.example.skinsync:styleable/ScrollingViewBehavior_Layout = 0x7f140078
 com.example.skinsync:macro/m3_comp_time_picker_time_selector_unselected_container_color = 0x7f0e0167
 com.example.skinsync:style/Widget.Design.BottomSheet.Modal = 0x7f130335

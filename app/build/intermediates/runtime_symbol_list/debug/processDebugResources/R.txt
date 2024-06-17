@@ -4055,6 +4055,7 @@ int id buttonCancel 0x7f0a0076
 int id buttonEdit 0x7f0a0077
 int id buttonGallery 0x7f0a0078
 int id buttonGetProduct 0x7f0a0079
+int id buttonGetRecommendations 0x7f0a02ff
 int id buttonLogin 0x7f0a007a
 int id buttonPanel 0x7f0a007b
 int id buttonRegister 0x7f0a007c

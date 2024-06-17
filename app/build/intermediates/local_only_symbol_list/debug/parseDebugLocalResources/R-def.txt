@@ -98,6 +98,7 @@ id buttonCancel
 id buttonEdit
 id buttonGallery
 id buttonGetProduct
+id buttonGetRecommendations
 id buttonLogin
 id buttonRegister
 id buttonSave
