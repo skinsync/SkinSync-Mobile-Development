@@ -1,6 +1,7 @@
 package com.example.skinsync.activity.users.scheduling.night
 
 import android.app.AlarmManager
+import android.app.AlertDialog
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
@@ -55,6 +56,8 @@ class NightSchedulingActivity : AppCompatActivity() {
             val intent = Intent(this, MorningSchedulingActivity::class.java)
             startActivity(intent)
         }
+
+        showDevelopmentAlert()
     }
 
     private fun setNightRoutineAlarm() {
@@ -75,5 +78,13 @@ class NightSchedulingActivity : AppCompatActivity() {
             AlarmManager.INTERVAL_DAY, // Repeat daily for night routine notification
             pendingIntent
         )
+    }
+
+    private fun showDevelopmentAlert() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Fitur dalam Pengembangan")
+        builder.setMessage("Mohon Maaf, Fitur ini masih dalam tahap pengembangan.")
+        builder.setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+        builder.show()
     }
 }
