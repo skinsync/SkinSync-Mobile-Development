@@ -4,7 +4,7 @@
             "outputFile": "com.example.skinsync.app-mergeDebugResources-51:/values-v24/values-v24.xml",
             "map": [
                 {
-                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/9d7764d5855c47c41692953c1a4e0ad8/transformed/appcompat-1.6.1/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\9d7764d5855c47c41692953c1a4e0ad8\\transformed\\appcompat-1.6.1\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/muhammadrazirizzardi/.gradle/caches/transforms-3/641384f6b6222ce7eba838b45e0e4db7/transformed/material-1.12.0/res/values-v24/values-v24.xml",
+                    "source": "C:\\Users\\hi\\.gradle\\caches\\transforms-3\\641384f6b6222ce7eba838b45e0e4db7\\transformed\\material-1.12.0\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,9,12,15",
                         "startColumns": "4,4,4,4,4,4,4,4",

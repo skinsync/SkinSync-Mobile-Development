@@ -98,11 +98,10 @@ id buttonCancel
 id buttonEdit
 id buttonGallery
 id buttonGetProduct
-id buttonGetRecommendation
+id buttonGetRecommendations
 id buttonLogin
 id buttonRegister
 id buttonSave
-id buttonSavedProduct
 id buttonTryNow
 id buttonUpload
 id card
@@ -112,7 +111,6 @@ id card3
 id card4
 id card5
 id cardView
-id checkBox
 id checkBoxCompletedRoutine
 id checkBoxFemale
 id checkBoxMale
@@ -198,7 +196,6 @@ id iv_image_product
 id iv_img_user
 id iv_preview_image_ca
 id justForYou
-id lvItems
 id main
 id manySteps
 id manyStepsNight
@@ -235,7 +232,6 @@ id searchBar
 id searchView
 id seeDetails
 id seeMore
-id spinner
 id step1
 id step2
 id step3
@@ -246,7 +242,6 @@ id textDontHaveAccount
 id textForgot
 id textMakeAccount
 id textTitle
-id textView
 id textViewDate
 id til_birthdate_cu
 id til_birthdate_ud
@@ -267,7 +262,6 @@ id til_pass_ud
 id til_priority_cp
 id til_role_cu
 id til_role_ud
-id til_tipe
 id til_tipe_cp
 id til_tipe_wajah_cp
 id til_url_ad
@@ -366,8 +360,6 @@ layout activity_result
 layout activity_scan
 layout activity_user_admin
 layout activity_welcome
-layout dialog_multiselect
-layout item_multiselect
 layout list_article_admin
 layout list_article_just_for_u
 layout list_article_users
