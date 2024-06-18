@@ -1,6 +1,7 @@
 package com.example.skinsync.helper
 
 import android.content.Context
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -17,6 +18,12 @@ class MultiSelectAdapter(
 ) : ArrayAdapter<String>(context, resource, items) {
 
     private val selectedItems = mutableSetOf<String>()
+
+    fun updateItems(newItems: List<String>) {
+        selectedItems.clear()
+        selectedItems.addAll(newItems)
+        notifyDataSetChanged()
+    }
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         return createViewFromResource(position, convertView, parent)
@@ -50,6 +57,10 @@ class MultiSelectAdapter(
             } else {
                 selectedItems.remove(items[position])
             }
+            notifyDataSetChanged()
+
+            // Log selected items from adapter
+            Log.d("MultiSelectAdapter", "Selected items: $selectedItems")
             Toast.makeText(context, "Selected items: $selectedItems", Toast.LENGTH_SHORT).show()
         }
 

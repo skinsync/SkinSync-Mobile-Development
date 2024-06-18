@@ -30,6 +30,7 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     private lateinit var binding: ActivityResultBinding
     private lateinit var imageClassifierHelper: ImageClassifierHelper
     private lateinit var adapter: MultiSelectAdapter
+    private lateinit var defaultCategory: String // Tambahkan variabel defaultCategory
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -51,16 +52,34 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
             startActivity(intent)
         }
 
-        val listTipeProduct = listOf("Face Wash", "Moisturizer", "Serum")
+        val listTipeProduct = listOf("Face Wash", "Moisturizer", "Serum", "Toner", "Sunscreen")
         val adapter1 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeProduct)
         binding.actDropdownTipeProduk.setAdapter(adapter1)
 
-        val spinner: Spinner = findViewById(R.id.spinner)
-        val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")
+        // Set defaultCategory dengan kategori pertama dari listTipeProduct
+        defaultCategory = listTipeProduct.first()
+
+        //val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")
+        //val items = listOf<String>()
+        val items = when (defaultCategory) {
+            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
+            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
+            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
+            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
+            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
+            else -> emptyList()
+        }
         adapter = MultiSelectAdapter(this, R.layout.item_multiselect, items)
 
+        val spinner: Spinner = findViewById(R.id.spinner)
         spinner.adapter = adapter
         spinner.onItemSelectedListener = this
+
+        // Manually call onItemSelected for initial selection
+        if (spinner.selectedItem != null) {
+            val position = spinner.selectedItemPosition
+            onItemSelected(spinner, spinner.selectedView, position, 0)
+        }
 
 //        val listTipeWajah = listOf("Kering", "Berminyak", "Campuran")
 //        val adapter2 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeWajah)
@@ -164,10 +183,17 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
     }
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val selectedItems = adapter.getSelectedItems()
-        // Do something with the selected items
-        // For example, you can display the selected items in a Toast
-        Toast.makeText(this, "Selected items: $selectedItems", Toast.LENGTH_SHORT).show()
+        val selectedType = parent?.getItemAtPosition(position) as String
+        val itemsForSelectedType = when (selectedType) {
+            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
+            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
+            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
+            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
+            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
+            else -> emptyList()
+        }
+        Log.d("ResultActivity", "Items for selected type: $itemsForSelectedType")
+        adapter.updateItems(itemsForSelectedType) // Update the adapter with the new items
     }
 
     override fun onNothingSelected(parent: AdapterView<*>?) {
