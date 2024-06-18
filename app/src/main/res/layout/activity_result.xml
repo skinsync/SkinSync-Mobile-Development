@@ -20,7 +20,7 @@
         android:textAlignment="center"
         android:textColor="@color/grey"
         android:textSize="@dimen/_18ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="@dimen/_30sdp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -32,64 +32,135 @@
         android:layout_height="@dimen/_120sdp"
         android:layout_marginTop="@dimen/_20sdp"
         android:layout_marginStart="@dimen/_20sdp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titlePage"
         android:src="@drawable/dasha"/>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_tipe"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/previewImageView">
+
+        <AutoCompleteTextView
+            android:id="@+id/act_dropdown_tipe_produk"
+            android:hint="Pilih Tipe Produk"
+            android:ems="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="none"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/til_tipe" />
+
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/til_notable"-->
+<!--        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="@dimen/_30sdp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginStart="@dimen/_20sdp"-->
+<!--        android:layout_marginEnd="@dimen/_20sdp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/til_tipe">-->
+
+<!--        <AutoCompleteTextView-->
+<!--            android:id="@+id/act_dropdown_notable"-->
+<!--            android:hint="Pilih Notable"-->
+<!--            android:ems="10"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="none"/>-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+    <Button
+        android:id="@+id/buttonGetRecommendation"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/button_peach"
+        android:fontFamily="@font/roboto"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:text="Dapatkan Rekomendasi Skincare"
+        android:textSize="@dimen/_9ssp"
+        android:maxLines="2"
+        android:lineSpacingExtra="2dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:backgroundTint="@null"/>
+
     <TextView
         android:id="@+id/titleTypeSkin"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_25sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/title_skin_type"
         android:textSize="@dimen/_13ssp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/previewImageView"
         app:layout_constraintTop_toBottomOf="@+id/titlePage" />
 
     <TextView
         android:id="@+id/typeSkin"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_5sdp"
         android:text="@string/type_skin"
         android:fontFamily="@font/roboto"
         android:textSize="@dimen/_11ssp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="@+id/titleTypeSkin"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/titleTypeSkin"
         app:layout_constraintTop_toBottomOf="@+id/titleTypeSkin"/>
 
     <TextView
         android:id="@+id/titleReminderResult"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_20sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/title_reminder_result"
         android:textSize="@dimen/_13ssp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
+        android:layout_marginEnd="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/previewImageView"
         app:layout_constraintTop_toBottomOf="@+id/typeSkin" />
 
     <TextView
         android:id="@+id/messageReminder"
-        android:layout_width="@dimen/_130sdp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="@dimen/_5sdp"
         android:layout_marginEnd="@dimen/_20sdp"
         android:text="@string/message_reminder"
         android:fontFamily="@font/roboto"
         android:textSize="@dimen/_11ssp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/previewImageView"
         app:layout_constraintStart_toStartOf="@+id/titleReminderResult"
         app:layout_constraintTop_toBottomOf="@+id/titleReminderResult"/>
 
@@ -97,14 +168,12 @@
         android:id="@+id/titleRecommendSkincare"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
         android:fontFamily="@font/lato_bold"
         android:text="@string/title_recommend_skincare"
         android:textSize="@dimen/_13ssp"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toRightOf="parent"
         app:layout_constraintStart_toStartOf="@id/previewImageView"
-        app:layout_constraintTop_toBottomOf="@+id/previewImageView" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonGetRecommendation" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card1"
@@ -116,7 +185,6 @@
         app:cardCornerRadius="@dimen/_8sdp"
         app:cardElevation="@dimen/_4sdp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleRecommendSkincare">
 
@@ -159,25 +227,31 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 
-    <HorizontalScrollView
-        android:id="@+id/horizontalView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_20sdp"
-        app:layout_constraintRight_toRightOf="parent"
+<!--    <HorizontalScrollView-->
+<!--        android:id="@+id/horizontalView"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_10sdp"-->
+<!--        android:layout_marginStart="@dimen/_20sdp"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintLeft_toRightOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="@id/card1"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card1">-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_160sdp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_8sdp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/card1"
         app:layout_constraintStart_toStartOf="@id/card1"
-        app:layout_constraintTop_toBottomOf="@+id/card1">
+        app:layout_constraintTop_toBottomOf="@+id/card1"/>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerView"
-            android:layout_width="@dimen/_80sdp"
-            android:layout_height="@dimen/_160sdp"
-            android:orientation="horizontal"
-            android:padding="@dimen/_8sdp"/>
-
-    </HorizontalScrollView>
+<!--    </HorizontalScrollView>-->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card2"
@@ -191,7 +265,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/horizontalView">
+        app:layout_constraintTop_toBottomOf="@id/recyclerView">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
