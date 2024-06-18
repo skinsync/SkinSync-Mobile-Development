@@ -59,7 +59,6 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-        <com.gi
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="0dp"
