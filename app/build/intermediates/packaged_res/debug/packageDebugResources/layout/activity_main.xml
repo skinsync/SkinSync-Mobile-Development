@@ -405,8 +405,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/_40sdp"
         android:layout_gravity="start"
-        app:itemIconTint="@color/beige"
-        app:itemTextColor="@color/beige"
+        app:itemIconTint="@color/peach"
+        app:itemTextColor="@color/peach"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/nav_menu"
         android:fitsSystemWindows="true"/>

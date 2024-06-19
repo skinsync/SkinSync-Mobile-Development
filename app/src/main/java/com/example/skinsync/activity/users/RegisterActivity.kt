@@ -29,6 +29,21 @@ class RegisterActivity : AppCompatActivity() {
             val name = binding.inputUsername.text.toString()
             val email = binding.inputEmail.text.toString()
             val password = binding.inputPassword.text.toString()
+
+            if (name.isEmpty()) {
+                binding.inputUsername.error = "Nama tidak boleh kosong"
+                return@setOnClickListener
+            }
+
+            if (!isValidEmail(email)) {
+                binding.inputEmail.error = "Email tidak valid"
+                return@setOnClickListener
+            }
+
+            if (password.length < 8) {
+                binding.inputPassword.error = "Password harus memiliki minimal 8 karakter"
+                return@setOnClickListener
+            }
             authRepository.register(RegisterRequest(name = name, email = email, password = password)){ response, error ->
                 if (response != null) {
                     Log.d("Auth", "Registration successful: ${response.message}")
@@ -40,5 +55,9 @@ class RegisterActivity : AppCompatActivity() {
                 }
             }
         }
+    }
+
+    private fun isValidEmail(email: String): Boolean {
+        return android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()
     }
 }

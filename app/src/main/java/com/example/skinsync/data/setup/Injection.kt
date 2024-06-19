@@ -7,6 +7,7 @@ import com.example.skinsync.data.articleadmin.ArticleAdminRepository
 import com.example.skinsync.activity.users.article.ArticleUserRepository
 import com.example.skinsync.activity.users.listproduct.ListProductRepository
 import com.example.skinsync.activity.users.profile.ProfileRepository
+import com.example.skinsync.activity.users.scan.result.ResultRepository
 import com.example.skinsync.data.dataStore
 import com.example.skinsync.viewmodel.CombinedRepository
 
@@ -35,6 +36,11 @@ object Injection {
         return ListProductRepository.getInstance(pref)
     }
 
+    fun provideResultRepository(context: Context): ResultRepository {
+        val pref = UserPreference.getInstance(context.dataStore)
+        return ResultRepository.getInstance(pref)
+    }
+
 
     fun provideCombinedRepository(context: Context): CombinedRepository {
         return CombinedRepository(
@@ -42,7 +48,8 @@ object Injection {
             provideArticleAdminRepository(context),
             provideArticleUserRepository(context),
             provideProfileRepository(context),
-            provideListProductRepository(context)
+            provideListProductRepository(context),
+            provideResultRepository(context)
         )
     }
 }

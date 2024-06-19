@@ -41,12 +41,13 @@ class LoginActivity : AppCompatActivity() {
         binding.buttonLogin.setOnClickListener {
             val email = binding.inputEmail.text.toString()
             val password = binding.inputPassword.text.toString()
+
             authRepository.login(LoginRequest(email = email, password = password)) { response, error ->
                 if (response != null) {
                     Log.d("Auth", "Login successful: ${response.message}")
                     toastMessage("Login successful\n${response.message}")
                     val userData = response.data
-                    viewModel.saveSession(UserModel(email, response.token!!, userData!!.role!!, true))
+                    viewModel.saveSession(UserModel(email, response.token!!, userData!!.role!!, true, "Normal"))
                     var intent = Intent(this@LoginActivity, MainActivity::class.java)
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)

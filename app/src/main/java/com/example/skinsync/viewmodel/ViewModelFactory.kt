@@ -9,6 +9,8 @@ import com.example.skinsync.activity.users.article.ArticleUserRepository
 import com.example.skinsync.activity.users.listproduct.ListProductRepository
 import com.example.skinsync.activity.users.profile.ProfileRepository
 import com.example.skinsync.activity.users.profile.ProfileViewModel
+import com.example.skinsync.activity.users.scan.result.ResultRepository
+import com.example.skinsync.activity.users.scan.result.ResultViewModel
 import com.example.skinsync.data.auth.AuthRepository
 import com.example.skinsync.data.setup.Injection
 
@@ -17,7 +19,8 @@ class CombinedRepository(
     val articleAdminRepository: ArticleAdminRepository,
     val articleUserRepository: ArticleUserRepository,
     val profileRepository: ProfileRepository,
-    val listProductRepository: ListProductRepository
+    val listProductRepository: ListProductRepository,
+    val resultRepository: ResultRepository
 )
 class ViewModelFactory(private val combinedRepository: CombinedRepository) : ViewModelProvider.NewInstanceFactory() {
 
@@ -41,6 +44,9 @@ class ViewModelFactory(private val combinedRepository: CombinedRepository) : Vie
             }
             modelClass.isAssignableFrom(ListProductViewModel::class.java) -> {
                 ListProductViewModel(combinedRepository.listProductRepository) as T
+            }
+            modelClass.isAssignableFrom(ResultViewModel::class.java) -> {
+                ResultViewModel(combinedRepository.resultRepository) as T
             }
             else -> throw IllegalArgumentException("Unknown ViewModel class: " + modelClass.name)
         }
