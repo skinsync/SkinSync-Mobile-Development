@@ -15,7 +15,6 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import com.bumptech.glide.Glide
 import com.example.skinsync.R
-import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.activity.users.article.ArticleActivity
 import com.example.skinsync.activity.users.listproduct.ListProductActivity
 import com.example.skinsync.activity.users.profile.ProfileActivity
@@ -49,10 +48,6 @@ class MainActivity : AppCompatActivity() {
                 startActivity(Intent(this, WelcomeActivity::class.java))
                 finish()
             } else {
-                if (user.role.equals("admin")) {
-                    startActivity(Intent(this, DashboardActivity::class.java))
-                    finish()
-                }
             }
         }
         binding = ActivityMainBinding.inflate(layoutInflater)

@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import com.example.skinsync.activity.MainActivity
-import com.example.skinsync.activity.admin.dashboard.DashboardActivity
 import com.example.skinsync.databinding.ActivityLoginBinding
 import com.example.skinsync.data.auth.AuthRepository
 import com.example.skinsync.data.auth.LoginRequest
@@ -49,9 +48,6 @@ class LoginActivity : AppCompatActivity() {
                     val userData = response.data
                     viewModel.saveSession(UserModel(email, response.token!!, userData!!.role!!, true))
                     var intent = Intent(this@LoginActivity, MainActivity::class.java)
-                    if (userData.role == "admin") {
-                        intent = Intent(this@LoginActivity, DashboardActivity::class.java)
-                    }
                     intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
                     startActivity(intent)
                     finish()
