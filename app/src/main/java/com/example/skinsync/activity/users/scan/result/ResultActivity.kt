@@ -21,16 +21,33 @@ import com.example.skinsync.helper.ImageClassifierHelper
 import android.widget.AutoCompleteTextView
 import android.widget.ListView
 import android.widget.Spinner
+import android.widget.TextView
+import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
+//import com.anurag.multiselectionspinner.MultiSelectionSpinnerDialog
+//import com.anurag.multiselectionspinner.MultiSpinner
 import com.example.skinsync.helper.MultiSelectAdapter
+import com.example.skinsync.viewmodel.ArticleUserViewModel
+import com.example.skinsync.viewmodel.ViewModelFactory
+import java.util.Arrays
 
-class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
+class ResultActivity : AppCompatActivity(){
+
+    private val viewModel by viewModels<ResultViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
 
     private lateinit var binding: ActivityResultBinding
     private lateinit var imageClassifierHelper: ImageClassifierHelper
     private lateinit var adapter: MultiSelectAdapter
     private lateinit var defaultCategory: String // Tambahkan variabel defaultCategory
+
+    //
+    private lateinit var spinner: TextView
+    private var langArray = arrayOf("Java", "C++", "Kotlin", "C", "Python", "Javascript")
+    private var selectedLanguage = BooleanArray(langArray.size)
+    private val langList = ArrayList<Int>()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -56,30 +73,77 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val adapter1 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeProduct)
         binding.actDropdownTipeProduk.setAdapter(adapter1)
 
+
+        // Inisialisasi array list untuk isi spinner
+        val contentList: MutableList<String> = ArrayList()
+
+        binding.actDropdownTipeProduk.setOnItemClickListener { parent, view, position, id ->
+            val selectedType = parent.getItemAtPosition(position) as String
+            // Lakukan sesuatu dengan selectedType
+            println("Selected Type: $selectedType")
+            Log.d("ResultActivity", "Selected Type: $selectedType")
+
+            if (selectedType == "Face Wash"){
+                langArray = arrayOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
+                selectedLanguage = BooleanArray(langArray.size)
+                setSpinner()
+            }else if (selectedType == "Moisturizer"){
+                langArray = arrayOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
+                selectedLanguage = BooleanArray(langArray.size)
+                setSpinner()
+            }else if (selectedType == "Serum"){
+                langArray = arrayOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
+                selectedLanguage = BooleanArray(langArray.size)
+                setSpinner()
+            }else if(selectedType == "Toner"){
+                langArray = arrayOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
+                selectedLanguage = BooleanArray(langArray.size)
+                setSpinner()
+            }else if (selectedType == "Sunscreen"){
+                langArray = arrayOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
+                selectedLanguage = BooleanArray(langArray.size)
+                setSpinner()
+            }else{
+                Toast.makeText(this, "Masukkan Notable Terlebih dahulu !", Toast.LENGTH_SHORT).show()
+            }
+        }
+//
+//        val spinner: MultiSpinner = findViewById(R.id.spinner)
+//
+//        val contentList : MutableList<String> = ArrayList()
+//        contentList.add("One")
+//        contentList.add("Two")
+//        contentList.add("Three")
+//        contentList.add("Four")
+//        contentList.add("Five")
+//
+//        spinner.setAdapterWithOutImage(this,contentList,this)
+
+
         // Set defaultCategory dengan kategori pertama dari listTipeProduct
-        defaultCategory = listTipeProduct.first()
+        //defaultCategory = listTipeProduct.first()
 
         //val items = listOf("Item 1", "Item 2", "Item 3", "Item 4")
         //val items = listOf<String>()
-        val items = when (defaultCategory) {
-            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
-            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
-            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
-            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
-            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
-            else -> emptyList()
-        }
-        adapter = MultiSelectAdapter(this, R.layout.item_multiselect, items)
+//        val items = when (defaultCategory) {
+//            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
+//            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
+//            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
+//            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
+//            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
+//            else -> emptyList()
+//        }
+        //adapter = MultiSelectAdapter(this, R.layout.item_multiselect, items)
 
-        val spinner: Spinner = findViewById(R.id.spinner)
-        spinner.adapter = adapter
-        spinner.onItemSelectedListener = this
 
-        // Manually call onItemSelected for initial selection
-        if (spinner.selectedItem != null) {
-            val position = spinner.selectedItemPosition
-            onItemSelected(spinner, spinner.selectedView, position, 0)
-        }
+//        spinner.adapter = adapter
+//        spinner.onItemSelectedListener = this
+//
+//        // Manually call onItemSelected for initial selection
+//        if (spinner.selectedItem != null) {
+//            val position = spinner.selectedItemPosition
+//            onItemSelected(spinner, spinner.selectedView, position, 0)
+//        }
 
 //        val listTipeWajah = listOf("Kering", "Berminyak", "Campuran")
 //        val adapter2 = ArrayAdapter(this, R.layout.list_tipe_product, listTipeWajah)
@@ -96,6 +160,7 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
                     //println("Predicted class: $prediction")
                     val label = arrayOf("Berjerawat", "Berminyak", "Kering", "Normal")
                     binding.typeSkin.text = label[prediction]
+                    viewModel.setSaveSkinType(label[prediction])
                 } else {
                     showToast("Failed to decode image")
                 }
@@ -182,21 +247,104 @@ class ResultActivity : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         const val EXTRA_RESULT = "extra_result"
     }
 
-    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val selectedType = parent?.getItemAtPosition(position) as String
-        val itemsForSelectedType = when (selectedType) {
-            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
-            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
-            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
-            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
-            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
-            else -> emptyList()
-        }
-        Log.d("ResultActivity", "Items for selected type: $itemsForSelectedType")
-        adapter.updateItems(itemsForSelectedType) // Update the adapter with the new items
-    }
+//    override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
+//        val selectedType = parent?.getItemAtPosition(position) as String
+////        val itemsForSelectedType = when (selectedType) {
+////            "Face Wash" -> listOf("acne-free", "pore-care", "brightening", "anti-aging", "soothing", "balancing", "moisturizing", "hydrating", "refreshing", "oil-control", "skin-barrier", "acne-spot", "uv-protection", "black-spot")
+////            "Moisturizer" -> listOf("moisturizing", "brightening", "hydrating", "balancing", "anti-aging", "uv-protection", "acne-free", "oil-control", "black-spot", "pore-care", "soothing", "skin-barrier", "refreshing")
+////            "Serum" -> listOf("moisturizing", "brightening", "anti-aging", "uv-protection", "acne-free", "pore-care", "soothing", "hydrating", "skin-barrier", "black-spot", "oil-control", "balancing")
+////            "Toner" -> listOf("soothing", "balancing", "acne-free", "pore-care", "brightening", "anti-aging", "oil-control", "moisturizing", "refreshing", "hydrating", "black-spot", "skin-barrier", "uv-protection")
+////            "Sunscreen" -> listOf("anti-aging", "uv-protection", "hydrating", "moisturizing", "soothing", "no-whitecast", "skin-barrier", "brightening", "acne-free", "oil-control", "pore-care", "black-spot")
+////            else -> emptyList()
+////        }
+//        println(selectedType)
+//        Log.d("ResultActivity", "Items for selected type: $selectedType")
+//        //adapter.updateItems(itemsForSelectedType) // Update the adapter with the new items
+//    }
+//
+//    override fun onNothingSelected(parent: AdapterView<*>?) {
+//        TODO("Not yet implemented")
+//    }
 
-    override fun onNothingSelected(parent: AdapterView<*>?) {
-        TODO("Not yet implemented")
+//    override fun OnMultiSpinnerItemSelected(chosenItems: MutableList<String>?) {
+//
+//        //This is where you get all your items selected from the Multi Selection Spinner :)
+//        for (i in chosenItems!!.indices){
+//
+//            Log.e("chosenItems",chosenItems[i])
+//        }
+//    }
+
+    fun setSpinner(){
+        // assign variable
+        spinner = findViewById(R.id.spinner)
+
+        // initialize selected language array
+        Arrays.fill(selectedLanguage, false)
+
+        spinner.setOnClickListener {
+            // Initialize alert dialog
+            val builder = AlertDialog.Builder(this)
+
+            // set title
+            builder.setTitle("Select Language")
+
+            // set dialog non cancelable
+            builder.setCancelable(false)
+
+            builder.setMultiChoiceItems(langArray, selectedLanguage) { _, i, b ->
+                // check condition
+                if (b) {
+                    // when checkbox selected
+                    // Add position in lang list
+                    langList.add(i)
+                    // Sort array list
+                    langList.sort()
+                } else {
+                    // when checkbox unselected
+                    // Remove position from langList
+                    langList.remove(i)
+                }
+            }
+
+            builder.setPositiveButton("OK") { _, _ ->
+                // Initialize string builder
+                val stringBuilder = StringBuilder()
+                // use for loop
+                for (j in langList.indices) {
+                    // concat array value
+                    stringBuilder.append(langArray[langList[j]])
+                    // check condition
+                    if (j != langList.size - 1) {
+                        // When j value not equal
+                        // to lang list size - 1
+                        // add comma
+                        stringBuilder.append(", ")
+                    }
+                }
+                // set text on textView
+                spinner.text = stringBuilder.toString()
+            }
+
+            builder.setNegativeButton("Cancel") { dialogInterface, _ ->
+                // dismiss dialog
+                dialogInterface.dismiss()
+            }
+
+            builder.setNeutralButton("Clear All") { _, _ ->
+                // use for loop
+                for (j in selectedLanguage.indices) {
+                    // remove all selection
+                    selectedLanguage[j] = false
+                }
+                // clear language list
+                langList.clear()
+                // clear text view value
+                spinner.text = ""
+            }
+
+            // show dialog
+            builder.show()
+        }
     }
 }

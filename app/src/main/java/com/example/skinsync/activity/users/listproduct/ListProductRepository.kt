@@ -7,8 +7,10 @@ import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
 import com.example.skinsync.activity.users.article.ArticleUserRepository
+import com.example.skinsync.data.UserModel
 import com.example.skinsync.data.UserPreference
 import com.example.skinsync.data.setup.ApiConfig
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 
 class ListProductRepository (private val pref: UserPreference
@@ -22,6 +24,10 @@ class ListProductRepository (private val pref: UserPreference
                 pagingSourceFactory = { ListProductPagingSource(apiService) }
             ).liveData
         )
+    }
+
+    fun getSession(): Flow<UserModel> {
+        return pref.getSession()
     }
 
     companion object {

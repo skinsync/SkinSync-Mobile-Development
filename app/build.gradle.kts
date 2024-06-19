@@ -82,4 +82,7 @@ dependencies {
     //add dependencies for notification scheduling
     implementation("androidx.work:work-runtime-ktx:2.7.1")
 
+    //multi select spinner
+    //implementation("com.github.AnuraganuPunalur:Multi-Selection-Spinner-Android:1.0")
+
 }

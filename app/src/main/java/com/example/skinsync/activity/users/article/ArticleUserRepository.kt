@@ -6,10 +6,12 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import androidx.paging.liveData
+import com.example.skinsync.data.UserModel
 import com.example.skinsync.data.UserPreference
 import com.example.skinsync.data.articleadmin.ArticleData
 import com.example.skinsync.data.articleadmin.ArticlePagingSource
 import com.example.skinsync.data.setup.ApiConfig
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
 
 class ArticleUserRepository(private val pref: UserPreference
@@ -23,6 +25,10 @@ class ArticleUserRepository(private val pref: UserPreference
                 pagingSourceFactory = { ArticlePagingSource(apiService) }
             ).liveData
         )
+    }
+
+    fun getSession(): Flow<UserModel> {
+        return pref.getSession()
     }
 //    suspend fun getUserArticles(page: Int, limit: Int, sortBy: String, order: String, search: String): MutableLiveData<ArticleUserResponse?> {
 //        val data = MutableLiveData<ArticleUserResponse?>()

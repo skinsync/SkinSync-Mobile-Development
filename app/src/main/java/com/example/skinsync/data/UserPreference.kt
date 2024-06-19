@@ -20,6 +20,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
             preferences[ROLE_KEY] = user.role
             preferences[TOKEN_KEY] = user.token
             preferences[IS_LOGIN_KEY] = true
+            preferences[IS_SKIN_TYPE_USER] = user.skinType
         }
     }
 
@@ -29,7 +30,8 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
                 preferences[EMAIL_KEY] ?: "",
                 preferences[TOKEN_KEY] ?: "",
                 preferences[ROLE_KEY] ?: "",
-                preferences[IS_LOGIN_KEY] ?: false
+                preferences[IS_LOGIN_KEY] ?: false,
+                preferences[IS_SKIN_TYPE_USER] ?: ""
             )
         }
     }
@@ -37,6 +39,12 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
     suspend fun logout() {
         dataStore.edit { preferences ->
             preferences.clear()
+        }
+    }
+
+    suspend fun setSaveSkinType(skinType:String){
+        dataStore.edit { preferences ->
+            preferences[IS_SKIN_TYPE_USER] = skinType
         }
     }
 
@@ -48,6 +56,7 @@ class UserPreference private constructor(private val dataStore: DataStore<Prefer
         private val TOKEN_KEY = stringPreferencesKey("token")
         private val ROLE_KEY = stringPreferencesKey("role")
         private val IS_LOGIN_KEY = booleanPreferencesKey("isLogin")
+        private val IS_SKIN_TYPE_USER = stringPreferencesKey("skinType")
 
         fun getInstance(dataStore: DataStore<Preferences>): UserPreference {
             return INSTANCE ?: synchronized(this) {
