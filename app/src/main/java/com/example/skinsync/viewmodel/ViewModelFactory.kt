@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.skinsync.activity.admin.article.ArticleAdminViewModel
-import com.example.skinsync.activity.admin.dashboard.DashboardViewModel
 import com.example.skinsync.data.articleadmin.ArticleAdminRepository
 import com.example.skinsync.activity.users.article.ArticleUserRepository
 import com.example.skinsync.activity.users.listproduct.ListProductRepository
@@ -30,9 +29,6 @@ class ViewModelFactory(private val combinedRepository: CombinedRepository) : Vie
             }
             modelClass.isAssignableFrom(MainViewModel::class.java) -> {
                 MainViewModel(combinedRepository.authRepository) as T
-            }
-            modelClass.isAssignableFrom(DashboardViewModel::class.java) -> {
-                DashboardViewModel(combinedRepository.authRepository) as T
             }
             modelClass.isAssignableFrom(ArticleAdminViewModel::class.java) -> {
                 ArticleAdminViewModel(combinedRepository.articleAdminRepository) as T
