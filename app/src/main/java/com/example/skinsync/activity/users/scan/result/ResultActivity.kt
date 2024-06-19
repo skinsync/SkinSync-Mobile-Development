@@ -25,14 +25,21 @@ import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AlertDialog
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.skinsync.activity.users.listproduct.ListProductAdapter
 //import com.anurag.multiselectionspinner.MultiSelectionSpinnerDialog
 //import com.anurag.multiselectionspinner.MultiSpinner
 import com.example.skinsync.helper.MultiSelectAdapter
 import com.example.skinsync.viewmodel.ArticleUserViewModel
+import com.example.skinsync.viewmodel.ListProductViewModel
+import com.example.skinsync.viewmodel.LoadingViewModel
 import com.example.skinsync.viewmodel.ViewModelFactory
 import java.util.Arrays
 
 class ResultActivity : AppCompatActivity(){
+    private val viewModelRecommendation by viewModels<RecommendationViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
 
     private val viewModel by viewModels<ResultViewModel> {
         ViewModelFactory.getInstance(this)
@@ -49,11 +56,20 @@ class ResultActivity : AppCompatActivity(){
     private var selectedLanguage = BooleanArray(langArray.size)
     private val langList = ArrayList<Int>()
 
+    private lateinit var skinType: String
+    private lateinit var productType: String
+    private lateinit var notableEffect: String
+
+    private lateinit var loadingViewModel: LoadingViewModel
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
 
         // Set up button back
         val backButton = findViewById<ImageView>(R.id.back)
@@ -67,6 +83,14 @@ class ResultActivity : AppCompatActivity(){
         buttonTryNow.setOnClickListener {
             val intent = Intent(this, MorningSchedulingActivity::class.java)
             startActivity(intent)
+        }
+
+        // Inisialisasi ViewModel
+        loadingViewModel = ViewModelProvider(this).get(LoadingViewModel::class.java)
+
+        // Observer untuk isLoading
+        loadingViewModel.isLoading.observe(this) { isLoading ->
+            showLoading(isLoading)
         }
 
         val listTipeProduct = listOf("Face Wash", "Moisturizer", "Serum", "Toner", "Sunscreen")
@@ -217,6 +241,36 @@ class ResultActivity : AppCompatActivity(){
 //        // Analisis gambar setelah activity dibuat
 //        uploadImage(imageUri)
 
+        // Set up RecyclerView
+        val recommendationAdapter = RecommendationAdapter()
+        binding.recyclerView.apply {
+            layoutManager = LinearLayoutManager(this@ResultActivity, LinearLayoutManager.HORIZONTAL, false)
+            adapter = recommendationAdapter
+        }
+
+        binding.buttonGetRecommendation.setOnClickListener{
+            skinType = binding.typeSkin.text.toString()
+            productType = binding.actDropdownTipeProduk.text.toString()
+            notableEffect = binding.spinner.text.toString()
+
+            loadingViewModel.setLoadingStatus(true)
+
+            if (skinType.isEmpty() || productType.isEmpty() || notableEffect.isEmpty()) {
+                loadingViewModel.setLoadingStatus(false)
+                Toast.makeText(this, "Skin Type, Product Type, dan Notable Effect tidak boleh kosong", Toast.LENGTH_SHORT).show()
+            } else {
+                viewModelRecommendation.getRecommendedSkincare(skinType, productType, listOf(notableEffect))
+                loadingViewModel.setLoadingStatus(false)
+            }
+        }
+
+        // Observe data from ViewModel and submit to adapter
+        Log.d("Luar Observe View Model", "Luar")
+        viewModelRecommendation.recommendedSkincare.observe(this) { pagingData ->
+            Log.d("ResultActivity", "Submitting data to adapter: $pagingData")
+            recommendationAdapter.submitData(lifecycle, pagingData)
+        }
+
     }
 
     fun getBitmapFromUri(uri: Uri?): Bitmap? {
@@ -345,6 +399,14 @@ class ResultActivity : AppCompatActivity(){
 
             // show dialog
             builder.show()
+        }
+    }
+
+    private fun showLoading(isLoading: Boolean){
+        if (isLoading){
+            binding.progressIndicator.visibility = View.VISIBLE
+        }else{
+            binding.progressIndicator.visibility = View.GONE
         }
     }
 }

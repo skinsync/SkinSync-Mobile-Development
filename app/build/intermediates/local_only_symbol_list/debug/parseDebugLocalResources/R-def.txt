@@ -20,6 +20,7 @@ drawable background_article
 drawable baseline_account_circle_24
 drawable bell
 drawable books
+drawable border
 drawable box
 drawable brands
 drawable button_peach
@@ -42,6 +43,7 @@ drawable icon_article
 drawable icon_list_product
 drawable icon_logout
 drawable icon_user
+drawable kosongproduct
 drawable lock
 drawable logo_resize
 drawable mail
@@ -99,7 +101,6 @@ id buttonEdit
 id buttonGallery
 id buttonGetProduct
 id buttonGetRecommendation
-id buttonGetRecommendations
 id buttonLogin
 id buttonRegister
 id buttonSave
@@ -162,7 +163,6 @@ id genderRadioGroup
 id genderTitle
 id gmailUser
 id gmail_textView
-id horizontalView
 id horizontalView2
 id ib_filter
 id ib_preview_image_ad

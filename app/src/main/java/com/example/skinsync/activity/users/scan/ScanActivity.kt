@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -15,17 +16,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.ViewModelProvider
 import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.activity.users.scan.result.ResultActivity
 import com.example.skinsync.databinding.ActivityScanBinding
 import com.example.skinsync.getImageUri
+import com.example.skinsync.viewmodel.LoadingViewModel
 
 class ScanActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityScanBinding
 
     private var currentImageUri: Uri? = null
+
+    private lateinit var loadingViewModel: LoadingViewModel
 
     private fun allPermissionsGranted() =
         ContextCompat.checkSelfPermission(
@@ -49,6 +54,8 @@ class ScanActivity : AppCompatActivity() {
         binding = ActivityScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         // Set up button back
         val backButton = findViewById<ImageView>(R.id.back)
         backButton.setOnClickListener {
@@ -60,9 +67,28 @@ class ScanActivity : AppCompatActivity() {
             requestPermissionLauncher.launch(REQUIRED_PERMISSION)
         }
 
+        // Inisialisasi ViewModel
+        loadingViewModel = ViewModelProvider(this).get(LoadingViewModel::class.java)
+
+        // Observer untuk isLoading
+        loadingViewModel.isLoading.observe(this) { isLoading ->
+            showLoading(isLoading)
+        }
+
+        // Contoh penggunaan, misalnya saat loading dimulai
+        loadingViewModel.setLoadingStatus(true)
+
+        // ... Lakukan proses loading
+
+        // Contoh penggunaan, misalnya saat loading selesai
+        loadingViewModel.setLoadingStatus(false)
+
         binding.buttonGallery.setOnClickListener { startGallery() }
         binding.buttonCamera.setOnClickListener { startCamera() }
-        binding.buttonUpload.setOnClickListener { uploadImage() }
+        binding.buttonUpload.setOnClickListener {
+            loadingViewModel.setLoadingStatus(true)
+            uploadImage()
+        }
     }
 
     private fun startGallery() {
@@ -111,6 +137,14 @@ class ScanActivity : AppCompatActivity() {
 
     companion object {
         private const val REQUIRED_PERMISSION = Manifest.permission.CAMERA
+    }
+
+    private fun showLoading(isLoading: Boolean){
+        if (isLoading){
+            binding.progressIndicator.visibility = View.VISIBLE
+        }else{
+            binding.progressIndicator.visibility = View.GONE
+        }
     }
 
 }

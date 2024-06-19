@@ -19,6 +19,8 @@ class WelcomeActivity : AppCompatActivity() {
         binding = ActivityWelcomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        supportActionBar?.hide()
+
         // Fungsi untuk tombol Login
         findViewById<Button>(R.id.buttonLogin).setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))

@@ -1,4 +1,4 @@
-#Wed Jun 19 16:22:19 WIB 2024
+#Thu Jun 20 01:24:34 WIB 2024
 base.0=C\:\\Users\\hi\\AndroidStudioProjects\\SkinSync\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes.dex
 base.1=C\:\\Users\\hi\\AndroidStudioProjects\\SkinSync\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
 base.10=C\:\\Users\\hi\\AndroidStudioProjects\\SkinSync\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\6\\classes.dex

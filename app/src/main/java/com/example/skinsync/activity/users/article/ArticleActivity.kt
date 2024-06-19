@@ -3,15 +3,18 @@ package com.example.skinsync.activity.users.article
 import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
+import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.databinding.ActivityArticleBinding
 import com.example.skinsync.viewmodel.ArticleUserViewModel
+import com.example.skinsync.viewmodel.LoadingViewModel
 import com.example.skinsync.viewmodel.ViewModelFactory
 import java.util.Locale
 
@@ -21,10 +24,13 @@ class ArticleActivity : AppCompatActivity() {
         ViewModelFactory.getInstance(this)
     }
     private lateinit var articleAdapter: ArticleUserAdapter
+    private lateinit var loadingViewModel: LoadingViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityArticleBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        supportActionBar?.hide()
 
         val textViewDate: TextView = findViewById(R.id.textViewDate)
 
@@ -42,6 +48,14 @@ class ArticleActivity : AppCompatActivity() {
             startActivity(intent) // Memulai MainActivity
         }
 
+        // Inisialisasi ViewModel
+        loadingViewModel = ViewModelProvider(this).get(LoadingViewModel::class.java)
+
+        // Observer untuk isLoading
+        loadingViewModel.isLoading.observe(this) { isLoading ->
+            showLoading(isLoading)
+        }
+
         // Inisialisasi RecyclerView
         binding.recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
 
@@ -51,7 +65,9 @@ class ArticleActivity : AppCompatActivity() {
 
         // Observasi LiveData untuk mendapatkan data artikel
         viewModel.articles.observe(this) {
+            loadingViewModel.setLoadingStatus(true)
             articleAdapter.submitData(lifecycle, it)
+            loadingViewModel.setLoadingStatus(false)
         }
 
         // Panggil metode untuk mendapatkan data artikel
@@ -65,4 +81,12 @@ class ArticleActivity : AppCompatActivity() {
 //        // Update data di ArticleAdapter
 //        articleAdapter.updateData(articleList)
 //    }
+
+    private fun showLoading(isLoading: Boolean){
+        if (isLoading){
+            binding.progressIndicator.visibility = View.VISIBLE
+        }else{
+            binding.progressIndicator.visibility = View.GONE
+        }
+    }
 }

@@ -3773,6 +3773,7 @@ drawable background_article
 drawable baseline_account_circle_24
 drawable bell
 drawable books
+drawable border
 drawable box
 drawable brands
 drawable btn_checkbox_checked_mtrl
@@ -3827,6 +3828,7 @@ drawable icon_list_product
 drawable icon_logout
 drawable icon_user
 drawable indeterminate_static
+drawable kosongproduct
 drawable lock
 drawable logo_resize
 drawable m3_avd_hide_password
@@ -4057,7 +4059,6 @@ id buttonEdit
 id buttonGallery
 id buttonGetProduct
 id buttonGetRecommendation
-id buttonGetRecommendations
 id buttonLogin
 id buttonPanel
 id buttonRegister
@@ -4242,7 +4243,6 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
-id horizontalView
 id horizontalView2
 id horizontal_only
 id ib_filter
