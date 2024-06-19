@@ -3772,6 +3772,7 @@ int drawable background_article 0x7f08007c
 int drawable baseline_account_circle_24 0x7f08007d
 int drawable bell 0x7f08007e
 int drawable books 0x7f08007f
+int drawable border 0x7f08011d
 int drawable box 0x7f080080
 int drawable brands 0x7f080081
 int drawable btn_checkbox_checked_mtrl 0x7f080082
@@ -3826,6 +3827,7 @@ int drawable icon_list_product 0x7f0800b2
 int drawable icon_logout 0x7f0800b3
 int drawable icon_user 0x7f0800b4
 int drawable indeterminate_static 0x7f0800b5
+int drawable kosongproduct 0x7f08011e
 int drawable lock 0x7f0800b6
 int drawable logo_resize 0x7f0800b7
 int drawable m3_avd_hide_password 0x7f0800b8
@@ -4056,7 +4058,6 @@ int id buttonEdit 0x7f0a0077
 int id buttonGallery 0x7f0a0078
 int id buttonGetProduct 0x7f0a0079
 int id buttonGetRecommendation 0x7f0a007a
-int id buttonGetRecommendations 0x7f0a007b
 int id buttonLogin 0x7f0a007c
 int id buttonPanel 0x7f0a007d
 int id buttonRegister 0x7f0a007e
@@ -4241,7 +4242,6 @@ int id hideable 0x7f0a0130
 int id home 0x7f0a0131
 int id homeAsUp 0x7f0a0132
 int id honorRequest 0x7f0a0133
-int id horizontalView 0x7f0a0134
 int id horizontalView2 0x7f0a0135
 int id horizontal_only 0x7f0a0136
 int id ib_filter 0x7f0a0137

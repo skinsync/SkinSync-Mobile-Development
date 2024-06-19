@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -74,6 +75,9 @@ public final class ActivityRegisterBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final ProgressBar progressIndicator;
+
+  @NonNull
   public final TextView titleApp;
 
   private ActivityRegisterBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView background,
@@ -84,7 +88,8 @@ public final class ActivityRegisterBinding implements ViewBinding {
       @NonNull ImageView iconPassword, @NonNull ImageView iconUser,
       @NonNull EditText inputConfirmPassword, @NonNull EditText inputEmail,
       @NonNull EditText inputPassword, @NonNull EditText inputUsername,
-      @NonNull ConstraintLayout main, @NonNull TextView titleApp) {
+      @NonNull ConstraintLayout main, @NonNull ProgressBar progressIndicator,
+      @NonNull TextView titleApp) {
     this.rootView = rootView;
     this.background = background;
     this.box = box;
@@ -103,6 +108,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
     this.inputPassword = inputPassword;
     this.inputUsername = inputUsername;
     this.main = main;
+    this.progressIndicator = progressIndicator;
     this.titleApp = titleApp;
   }
 
@@ -231,6 +237,12 @@ public final class ActivityRegisterBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.progressIndicator;
+      ProgressBar progressIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (progressIndicator == null) {
+        break missingId;
+      }
+
       id = R.id.titleApp;
       TextView titleApp = ViewBindings.findChildViewById(rootView, id);
       if (titleApp == null) {
@@ -240,7 +252,7 @@ public final class ActivityRegisterBinding implements ViewBinding {
       return new ActivityRegisterBinding((ConstraintLayout) rootView, background, box,
           buttonRegister, descApp, fieldConfirmPassword, fieldEmail, fieldPassword, fieldUsername,
           iconConfirmPassword, iconEmail, iconPassword, iconUser, inputConfirmPassword, inputEmail,
-          inputPassword, inputUsername, main, titleApp);
+          inputPassword, inputUsername, main, progressIndicator, titleApp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

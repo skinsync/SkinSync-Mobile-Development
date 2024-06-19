@@ -25,12 +25,6 @@
         android:theme="@style/Theme.SkinSync"
         tools:targetApi="31">
         <activity
-            android:name=".activity.admin.producttype.ProductTypeAdminActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.admin.product.DetailProductAdminActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.admin.user.CreateUserAdminActivity"
             android:exported="false" />
         <activity
@@ -46,9 +40,6 @@
             android:name=".activity.users.article.ArticleActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.admin.product.CreateProductAdminActivity"
-            android:exported="true" />
-        <activity
             android:name=".activity.users.listproduct.ListProductActivity"
             android:exported="true" />
         <activity
@@ -56,9 +47,6 @@
             android:exported="false" />
         <activity
             android:name=".activity.users.scheduling.morning.MorningSchedulingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".activity.admin.product.ProductAdminActivity"
             android:exported="false" />
         <activity
             android:name=".activity.admin.article.DetailArticleAdminActivity"
@@ -69,11 +57,6 @@
         <activity
             android:name=".activity.users.scan.ScanActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activity.admin.article.CreateArticleAdminActivity"
@@ -90,12 +73,8 @@
 
         </activity>
         <activity
-            android:name=".activity.admin.dashboard.DashboardActivity"
-            android:exported="false" />
-        <activity
             android:name=".activity.users.welcome.WelcomeActivity"
             android:exported="true">
-
         </activity>
         <activity
             android:name=".activity.users.LoginActivity"
@@ -107,6 +86,11 @@
             android:name=".activity.MainActivity"
             android:exported="true">
 
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <receiver

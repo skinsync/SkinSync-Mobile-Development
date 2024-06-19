@@ -6,9 +6,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.FrameLayout;
-import android.widget.HorizontalScrollView;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,9 +43,6 @@ public final class ActivityMainBinding implements ViewBinding {
   public final FrameLayout frame;
 
   @NonNull
-  public final HorizontalScrollView horizontalView;
-
-  @NonNull
   public final ImageButton ibFilter;
 
   @NonNull
@@ -76,7 +73,10 @@ public final class ActivityMainBinding implements ViewBinding {
   public final TextView or;
 
   @NonNull
-  public final RecyclerView recyclerView;
+  public final ProgressBar progressIndicator;
+
+  @NonNull
+  public final RecyclerView rvProduct;
 
   @NonNull
   public final SearchBar searchBar;
@@ -119,22 +119,22 @@ public final class ActivityMainBinding implements ViewBinding {
 
   private ActivityMainBinding(@NonNull DrawerLayout rootView, @NonNull Button buttonTryNow,
       @NonNull CardView card, @NonNull TextView descMainFitur, @NonNull FrameLayout frame,
-      @NonNull HorizontalScrollView horizontalView, @NonNull ImageButton ibFilter,
-      @NonNull ImageView imageCloud, @NonNull ImageView imageExpression,
-      @NonNull ImageView imageGallery, @NonNull ImageView imageScan, @NonNull DrawerLayout main,
-      @NonNull NavigationView navView, @NonNull TextView next, @NonNull TextView next2,
-      @NonNull TextView or, @NonNull RecyclerView recyclerView, @NonNull SearchBar searchBar,
-      @NonNull SearchView searchView, @NonNull TextView step1, @NonNull TextView step2,
-      @NonNull TextView step3, @NonNull TextView step4, @NonNull TextView stepFitur,
-      @NonNull TextView titleMainFitur, @NonNull TextView titleSkincareProduct,
-      @NonNull TextView titleWelcomeMain, @NonNull ConstraintLayout toolbar,
-      @NonNull TextView tungguApalagi, @NonNull ImageButton userPicture) {
+      @NonNull ImageButton ibFilter, @NonNull ImageView imageCloud,
+      @NonNull ImageView imageExpression, @NonNull ImageView imageGallery,
+      @NonNull ImageView imageScan, @NonNull DrawerLayout main, @NonNull NavigationView navView,
+      @NonNull TextView next, @NonNull TextView next2, @NonNull TextView or,
+      @NonNull ProgressBar progressIndicator, @NonNull RecyclerView rvProduct,
+      @NonNull SearchBar searchBar, @NonNull SearchView searchView, @NonNull TextView step1,
+      @NonNull TextView step2, @NonNull TextView step3, @NonNull TextView step4,
+      @NonNull TextView stepFitur, @NonNull TextView titleMainFitur,
+      @NonNull TextView titleSkincareProduct, @NonNull TextView titleWelcomeMain,
+      @NonNull ConstraintLayout toolbar, @NonNull TextView tungguApalagi,
+      @NonNull ImageButton userPicture) {
     this.rootView = rootView;
     this.buttonTryNow = buttonTryNow;
     this.card = card;
     this.descMainFitur = descMainFitur;
     this.frame = frame;
-    this.horizontalView = horizontalView;
     this.ibFilter = ibFilter;
     this.imageCloud = imageCloud;
     this.imageExpression = imageExpression;
@@ -145,7 +145,8 @@ public final class ActivityMainBinding implements ViewBinding {
     this.next = next;
     this.next2 = next2;
     this.or = or;
-    this.recyclerView = recyclerView;
+    this.progressIndicator = progressIndicator;
+    this.rvProduct = rvProduct;
     this.searchBar = searchBar;
     this.searchView = searchView;
     this.step1 = step1;
@@ -212,12 +213,6 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.horizontalView;
-      HorizontalScrollView horizontalView = ViewBindings.findChildViewById(rootView, id);
-      if (horizontalView == null) {
-        break missingId;
-      }
-
       id = R.id.ib_filter;
       ImageButton ibFilter = ViewBindings.findChildViewById(rootView, id);
       if (ibFilter == null) {
@@ -274,9 +269,15 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.recyclerView;
-      RecyclerView recyclerView = ViewBindings.findChildViewById(rootView, id);
-      if (recyclerView == null) {
+      id = R.id.progressIndicator;
+      ProgressBar progressIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (progressIndicator == null) {
+        break missingId;
+      }
+
+      id = R.id.rvProduct;
+      RecyclerView rvProduct = ViewBindings.findChildViewById(rootView, id);
+      if (rvProduct == null) {
         break missingId;
       }
 
@@ -359,8 +360,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((DrawerLayout) rootView, buttonTryNow, card, descMainFitur,
-          frame, horizontalView, ibFilter, imageCloud, imageExpression, imageGallery, imageScan,
-          main, navView, next, next2, or, recyclerView, searchBar, searchView, step1, step2, step3,
+          frame, ibFilter, imageCloud, imageExpression, imageGallery, imageScan, main, navView,
+          next, next2, or, progressIndicator, rvProduct, searchBar, searchView, step1, step2, step3,
           step4, stepFitur, titleMainFitur, titleSkincareProduct, titleWelcomeMain, toolbar,
           tungguApalagi, userPicture);
     }

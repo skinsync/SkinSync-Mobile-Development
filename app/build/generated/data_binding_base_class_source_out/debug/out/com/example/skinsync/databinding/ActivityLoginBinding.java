@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -60,6 +61,9 @@ public final class ActivityLoginBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
+  public final ProgressBar progressIndicator;
+
+  @NonNull
   public final TextView textDontHaveAccount;
 
   @NonNull
@@ -77,8 +81,8 @@ public final class ActivityLoginBinding implements ViewBinding {
       @NonNull ConstraintLayout fieldEmail, @NonNull ConstraintLayout fieldPassword,
       @NonNull ImageView iconEmail, @NonNull ImageView iconPassword, @NonNull EditText inputEmail,
       @NonNull EditText inputPassword, @NonNull ConstraintLayout main,
-      @NonNull TextView textDontHaveAccount, @NonNull TextView textForgot,
-      @NonNull TextView textMakeAccount, @NonNull TextView titleApp) {
+      @NonNull ProgressBar progressIndicator, @NonNull TextView textDontHaveAccount,
+      @NonNull TextView textForgot, @NonNull TextView textMakeAccount, @NonNull TextView titleApp) {
     this.rootView = rootView;
     this.background = background;
     this.box = box;
@@ -92,6 +96,7 @@ public final class ActivityLoginBinding implements ViewBinding {
     this.inputEmail = inputEmail;
     this.inputPassword = inputPassword;
     this.main = main;
+    this.progressIndicator = progressIndicator;
     this.textDontHaveAccount = textDontHaveAccount;
     this.textForgot = textForgot;
     this.textMakeAccount = textMakeAccount;
@@ -193,6 +198,12 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
+      id = R.id.progressIndicator;
+      ProgressBar progressIndicator = ViewBindings.findChildViewById(rootView, id);
+      if (progressIndicator == null) {
+        break missingId;
+      }
+
       id = R.id.textDontHaveAccount;
       TextView textDontHaveAccount = ViewBindings.findChildViewById(rootView, id);
       if (textDontHaveAccount == null) {
@@ -219,7 +230,8 @@ public final class ActivityLoginBinding implements ViewBinding {
 
       return new ActivityLoginBinding((ConstraintLayout) rootView, background, box, buttonLogin,
           checkBoxRemember, descApp, fieldEmail, fieldPassword, iconEmail, iconPassword, inputEmail,
-          inputPassword, main, textDontHaveAccount, textForgot, textMakeAccount, titleApp);
+          inputPassword, main, progressIndicator, textDontHaveAccount, textForgot, textMakeAccount,
+          titleApp);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

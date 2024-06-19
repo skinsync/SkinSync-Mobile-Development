@@ -32,7 +32,7 @@ class ListProductAdapter : PagingDataAdapter<ProductDataItem, ListProductAdapter
             binding.apply {
 
                 tvNameProduct.text = product.name
-                //tvTypeProduct.text = product.productType!!.name
+                tvTypeProduct.text = product.productType!!.name
                 Glide.with(itemView.context)
                     .load(product.picture)
                     .into(imageProduct)

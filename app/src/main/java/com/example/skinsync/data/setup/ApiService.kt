@@ -7,6 +7,8 @@ import com.example.skinsync.activity.users.article.ArticleUserResponse
 import com.example.skinsync.activity.users.listproduct.ListProductResponse
 import com.example.skinsync.activity.users.profile.EditProfileResponse
 import com.example.skinsync.activity.users.profile.ProfileResponse
+import com.example.skinsync.activity.users.scan.result.RecommendationDataItem
+import com.example.skinsync.activity.users.scan.result.RecommendationResponse
 import com.example.skinsync.data.auth.LoginRequest
 import com.example.skinsync.data.auth.LoginResponse
 import com.example.skinsync.data.auth.RegisterRequest
@@ -22,6 +24,7 @@ import retrofit2.http.Multipart
 import retrofit2.http.PUT
 import retrofit2.http.Part
 import retrofit2.http.Query
+import retrofit2.http.QueryMap
 
 interface ApiService {
     @POST("auth/register")
@@ -75,5 +78,12 @@ interface ApiService {
         @Query("order") order: String,
         @Query("search") search: String
     ): ListProductResponse
+
+    @GET("predict/recommendation-raw")
+    suspend fun getRecommendedSkincare(
+        @Query("skintype") skintype: String,
+        @Query("product_type") productType: String,
+        @Query("notable_effects[]") notableEffects: List<String>
+    ): RecommendationResponse
 
 }
