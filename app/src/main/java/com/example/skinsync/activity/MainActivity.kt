@@ -105,38 +105,21 @@ class MainActivity : AppCompatActivity() {
         navView.setNavigationItemSelectedListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.nav_user -> {
-                    Toast.makeText(
-                        applicationContext,
-                        "Clicked User Profile Page",
-                        Toast.LENGTH_SHORT
-                    ).show()
                     startActivity(Intent(this, ProfileActivity::class.java))
                     true
                 }
 
                 R.id.nav_article -> {
-                    Toast.makeText(applicationContext, "Clicked Article Page", Toast.LENGTH_SHORT)
-                        .show()
                     startActivity(Intent(this, ArticleActivity::class.java))
                     true
                 }
 
                 R.id.nav_list_product -> {
-                    Toast.makeText(
-                        applicationContext,
-                        "Clicked List of Product Page",
-                        Toast.LENGTH_SHORT
-                    ).show()
                     startActivity(Intent(this, ListProductActivity::class.java))
                     true
                 }
 
                 R.id.nav_scheduling -> {
-                    Toast.makeText(
-                        applicationContext,
-                        "Clicked Morning Scheduling Page",
-                        Toast.LENGTH_SHORT
-                    ).show()
                     startActivity(Intent(this, MorningSchedulingActivity::class.java))
                     true
                 }
@@ -160,6 +143,10 @@ class MainActivity : AppCompatActivity() {
         ibFilter.setOnClickListener {
             // Menampilkan toast
             Toast.makeText(this, "Fitur filter masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.searchBar.setOnClickListener(){
+            Toast.makeText(this, "Fitur search masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
         }
 
         // Set up RecyclerView

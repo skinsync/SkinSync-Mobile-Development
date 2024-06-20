@@ -5,7 +5,10 @@ import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.skinsync.data.setup.ApiService
 
-class ArticlePagingSource(private val apiService: ApiService) : PagingSource<Int, ArticleData>() {
+class ArticlePagingSource(
+    private val apiService: ApiService,
+    private val searchQuery: String
+) : PagingSource<Int, ArticleData>() {
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, ArticleData> {
         return try {
             val position = params.key ?: 1
@@ -13,11 +16,11 @@ class ArticlePagingSource(private val apiService: ApiService) : PagingSource<Int
                 page = position,
                 limit = params.loadSize,
                 order = "ASC",
-                search = "",
+                search = searchQuery,
                 sortBy = "id"
             )
             val articles = response.data
-            Log.i("APS Artcle Data: ", articles.toString())
+            Log.i("APS Article Data: ", articles.toString())
 
             LoadResult.Page(
                 data = articles,

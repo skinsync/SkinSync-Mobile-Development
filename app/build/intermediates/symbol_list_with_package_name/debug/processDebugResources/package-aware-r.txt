@@ -4243,7 +4243,6 @@ id hideable
 id home
 id homeAsUp
 id honorRequest
-id horizontalView2
 id horizontal_only
 id ib_filter
 id ib_preview_image_ad
@@ -4452,7 +4451,6 @@ id ratio
 id rectangles
 id recyclerView
 id recyclerView2
-id recyclerViewJFY
 id report_drawn
 id reverseSawtooth
 id right
@@ -4945,6 +4943,7 @@ layout ssp_example
 layout support_simple_spinner_dropdown_item
 menu nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
 string abc_action_bar_home_description

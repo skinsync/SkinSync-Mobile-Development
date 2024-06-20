@@ -163,7 +163,6 @@ id genderRadioGroup
 id genderTitle
 id gmailUser
 id gmail_textView
-id horizontalView2
 id ib_filter
 id ib_preview_image_ad
 id ib_preview_image_ca
@@ -227,7 +226,6 @@ id radioGroupGender
 id radioMale
 id recyclerView
 id recyclerView2
-id recyclerViewJFY
 id row_1
 id row_2
 id row_3
@@ -382,6 +380,7 @@ layout list_user_admin
 layout nav_header
 menu nav_menu
 mipmap ic_launcher
+mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 string age_desc
 string age_title

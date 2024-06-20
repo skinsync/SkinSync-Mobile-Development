@@ -66,12 +66,12 @@
 38        android:extractNativeLibs="false"
 39        android:fullBackupContent="@xml/backup_rules"
 39-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:20:9-54
-40        android:icon="@mipmap/ic_launcher"
-40-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:21:9-43
+40        android:icon="@drawable/logo_resize"
+40-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:21:9-45
 41        android:label="@string/app_name"
 41-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:22:9-41
-42        android:roundIcon="@mipmap/ic_launcher_round"
-42-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:23:9-54
+42        android:roundIcon="@drawable/logo_resize"
+42-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:23:9-50
 43        android:supportsRtl="true"
 43-->C:\Users\hi\AndroidStudioProjects\SkinSync\app\src\main\AndroidManifest.xml:24:9-35
 44        android:testOnly="true"

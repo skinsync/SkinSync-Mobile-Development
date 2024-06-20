@@ -10,46 +10,64 @@ import com.example.skinsync.data.UserModel
 import com.example.skinsync.data.UserPreference
 import com.example.skinsync.data.articleadmin.ArticleData
 import com.example.skinsync.data.articleadmin.ArticlePagingSource
+import com.example.skinsync.data.articleadmin.ArticleRequest
+import com.example.skinsync.data.articleadmin.ArticlesResponse
 import com.example.skinsync.data.setup.ApiConfig
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.withContext
+import retrofit2.awaitResponse
 
-class ArticleUserRepository(private val pref: UserPreference
-) {
-    fun getArticle(): LiveData<PagingData<ArticleData>> = liveData {
+class ArticleUserRepository(private val pref: UserPreference) {
+
+    fun getSession(): Flow<UserModel> {
+        return pref.getSession()
+    }
+
+    fun getArticles(): LiveData<PagingData<ArticleData>> = liveData {
         val token = pref.getSession().first().token
         val apiService = ApiConfig.getApiService(token)
         emitSource(
             Pager(
                 config = PagingConfig(pageSize = 5, enablePlaceholders = false),
-                pagingSourceFactory = { ArticlePagingSource(apiService) }
+                pagingSourceFactory = { ArticlePagingSource(apiService, "") }
             ).liveData
         )
     }
 
-    fun getSession(): Flow<UserModel> {
-        return pref.getSession()
+    fun searchArticles(): LiveData<PagingData<ArticleData>> = liveData {
+        val token = pref.getSession().first().token
+        val query = pref.getSession().first().skinType
+        val apiService = ApiConfig.getApiService(token)
+        emitSource(
+            Pager(
+                config = PagingConfig(pageSize = 5, enablePlaceholders = false),
+                pagingSourceFactory = { ArticlePagingSource(apiService, query) }
+            ).liveData
+        )
     }
-//    suspend fun getUserArticles(page: Int, limit: Int, sortBy: String, order: String, search: String): MutableLiveData<ArticleUserResponse?> {
-//        val data = MutableLiveData<ArticleUserResponse?>()
-//
-//        apiService.getUserArticles(page, limit, sortBy, order, search).enqueue(object :
-//            Callback<ArticleUserResponse> {
-//            override fun onResponse(call: Call<ArticleUserResponse>, response: Response<ArticleUserResponse>) {
-//                if (response.isSuccessful) {
-//                    data.value = response.body()
-//                } else {
-//                    data.value = null // Handle error case
-//                }
-//            }
-//
-//            override fun onFailure(call: Call<ArticleUserResponse>, t: Throwable) {
-//                data.value = null // Handle failure
-//            }
-//        })
-//
-//        return data
-//    }
+
+    suspend fun addArticle(title: String, deskripsi: String, picture: String, url: String): ArticlesResponse? {
+        val token = pref.getSession().first().token
+        val apiService = ApiConfig.getApiService(token)
+        return withContext(Dispatchers.IO) {
+            try {
+                val articleRequest = ArticleRequest(title, deskripsi, picture, url)
+                val response = apiService.postArticle(articleRequest).awaitResponse()
+                if (response.isSuccessful) {
+                    response.body()
+                } else {
+                    // Handle error
+                    null
+                }
+            } catch (e: Exception) {
+                // Handle exception (e.g., log error, return a specific error response)
+                null
+            }
+        }
+    }
+
     companion object {
         @Volatile
         private var instance: ArticleUserRepository? = null
@@ -58,5 +76,4 @@ class ArticleUserRepository(private val pref: UserPreference
                 instance ?: ArticleUserRepository(pref)
             }.also { instance = it }
     }
-
 }

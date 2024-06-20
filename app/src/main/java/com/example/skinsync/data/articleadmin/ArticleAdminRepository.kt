@@ -22,7 +22,7 @@ class ArticleAdminRepository (private val pref: UserPreference
         emitSource(
             Pager(
                 config = PagingConfig(pageSize = 5, enablePlaceholders = false),
-                pagingSourceFactory = { ArticlePagingSource(apiService) }
+                pagingSourceFactory = { ArticlePagingSource(apiService, "") }
             ).liveData
         )
     }
