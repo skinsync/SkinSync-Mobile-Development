@@ -3,6 +3,7 @@ package com.example.skinsync.activity.users.article
 import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
@@ -14,18 +15,29 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
+import com.example.skinsync.activity.users.profile.ProfileViewModel
+import com.example.skinsync.data.UserModel
 import com.example.skinsync.databinding.ActivityArticleBinding
 import com.example.skinsync.viewmodel.ArticleUserViewModel
 import com.example.skinsync.viewmodel.LoadingViewModel
 import com.example.skinsync.viewmodel.ViewModelFactory
+import kotlinx.coroutines.flow.first
 import java.util.Locale
 
 class ArticleActivity : AppCompatActivity() {
-    private lateinit var binding: ActivityArticleBinding
     private val viewModel by viewModels<ArticleUserViewModel> {
         ViewModelFactory.getInstance(this)
     }
+    private val profileViewModel by viewModels<ProfileViewModel> {
+        ViewModelFactory.getInstance(this)
+    }
+    private val viewModelArticle2 by viewModels<ArticleUserViewModel>{
+        ViewModelFactory.getInstance(this)
+    }
+
+    private lateinit var binding: ActivityArticleBinding
     private lateinit var articleAdapter: ArticleUserAdapter
+    private lateinit var articleAdapter2: ArticleUserAdapter
     private lateinit var loadingViewModel: LoadingViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -78,6 +90,34 @@ class ArticleActivity : AppCompatActivity() {
             articleAdapter.submitData(lifecycle, it)
             loadingViewModel.setLoadingStatus(false)
         }
+
+        profileViewModel.fetchProfile()
+
+        profileViewModel.myProfile.observe(this) { profileResponse ->
+            if (profileResponse?.data != null) {
+                binding.usernameUser.text = profileResponse.data.name
+                println(profileResponse.data.name)
+            }else{
+                Log.e("ProfileActivity", "Profile data is null")
+            }
+        }
+
+        // Inisialisasi RecyclerView
+        binding.recyclerView2.layoutManager = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+
+        // Inisialisasi ArticleAdapter
+        articleAdapter2 = ArticleUserAdapter() // Mulai dengan list kosong
+        binding.recyclerView2.adapter = articleAdapter2
+
+        // Observasi LiveData untuk mendapatkan data artikel
+        viewModel.searchArticles.observe(this) {
+            //binding.usernameUser.text = data.name
+            loadingViewModel.setLoadingStatus(true)
+            articleAdapter2.submitData(lifecycle, it)
+            loadingViewModel.setLoadingStatus(false)
+        }
+
+
 
         // Panggil metode untuk mendapatkan data artikel
         //viewModel.fetchArticles(1, 10, "createdAt", "desc", "") // Ganti parameter dengan yang sesuai

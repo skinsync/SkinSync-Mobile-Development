@@ -49,6 +49,10 @@ class ListProductActivity : AppCompatActivity() {
             Toast.makeText(this, "Fitur filter masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
         }
 
+        binding.searchBar.setOnClickListener(){
+            Toast.makeText(this, "Fitur search masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
+        }
+
         // Inisialisasi ViewModel
         loadingViewModel = ViewModelProvider(this).get(LoadingViewModel::class.java)
 

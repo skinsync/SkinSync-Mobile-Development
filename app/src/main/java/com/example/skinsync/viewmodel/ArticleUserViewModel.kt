@@ -13,7 +13,8 @@ import com.example.skinsync.data.UserModel
 
 class ArticleUserViewModel(private val repository: ArticleUserRepository) : ViewModel() {
 
-    var articles: LiveData<PagingData<ArticleData>> = repository.getArticle().cachedIn(viewModelScope)
+    var articles: LiveData<PagingData<ArticleData>> = repository.getArticles().cachedIn(viewModelScope)
+    var searchArticles: LiveData<PagingData<ArticleData>> = repository.searchArticles().cachedIn(viewModelScope)
     //private val _articles = MutableLiveData<ArticleUserResponse?>()
     //val articles: LiveData<ArticleUserResponse?> get() = _articles
     var _isLoading = MutableLiveData<Boolean>()
