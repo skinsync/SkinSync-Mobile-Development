@@ -6,6 +6,7 @@ import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        //enableEdgeToEdge()
         mainViewModel.getSession().observe(this) { user ->
             if (!user.isLogin) {
                 startActivity(Intent(this, WelcomeActivity::class.java))
@@ -153,6 +154,12 @@ class MainActivity : AppCompatActivity() {
         buttonTryNow.setOnClickListener {
             val intent = Intent(this, ScanActivity::class.java)
             startActivity(intent) // Memulai MainActivity
+        }
+
+        val ibFilter = findViewById<ImageButton>(R.id.ib_filter)
+        ibFilter.setOnClickListener {
+            // Menampilkan toast
+            Toast.makeText(this, "Fitur filter masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
         }
 
         // Set up RecyclerView

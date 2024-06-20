@@ -17,19 +17,17 @@ import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.activity.users.scheduling.NotificationReceiver
 import com.example.skinsync.activity.users.scheduling.morning.MorningSchedulingActivity
+import com.example.skinsync.databinding.ActivityMorningSchedulingBinding
+import com.example.skinsync.databinding.ActivityNightSchedulingBinding
 import java.util.Calendar
 import java.util.Locale
 
 class NightSchedulingActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityNightSchedulingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_night_scheduling)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityNightSchedulingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val textViewDate: TextView = findViewById(R.id.textViewDate)
 
@@ -63,7 +61,7 @@ class NightSchedulingActivity : AppCompatActivity() {
     private fun setNightRoutineAlarm() {
         val alarmManager = getSystemService(Context.ALARM_SERVICE) as AlarmManager
         val intent = Intent(this, NotificationReceiver::class.java)
-        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT)
+        val pendingIntent = PendingIntent.getBroadcast(this, 0, intent, PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
 
         // Set alarm for night routine (adjust the time as needed)
         val calendar = Calendar.getInstance()

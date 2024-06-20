@@ -16,8 +16,7 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
-            android:layout_marginTop="@dimen/_40sdp"
-            android:background="@color/white"
+            android:background="@color/beige"
             app:layout_constraintTop_toTopOf="parent">
 
             <com.google.android.material.search.SearchBar
@@ -336,8 +335,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_height="@dimen/_250sdp"
             app:layout_constraintTop_toBottomOf="@id/frame">
 
             <TextView
@@ -360,6 +358,7 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:background="@drawable/ic_filter"
+                android:foreground="?android:attr/selectableItemBackground"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@id/titleSkincareProduct"
                 tools:ignore="MissingConstraints" />
@@ -367,7 +366,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvProduct"
                 android:layout_width="0dp"
-                android:layout_height="@dimen/_180sdp"
+                android:layout_height="@dimen/_200sdp"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:orientation="horizontal"
@@ -413,7 +412,6 @@
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_40sdp"
         android:layout_gravity="start"
         app:itemIconTint="@color/peach"
         app:itemTextColor="@color/peach"

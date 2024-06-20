@@ -104,6 +104,10 @@
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-54:\\layout\\activity_user_admin.xml"
     },
     {
+        "merged": "com.example.skinsync.app-debug-52:/layout_activity_list_product.xml.flat",
+        "source": "com.example.skinsync.app-main-54:/layout/activity_list_product.xml"
+    },
+    {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-52:\\layout_list_user_admin.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-54:\\layout\\list_user_admin.xml"
     },
@@ -322,10 +326,6 @@
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-52:\\layout_activity_detail_article_admin.xml.flat",
         "source": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-main-54:\\layout\\activity_detail_article_admin.xml"
-    },
-    {
-        "merged": "com.example.skinsync.app-debug-52:/layout_activity_main.xml.flat",
-        "source": "com.example.skinsync.app-main-54:/layout/activity_main.xml"
     },
     {
         "merged": "C:\\Users\\hi\\.gradle\\daemon\\8.4\\com.example.skinsync.app-debug-52:\\layout_activity_scan.xml.flat",
