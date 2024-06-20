@@ -15,19 +15,20 @@ import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.activity.users.scheduling.NotificationReceiver
 import com.example.skinsync.activity.users.scheduling.night.NightSchedulingActivity
+import com.example.skinsync.databinding.ActivityArticleBinding
+import com.example.skinsync.databinding.ActivityMorningSchedulingBinding
 import java.text.SimpleDateFormat
 import java.util.Calendar
 import java.util.Locale
 
 class MorningSchedulingActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMorningSchedulingBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_morning_scheduling)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        binding = ActivityMorningSchedulingBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         val textViewDate: TextView = findViewById(R.id.textViewDate)
 

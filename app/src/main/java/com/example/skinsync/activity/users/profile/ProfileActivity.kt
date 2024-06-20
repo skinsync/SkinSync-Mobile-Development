@@ -7,6 +7,7 @@ import android.util.Log
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -43,9 +44,9 @@ class ProfileActivity : AppCompatActivity() {
         }
 
         binding.buttonEdit.setOnClickListener {
+            Toast.makeText(this, "Fitur Edit Profile masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
             val intent = Intent(this, EditProfileActivity::class.java)
-            intent.putExtra("user", user)
-            startActivityForResult(intent, 1)
+            startActivity(intent)
         }
 
         viewModel.fetchProfile()

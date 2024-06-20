@@ -4,7 +4,9 @@ import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -12,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.skinsync.R
 import com.example.skinsync.activity.MainActivity
 import com.example.skinsync.data.listproduct.DataListProduct
 import com.example.skinsync.databinding.ActivityListProductBinding
@@ -38,6 +41,12 @@ class ListProductActivity : AppCompatActivity() {
         binding.back.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
+        }
+
+        val ibFilter = findViewById<ImageButton>(R.id.ib_filter)
+        ibFilter.setOnClickListener {
+            // Menampilkan toast
+            Toast.makeText(this, "Fitur filter masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
         }
 
         // Inisialisasi ViewModel

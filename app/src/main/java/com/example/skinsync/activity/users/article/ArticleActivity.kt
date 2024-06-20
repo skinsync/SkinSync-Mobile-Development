@@ -4,8 +4,10 @@ import android.content.Intent
 import android.icu.text.SimpleDateFormat
 import android.os.Bundle
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.ViewModelProvider
@@ -48,6 +50,12 @@ class ArticleActivity : AppCompatActivity() {
             startActivity(intent) // Memulai MainActivity
         }
 
+        val seeMore = findViewById<TextView>(R.id.seeMore)
+        seeMore.setOnClickListener {
+            // Menampilkan toast
+            Toast.makeText(this, "Fitur ini masih dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
+        }
+
         // Inisialisasi ViewModel
         loadingViewModel = ViewModelProvider(this).get(LoadingViewModel::class.java)
 
@@ -65,6 +73,7 @@ class ArticleActivity : AppCompatActivity() {
 
         // Observasi LiveData untuk mendapatkan data artikel
         viewModel.articles.observe(this) {
+            //binding.usernameUser.text = data.name
             loadingViewModel.setLoadingStatus(true)
             articleAdapter.submitData(lifecycle, it)
             loadingViewModel.setLoadingStatus(false)

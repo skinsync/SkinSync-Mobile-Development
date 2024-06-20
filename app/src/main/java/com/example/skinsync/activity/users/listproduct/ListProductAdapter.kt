@@ -8,6 +8,7 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.example.skinsync.R
 import com.example.skinsync.databinding.ListProductUsersBinding
 
 class ListProductAdapter : PagingDataAdapter<ProductDataItem, ListProductAdapter.ListProductViewHolder>(DIFF_CALLBACK) {
@@ -35,6 +36,7 @@ class ListProductAdapter : PagingDataAdapter<ProductDataItem, ListProductAdapter
                 tvTypeProduct.text = product.productType!!.name
                 Glide.with(itemView.context)
                     .load(product.picture)
+                    .placeholder(R.drawable.kosongproduct)
                     .into(imageProduct)
 
                 root.setOnClickListener {

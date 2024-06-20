@@ -33,6 +33,7 @@ import java.io.File
 import java.io.FileInputStream
 import java.net.URL
 import android.util.Base64
+import android.widget.Toast
 
 class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListener {
     private val viewModel by viewModels<ProfileViewModel> {
@@ -112,6 +113,8 @@ class EditProfileActivity : AppCompatActivity(), DatePickerDialog.OnDateSetListe
             Log.d("EditProfileActivity", "Gender: $gender")
             Log.d("EditProfileActivity", "Email: $email")
             Log.d("EditProfileActivity", "Password: $password")
+
+            Toast.makeText(this, "Data belum dapat tersimpan, dalam tahap pengembangan", Toast.LENGTH_SHORT).show()
 
             viewModel.editProfile(
                 name = username,
